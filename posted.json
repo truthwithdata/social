@@ -1,0 +1,77 @@
+{
+  "posted": [
+    {
+      "id": "2026-11-03-li-rent-vs-buy",
+      "platform": "linkedin",
+      "at": "2026-11-03T07:56:51Z",
+      "ref": "urn:li:share:7523292055545040896"
+    },
+    {
+      "id": "2026-11-03-ig-rent-vs-buy",
+      "platform": "instagram",
+      "at": "2026-11-03T18:58:17Z",
+      "ref": "https://www.instagram.com/p/DfSlEWQHflz/"
+    },
+    {
+      "id": "2026-11-03-igs-rent-vs-buy",
+      "platform": "instagram",
+      "at": "2026-11-03T18:59:11Z",
+      "ref": "17898762525676354"
+    },
+    {
+      "id": "2026-11-04-li-ai-jobs",
+      "platform": "linkedin",
+      "at": "2026-11-04T07:57:00Z",
+      "ref": "urn:li:share:7523654447990751232"
+    },
+    {
+      "id": "2026-11-04-x-rent-vs-buy",
+      "platform": "x",
+      "at": "2026-11-04T07:57:02Z",
+      "ref": null,
+      "skipped": "X not connected"
+    },
+    {
+      "id": "2026-11-04-igr-rent-vs-buy",
+      "platform": "instagram",
+      "at": "2026-11-04T18:56:18Z",
+      "ref": "https://www.instagram.com/reel/DfVJm2ZlYo8/"
+    },
+    {
+      "id": "2026-11-05-li-ab-testing",
+      "platform": "linkedin",
+      "at": "2026-11-05T07:57:41Z",
+      "ref": "urn:li:share:7524017040983068672"
+    },
+    {
+      "id": "2026-11-05-ig-ai-jobs",
+      "platform": "instagram",
+      "at": "2026-11-05T18:57:06Z",
+      "ref": "https://www.instagram.com/p/DfXufaqnRpv/"
+    },
+    {
+      "id": "2026-11-05-igs-ai-jobs",
+      "platform": "instagram",
+      "at": "2026-11-05T18:57:36Z",
+      "ref": "18378941746242169"
+    },
+    {
+      "id": "2026-11-07-ig-ab-testing",
+      "platform": "instagram",
+      "at": "2026-11-07T18:57:18Z",
+      "ref": "https://www.instagram.com/p/Dfc4GplnYbt/"
+    },
+    {
+      "id": "2026-11-07-igs-ab-testing",
+      "platform": "instagram",
+      "at": "2026-11-07T18:57:44Z",
+      "ref": "18001617540042540"
+    },
+    {
+      "id": "2026-11-08-nl-rent-vs-buy",
+      "platform": "newsletter",
+      "at": "2026-11-08T09:20:35Z",
+      "ref": "kit broadcast 26873777 (scheduled 2026-11-08T09:31:00Z)"
+    }
+  ]
+}

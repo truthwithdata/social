@@ -1,0 +1,99 @@
+{
+ "out_dir": "img/2026-11-09/ai-reviews",
+ "prefix": "ai-reviews",
+ "source": "Truth with Data analysis of Salminen et al. (2022) and CRSD (2026)",
+ "slides": [
+  {
+   "type": "title",
+   "h1": "Can a detector spot an AI&#8209;written review?",
+   "p": "We tested detectors on <b>8,036 short reviews</b>: half written by people, half by nine chat models up to GPT&#8209;5.2.",
+   "kicker": "Swipe for what we found &rarr;"
+  },
+  {
+   "type": "stat",
+   "h2": "Trained on today&rsquo;s chat models",
+   "big": "86%",
+   "p": "of AI-written reviews caught, while wrongly flagging only <b>1%</b> of genuine ones.",
+   "small": "Human and AI reviews matched on length and tone, so neither could give it away."
+  },
+  {
+   "type": "bars",
+   "h2": "A detector built for 2019&rsquo;s fakes catches almost none of today&rsquo;s",
+   "bars": [
+    {
+     "label": "Trained on 2019 GPT&#8209;2 fakes",
+     "value": 1,
+     "text": "1%"
+    },
+    {
+     "label": "Trained on modern chat models",
+     "value": 80,
+     "text": "80%"
+    }
+   ],
+   "highlight": 0,
+   "p": "Share of today&rsquo;s AI reviews caught by each detector, at a 1% false-flag rate, on reviews neither had seen."
+  },
+  {
+   "type": "bars",
+   "h2": "The newest models are hardest to catch",
+   "bars": [
+    {
+     "label": "GPT&#8209;5.2 Instant",
+     "value": 29,
+     "text": "29%"
+    },
+    {
+     "label": "GPT&#8209;5 mini",
+     "value": 35,
+     "text": "35%"
+    },
+    {
+     "label": "Gemini 3 Flash",
+     "value": 37,
+     "text": "37%"
+    },
+    {
+     "label": "GPT&#8209;4o mini",
+     "value": 63,
+     "text": "63%"
+    },
+    {
+     "label": "Llama 3 8B",
+     "value": 87,
+     "text": "87%"
+    }
+   ],
+   "highlight": 0,
+   "p": "Share caught when the detector had never seen that model."
+  },
+  {
+   "type": "list",
+   "h2": "What gives AI away",
+   "items": [
+    "Opens with &ldquo;The&hellip;&rdquo; or &ldquo;This&hellip;&rdquo;: <b>70%</b> of AI vs 10% of people",
+    "No full stop at the end: <b>1%</b> vs 18%",
+    "Contains a number: <b>1%</b> vs 12%",
+    "Uses &ldquo;great&rdquo;, &ldquo;good&rdquo; or &ldquo;nice&rdquo;: <b>13%</b> vs 34%"
+   ],
+   "p": "People write in fragments. AI writes tidy, complete sentences."
+  },
+  {
+   "type": "list",
+   "h2": "If you run a review page",
+   "items": [
+    "Score reviews and send the top ones to a <b>person</b>, not the bin",
+    "<b>Retrain</b> when a new model comes out",
+    "Add behaviour: account age, verified purchase, posting bursts"
+   ],
+   "p": "Detection decays. Last year&rsquo;s detector can be close to blind on this year&rsquo;s fakes."
+  },
+  {
+   "type": "cta",
+   "h2": "Try the detector yourself",
+   "p": "Paste any review into the free demo. It runs in your browser, so nothing is sent anywhere.",
+   "cta": "Link in bio",
+   "small": "A demonstration model. It gets some reviews wrong, so please don&rsquo;t use it to accuse anyone."
+  }
+ ]
+}

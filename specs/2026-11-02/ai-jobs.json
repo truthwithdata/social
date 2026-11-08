@@ -1,0 +1,70 @@
+{
+ "out_dir": "img/2026-11-02/ai-jobs",
+ "prefix": "ai-jobs",
+ "source": "Source: BLS OEWS 2015&ndash;2025; Anthropic Economic Index",
+ "slides": [
+  {
+   "type": "title",
+   "h1": "Which jobs is AI actually replacing?",
+   "p": "We matched data on where AI is really being used to official US employment for <b>722 occupations</b>, 2019 to 2025.",
+   "kicker": "Swipe for what the data shows &rarr;"
+  },
+  {
+   "type": "stat",
+   "h2": "How much does AI exposure explain?",
+   "big": "About 1%",
+   "p": "of the variation in how occupations grew or shrank, May 2019 to May 2025. Correlation: r&nbsp;=&nbsp;0.01.",
+   "chart": "blog/charts/ai-exposure-vs-employment-change-scatter-2019-2025.svg"
+  },
+  {
+   "type": "list",
+   "h2": "The most AI-exposed groups grew fastest",
+   "items": [
+    "<b>Management</b> +38.2%",
+    "<b>Business &amp; finance</b> +28.8%",
+    "<b>Computer &amp; maths</b> +15.5%",
+    "All US jobs +5.9%"
+   ],
+   "p": "Office &amp; admin support fell 9.1%, but it had already fallen 10.6% in the four years before ChatGPT."
+  },
+  {
+   "type": "list",
+   "h2": "Where displacement does show up",
+   "items": [
+    "<b>Customer service reps</b> &minus;11% (were +13% before)",
+    "<b>Office clerks</b> &minus;17%",
+    "<b>Receptionists</b> &minus;14% (were +8%)",
+    "<b>Medical transcriptionists</b> &minus;26%",
+    "<b>Technical writers</b> &minus;10%"
+   ],
+   "p": "Routine text-handling jobs that were growing, then reversed."
+  },
+  {
+   "type": "stat",
+   "h2": "Computer programmers",
+   "big": "&minus;54%",
+   "tone": "amber",
+   "p": "199,540 jobs in 2019, 92,230 in 2025. But they had already fallen 31% before ChatGPT, as the same work was retitled &lsquo;software developer&rsquo;."
+  },
+  {
+   "type": "stat",
+   "h2": "Software developers",
+   "big": "+33%",
+   "p": "Heavy AI use of their tasks, and still growing about as fast as before ChatGPT (+30%, 2015&ndash;19)."
+  },
+  {
+   "type": "stat",
+   "h2": "No AI exposure &ne; job security",
+   "big": "57%",
+   "tone": "amber",
+   "p": "of occupations with zero AI exposure shrank between 2019 and 2025. For the most exposed fifth: 58%."
+  },
+  {
+   "type": "cta",
+   "h2": "So is AI taking jobs?",
+   "p": "Not measurably across whole occupations, yet. The losses are concentrated in a short list of routine text jobs.",
+   "cta": "Look up your job: link in bio",
+   "small": "Free AI Job Exposure Checker covering 787 occupations."
+  }
+ ]
+}

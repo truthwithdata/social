@@ -1,0 +1,71 @@
+{
+ "out_dir": "img/2026-11-02/ab-testing",
+ "prefix": "ab-testing",
+ "source": "Simulation: 10,000 A/A tests by Truth with Data",
+ "slides": [
+  {
+   "type": "title",
+   "h1": "Your A/B test &lsquo;winner&rsquo; might be noise",
+   "p": "We simulated <b>10,000 A/B tests where nothing changed</b>. Then we counted how often a &lsquo;winner&rsquo; was declared anyway.",
+   "kicker": "Swipe &rarr;"
+  },
+  {
+   "type": "stat",
+   "h2": "Check once, at the planned end",
+   "big": "5%",
+   "p": "of tests show a false &lsquo;winner&rsquo;. That is exactly the 5% significance level you signed up for."
+  },
+  {
+   "type": "bars",
+   "h2": "Peek more, &lsquo;win&rsquo; more",
+   "bars": [
+    {
+     "label": "Once, at day 20 (as planned)",
+     "value": 5.1,
+     "text": "5%"
+    },
+    {
+     "label": "Weekly",
+     "value": 10.9,
+     "text": "11%"
+    },
+    {
+     "label": "Every 2 days",
+     "value": 19.3,
+     "text": "19%"
+    },
+    {
+     "label": "Daily, stop at first p &lt; 0.05",
+     "value": 24.9,
+     "text": "25%"
+    }
+   ],
+   "highlight": 3,
+   "p": "Same tests, same data. Only the number of looks changed."
+  },
+  {
+   "type": "stat",
+   "h2": "Peek daily and stop at the first &lsquo;significant&rsquo; result",
+   "big": "1 in 4",
+   "tone": "amber",
+   "p": "of your &lsquo;winning&rsquo; changes did nothing at all."
+  },
+  {
+   "type": "list",
+   "h2": "How to avoid it",
+   "items": [
+    "Fix the sample size <b>before</b> you start",
+    "Set the end date, and don&rsquo;t stop early",
+    "Need to monitor? Use a <b>sequential test</b>",
+    "Report the confidence interval, not just &lsquo;significant&rsquo;"
+   ]
+  },
+  {
+   "type": "cta",
+   "h2": "Plan your next test properly",
+   "p": "Free sample size calculator and the full guide to statistical significance, with Python and R code.",
+   "cta": "Link in bio",
+   "small": "Simulation: 5% conversion in both arms, 1,000 visitors per arm per day for 20 days, two-proportion z-test."
+  }
+ ]
+}

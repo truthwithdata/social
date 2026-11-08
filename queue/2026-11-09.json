@@ -1,0 +1,223 @@
+{
+ "week": "2026-11-09",
+ "posts": [
+  {
+   "id": "2026-11-09-rd-housinguk-rent-vs-buy",
+   "date": "2026-11-09",
+   "time": "19:00",
+   "platform": "reddit",
+   "subreddit": "HousingUK",
+   "kind": "self",
+   "title": "I modelled rent vs buy for every UK region and 316 councils. In year one owning costs more than renting everywhere; buying only wins through price growth",
+   "text": "I spent a few weeks building a month-by-month rent vs buy model from Land Registry prices, ONS rents and current mortgage rates, for a first-time buyer with a 10% deposit. A few things surprised me, and I'd like to know whether they match what people here have found.\n\n**In year one, owning costs more than renting everywhere.** First-year mortgage interest on the average home is 77% to 107% of the rent on the same home. Add maintenance, buildings insurance and what the deposit could have earned, and owning is more expensive in all 12 regions. (I don't count capital repayment as a cost, because it becomes equity.)\n\n**Buying wins through price growth, not monthly savings.** If prices keep rising about 3% a year, the buyer gets ahead after roughly 1.4 years in Scotland to 4.1 years in the South East, including buying and selling costs. If prices stay flat, it takes 11 years in Scotland, 18 to 27 years in six regions, and more than 30 in the other five.\n\n**Where you buy matters more than almost anything.** Across 316 local authorities in England and Wales, 181 (57%) break even within five years. Cities where rents are high relative to prices are fastest: Newcastle upon Tyne in about a year; Manchester, Portsmouth, Bristol and Southampton in 1.1 to 1.2. In 15 expensive rural and commuter areas, including Elmbridge, Waverley, Mole Valley, the Derbyshire Dales and Powys, buying the average home doesn't get ahead within 30 years.\n\n**Timing can override all of it.** People who bought in July 2007 took between 6 years (London) and 19 years (North East) to get ahead of an equivalent renter. Buyers from 2022 to 2024 were still behind in 8 of 12 regions by July this year.\n\nSo \"renting is dead money\" isn't right, but neither is \"buying always wins\". It's mostly a bet on prices and on how long you stay.\n\nIf you bought in the last few years, did the monthly sums come out roughly like this for you? And if you rent, is it the deposit or the numbers that's holding you back?",
+   "note": "No links on purpose: r/HousingUK bans links to online tools and businesses. This one builds the account's standing before the link posts."
+  },
+  {
+   "id": "2026-11-09-igr-ab-testing",
+   "date": "2026-11-09",
+   "time": "19:00",
+   "platform": "instagram",
+   "kind": "reel",
+   "video": "img/2026-11-09/reel/ab-testing-reel.mp4",
+   "cover": "img/2026-11-09/reel/ab-testing-reel-cover.jpg",
+   "text": "Your A/B test \"winner\" might be noise.\n\nWe simulated 10,000 tests where nothing changed. Check once at the planned end: 5% false winners. Check daily and stop at the first significant result: 25%.\n\nFix the sample size before you start. Free sample size calculator: link in bio.\n\n#abtesting #statistics #datascience #productmanagement #experimentation",
+   "note": "28 s: three Gemini (Veo) clips with text overlays and the logo outro. Keeps Gemini's quiet ambient sound; no music via the API. Added on request after the week's PR."
+  },
+  {
+   "id": "2026-11-10-li-ai-reviews",
+   "date": "2026-11-10",
+   "time": "08:00",
+   "platform": "linkedin",
+   "text": "Can a model tell an AI-written review from a real one? I tested it.\n\n8,036 short reviews: half written by people before 2019, half by nine chat models from Gemini 1.5 to GPT-5.2. I matched them on length and tone, so neither could give the game away.\n\nWhat I found:\n\n- Trained on today's models, a detector catches 86% of AI reviews while wrongly flagging 1% of genuine ones.\n- A detector trained on 2019-era GPT-2 fakes catches 1% of today's.\n- When the detector had never seen a model, the newest were hardest to catch: 29% for GPT-5.2 Instant, 35% for GPT-5 mini, 37% for Gemini 3 Flash.\n- The giveaways are style more than vocabulary. 70% of AI reviews open with \"The...\" or \"This...\", against 10% of people's.\n\nIf you run a review page, the lesson is that detection decays. A tool that scores well on last year's fakes can be close to blind on this year's. Use a detector to send reviews to a person for checking, retrain it when new models come out, and combine it with behaviour such as account age and verified purchases.\n\nThe case study has the method, the limits, the code, and a live demo you can paste a review into. Link in the first comment.\n\nHow are you handling AI-generated reviews or content today?",
+   "first_comment": "Case study and live demo: https://truthwithdata.com/case-studies/detecting-ai-written-reviews.html?utm_source=linkedin&utm_medium=social&utm_campaign=2026-11-10-li-ai-reviews",
+   "images": [
+    "img/2026-11-09/ai-reviews/ai-reviews-3.png"
+   ],
+   "note": "Merge site PR #16 first: this links to the case study. Repost from the Truth with Data page."
+  },
+  {
+   "id": "2026-11-10-ig-ai-reviews",
+   "date": "2026-11-10",
+   "time": "19:00",
+   "platform": "instagram",
+   "text": "Can a detector spot an AI-written review? We tested 8,036 short reviews, half by people and half by nine chat models up to GPT-5.2.\n\nTrained on today's models, it catches 86% while wrongly flagging 1% of real reviews. A detector built for 2019's fakes catches 1% of today's.\n\nThe tell: AI writes tidy, complete sentences. People don't.\n\nTry the free detector on any review: link in bio.\n\n#ai #chatgpt #fakereviews #onlineshopping #machinelearning #datascience #dataviz",
+   "images": [
+    "img/2026-11-09/ai-reviews/ai-reviews-1.png",
+    "img/2026-11-09/ai-reviews/ai-reviews-2.png",
+    "img/2026-11-09/ai-reviews/ai-reviews-3.png",
+    "img/2026-11-09/ai-reviews/ai-reviews-4.png",
+    "img/2026-11-09/ai-reviews/ai-reviews-5.png",
+    "img/2026-11-09/ai-reviews/ai-reviews-6.png",
+    "img/2026-11-09/ai-reviews/ai-reviews-7.png"
+   ]
+  },
+  {
+   "id": "2026-11-10-igs-ai-reviews",
+   "date": "2026-11-10",
+   "time": "19:00",
+   "platform": "instagram",
+   "kind": "story",
+   "images": [
+    "img/2026-11-09/story/ai-reviews-story.jpg"
+   ],
+   "note": "Story from slide 1. Add a link sticker to the case study by hand if you like."
+  },
+  {
+   "id": "2026-11-11-li-case-studies",
+   "date": "2026-11-11",
+   "time": "08:00",
+   "platform": "linkedin",
+   "text": "I've added a Case Studies section to Truth with Data.\n\nEach one takes a question people argue about and works it through properly: the data, a method that survives tough testing, the result, and what a business could do with it. All the code is public.\n\n1. Can a model spot an AI-written review? A detector trained on 2019's fakes catches 1% of today's. One trained on current models catches 86%.\n2. Is renting dead money? A month-by-month simulation for 316 local areas, backtested on 2005 to 2026. Buying wins in 1.4 to 4.1 years if prices rise 3% a year, and can take 30+ if they don't.\n3. Is AI taking jobs? Across 722 occupations, AI exposure explains about 1% of job change, and the apparent effect was already there before ChatGPT.\n4. Can you check an A/B test every day? With plain p-values, 24.6% of no-difference tests call a winner. With a sequential stopping rule, 5%.\n\nThese are independent projects on public data, not client work. They show how I approach a question.\n\nIf you have a decision your data should be able to settle, I'm happy to spend 30 minutes working out whether it can. Links in the first comment.",
+   "first_comment": "All four case studies: https://truthwithdata.com/case-studies.html?utm_source=linkedin&utm_medium=social&utm_campaign=2026-11-11-li-case-studies\nBook a free 30-minute call: https://calendly.com/truthwithdata/30min",
+   "images": [
+    "img/2026-11-09/case-studies/case-studies-1.png",
+    "img/2026-11-09/case-studies/case-studies-2.png",
+    "img/2026-11-09/case-studies/case-studies-3.png",
+    "img/2026-11-09/case-studies/case-studies-4.png",
+    "img/2026-11-09/case-studies/case-studies-5.png"
+   ],
+   "note": "Multi-image post (5 images). Merge site PR #16 first."
+  },
+  {
+   "id": "2026-11-11-x-ai-reviews",
+   "date": "2026-11-11",
+   "time": "08:00",
+   "platform": "x",
+   "thread": [
+    "Can a detector spot an AI-written review? I tested 8,036 short reviews: half by people (written before 2019), half by nine chat models up to GPT-5.2, matched on length and tone. Thread.",
+    "Trained on today's models, a detector catches 86% of AI reviews while wrongly flagging 1% of genuine ones.",
+    "A detector trained on 2019-era GPT-2 fakes catches 1% of today's AI reviews. Detectors learn the quirks of the model they were trained on.",
+    "When a model was new to the detector, the newest were hardest: GPT-5.2 Instant 29% caught, GPT-5 mini 35%, Gemini 3 Flash 37%. Older ones: 63-87%.",
+    "The tells are style: 70% of AI reviews open with \"The\" or \"This\" (people: 10%). People skip the full stop (18% vs 1%) and use numbers (12% vs 1%).",
+    "Method, limits, code and a live demo you can paste a review into: https://truthwithdata.com/case-studies/detecting-ai-written-reviews.html?utm_source=x&utm_medium=social&utm_campaign=2026-11-11-x-ai-reviews"
+   ],
+   "images": [
+    "img/2026-11-09/ai-reviews/ai-reviews-3.png"
+   ],
+   "note": "Skipped automatically until X is connected."
+  },
+  {
+   "id": "2026-11-11-igr-ai-reviews",
+   "date": "2026-11-11",
+   "time": "19:00",
+   "platform": "instagram",
+   "kind": "reel",
+   "video": "img/2026-11-09/reel/ai-reviews-reel.mp4",
+   "cover": "img/2026-11-09/reel/ai-reviews-reel-cover.jpg",
+   "text": "A detector built for 2019's fake reviews catches 1% of today's AI-written ones. The newest chat models are the hardest to catch.\n\nTry the free detector on any review: link in bio.\n\n#ai #fakereviews #chatgpt #datascience #onlineshopping",
+   "note": "Silent via the API. If you post by hand instead, add trending audio."
+  },
+  {
+   "id": "2026-11-11-rd-dib-rent-vs-buy",
+   "date": "2026-11-11",
+   "time": "19:00",
+   "platform": "reddit",
+   "subreddit": "dataisbeautiful",
+   "kind": "image",
+   "title": "[OC] How many years until buying the average home beats renting it, for 316 local authorities in England and Wales (2026)",
+   "images": [
+    "img/reddit/rent-vs-buy-breakeven-by-local-authority-england-wales-2026.png"
+   ],
+   "first_comment": "Source data: HM Land Registry UK House Price Index (July 2026), ONS Price Index of Private Rents (October 2026 release), Bank of England quoted mortgage rates.\nTools: Python (pandas, matplotlib); the model is cross-checked in R.\n\nEach dot is one local authority; the bar is the regional median. The model runs month by month: a first-time buyer with a 10% deposit at the current 90% LTV rate (5.37%), against someone renting the same home and investing whatever they don't spend at 5% a year. House prices rise 3.0% a year, the 2005 to 2026 average. Break-even is the point after which the buyer stays ahead, including stamp duty, fees and selling costs.\n\n- 181 of 316 (57%) break even within 5 years.\n- Newcastle upon Tyne is fastest at 1.0 years, then Manchester, Portsmouth, Bristol and Southampton at 1.1 to 1.2.\n- 15 expensive rural and commuter areas, such as Elmbridge, Waverley and Powys, never break even within 30 years. Rents there are low relative to prices (yields of 2.7% to 3.5%).\n\nBiggest caveat: everything depends on prices. With flat prices most of the country takes decades.\n\nWrite-up with the method, sensitivity checks, a 2005 to 2026 backtest and the code: https://truthwithdata.com/blog/is-renting-dead-money-uk.html?utm_source=reddit&utm_medium=social&utm_campaign=2026-11-11-rd-dib-rent-vs-buy",
+   "note": "r/dataisbeautiful rules: [OC] in the title, sources and tools in the first top-level comment (that's first_comment). Plain title, no clickbait."
+  },
+  {
+   "id": "2026-11-12-li-ab-fix",
+   "date": "2026-11-12",
+   "time": "08:00",
+   "platform": "linkedin",
+   "text": "Last week I showed that checking an A/B test every day, and stopping at the first p < 0.05, turns a 5% false-winner rate into about 25%.\n\nThe obvious follow-up: can you look every day without fooling yourself? Yes, with a stopping rule built for it.\n\nI reran the simulation at a bigger scale: 50,000 tests with no real difference and 50,000 with a real 10% lift, each read under six stopping plans.\n\n- Look once at the planned end: 4.9% false winners.\n- Look daily, stop at p < 0.05: 24.6%.\n- Look daily with an O'Brien-Fleming boundary: 5.0%.\n\nThe boundary asks for much stronger evidence early on, when samples are small and noise is loudest, and relaxes as the data builds up.\n\nThe cost is small: power drops from 61% to 59% for a real 10% lift. And when the lift is real, the test stops 3.2 days sooner on average.\n\nIf your team reads tests from a live dashboard, this is the fix. The case study and the simulation code are in the first comment.\n\nWhat stopping rule does your team use?",
+   "first_comment": "Case study: https://truthwithdata.com/case-studies/ab-testing-peeking-simulation.html?utm_source=linkedin&utm_medium=social&utm_campaign=2026-11-12-li-ab-fix\nSimulation code: https://github.com/truthwithdata/analysis/tree/main/ab-testing-peeking\nSample size calculator: https://truthwithdata.com/tools/sample-size-calculator.html?utm_source=linkedin&utm_medium=social&utm_campaign=2026-11-12-li-ab-fix",
+   "images": [
+    "img/2026-11-09/ab-fix/ab-fix-2.png"
+   ],
+   "note": "Merge site PR #16 and analysis PR #1 first."
+  },
+  {
+   "id": "2026-11-12-ig-ab-fix",
+   "date": "2026-11-12",
+   "time": "19:00",
+   "platform": "instagram",
+   "text": "Checking an A/B test every day isn't the problem. Stopping at the first p < 0.05 is.\n\nWe simulated 100,000 tests. Daily peeking called a false winner 24.6% of the time. A sequential stopping rule kept it at 5%, cost 2 points of power, and stopped real winners 3.2 days sooner.\n\nFull case study and a free sample size calculator: link in bio.\n\n#abtesting #statistics #datascience #productmanagement #growthmarketing #experimentation",
+   "images": [
+    "img/2026-11-09/ab-fix/ab-fix-1.png",
+    "img/2026-11-09/ab-fix/ab-fix-2.png",
+    "img/2026-11-09/ab-fix/ab-fix-3.png",
+    "img/2026-11-09/ab-fix/ab-fix-4.png",
+    "img/2026-11-09/ab-fix/ab-fix-5.png",
+    "img/2026-11-09/ab-fix/ab-fix-6.png"
+   ]
+  },
+  {
+   "id": "2026-11-12-igs-ab-fix",
+   "date": "2026-11-12",
+   "time": "19:00",
+   "platform": "instagram",
+   "kind": "story",
+   "images": [
+    "img/2026-11-09/story/ab-fix-story.jpg"
+   ]
+  },
+  {
+   "id": "2026-11-13-rd-cro-ab-peeking",
+   "date": "2026-11-13",
+   "time": "19:00",
+   "platform": "reddit",
+   "subreddit": "CRO",
+   "kind": "self",
+   "title": "I simulated 100,000 A/B tests: looking daily and stopping at p < 0.05 makes 1 in 4 'winners' noise. A sequential boundary fixes it at almost no cost",
+   "text": "A question I get from teams watching a live dashboard: is it OK to look every day? I ran a simulation to put numbers on it.\n\n**Setup.** 50,000 A/A tests (both versions identical, so any winner is a false positive) and 50,000 A/B tests with a real 10% relative lift. 1,000 visitors per arm per day for 20 days, 5% baseline conversion. Each test was read under six stopping plans.\n\n| Stopping plan | False winners (A/A) | Power (real 10% lift) |\n|:--|--:|--:|\n| Look once at day 20, as planned | 4.9% | 61% |\n| Look weekly, stop at p < 0.05 | 10.4% | |\n| Look every 2 days | 19.2% | |\n| Look daily | 24.6% | 74% |\n| Look daily, O'Brien-Fleming boundary | 5.0% | 59% |\n| Look daily, Pocock boundary | 5.0% | 46% |\n\nDaily peeking only looks more powerful because it calls more of everything, including five times as many false winners.\n\nThe O'Brien-Fleming boundary asks for very strong evidence early, when samples are small and noise is loudest, and relaxes towards the end. It gives up two points of power, and when the lift is real the test stops 3.2 days sooner on average (16.8 days instead of 20). Pocock is flatter: easier to stop early, but power falls to 46%.\n\nSo if your team is going to look anyway, agree a boundary before the test starts rather than trying to ban peeking.\n\nChart and write-up: https://truthwithdata.com/case-studies/ab-testing-peeking-simulation.html?utm_source=reddit&utm_medium=social&utm_campaign=2026-11-13-rd-cro-ab-peeking\n\nSimulation code (Python, reproducible): https://github.com/truthwithdata/analysis/tree/main/ab-testing-peeking\n\nWhat do people use in practice: group-sequential boundaries, always-valid p-values (mSPRT), Bayesian with a decision threshold, or a fixed horizon and discipline?",
+   "note": "Numbers from the A/B peeking case study (table of plans). r/CRO has no posted rules; one link to the write-up, one to the code."
+  },
+  {
+   "id": "2026-11-14-ig-case-studies",
+   "date": "2026-11-14",
+   "time": "19:00",
+   "platform": "instagram",
+   "text": "Four hard questions, answered properly with data: AI-written reviews, renting vs buying, AI and jobs, and A/B testing.\n\nEach case study has the method, the results, the limits and the code. Independent projects on public data, not client work.\n\nGot a question your data should answer? Link in bio.\n\n#datascience #dataanalytics #machinelearning #statistics #dataviz #consulting",
+   "images": [
+    "img/2026-11-09/case-studies/case-studies-1.png",
+    "img/2026-11-09/case-studies/case-studies-2.png",
+    "img/2026-11-09/case-studies/case-studies-3.png",
+    "img/2026-11-09/case-studies/case-studies-4.png",
+    "img/2026-11-09/case-studies/case-studies-5.png",
+    "img/2026-11-09/case-studies/case-studies-6.png"
+   ]
+  },
+  {
+   "id": "2026-11-14-igs-case-studies",
+   "date": "2026-11-14",
+   "time": "19:00",
+   "platform": "instagram",
+   "kind": "story",
+   "images": [
+    "img/2026-11-09/story/case-studies-story.jpg"
+   ]
+  },
+  {
+   "id": "2026-11-15-nl-ai-reviews",
+   "date": "2026-11-15",
+   "time": "08:00",
+   "platform": "newsletter",
+   "subject": "Can a detector spot an AI-written review? (one chart)",
+   "text": "<p>Hi,</p>\n<h2>This week: can a detector spot an AI-written review?</h2>\n<p><img src=\"https://truthwithdata.github.io/social/img/2026-11-09/ai-reviews/ai-reviews-3.png\" alt=\"A detector trained on 2019 fakes catches 1% of today's AI reviews; one trained on modern models catches 80%\" width=\"540\" style=\"max-width:100%;height:auto\"></p>\n<p>I tested detectors on 8,036 short reviews, half written by people before 2019 and half by nine chat models up to GPT&#8209;5.2, matched on length and tone. Trained on today's models, a detector catches 86% of AI reviews while wrongly flagging 1% of genuine ones. A detector trained on 2019-era GPT&#8209;2 fakes catches 1% of today's.</p>\n<p>The newest models were the hardest to catch when the detector hadn't seen them: 29% for GPT&#8209;5.2 Instant. The giveaway is style: AI writes tidy, complete sentences, and 70% of its reviews open with &ldquo;The&hellip;&rdquo; or &ldquo;This&hellip;&rdquo;, against 10% of people's.</p>\n<p><a href=\"https://truthwithdata.com/case-studies/detecting-ai-written-reviews.html?utm_source=newsletter&utm_medium=email&utm_campaign=2026-11-15\">Read the case study and try the live detector</a> on any review you like. It runs in your browser.</p>\n<h3>New: case studies</h3>\n<p>This is one of four new <a href=\"https://truthwithdata.com/case-studies.html?utm_source=newsletter&utm_medium=email&utm_campaign=2026-11-15\">case studies</a> that work a question through from data to decision, with the code. The others cover renting vs buying, AI and jobs, and <a href=\"https://truthwithdata.com/case-studies/ab-testing-peeking-simulation.html?utm_source=newsletter&utm_medium=email&utm_campaign=2026-11-15\">how to check an A/B test every day without fooling yourself</a>.</p>\n<p>Got a question you'd like answered with data? Just reply to this email.</p>\n<p>Vishal<br>Truth with Data</p>",
+   "images": [],
+   "note": "Sent via Kit at 08:00 Sunday. Skipped if Kit isn't connected."
+  },
+  {
+   "id": "2026-11-15-rd-dataviz-ai-jobs",
+   "date": "2026-11-15",
+   "time": "19:00",
+   "platform": "reddit",
+   "subreddit": "datavisualization",
+   "kind": "image",
+   "flair": "OC",
+   "title": "[OC] Charting a null result: AI exposure vs employment change for 722 US occupations, 2019 to 2025",
+   "images": [
+    "img/reddit/ai-exposure-vs-employment-change-scatter-2019-2025.png"
+   ],
+   "first_comment": "Data: BLS Occupational Employment and Wage Statistics (May 2019 and May 2025) and the Anthropic Economic Index, which measures the share of each occupation's tasks people already do with an LLM. Tools: Python (pandas, matplotlib), with the regressions repeated in R.\n\nThe finding is mostly a non-finding: Pearson r = 0.01, and the 95% interval on the employment-weighted slope straddles zero. A similar slope shows up in 2015 to 2019, before ChatGPT existed, which is why I don't read it as an AI effect.\n\nDesign choices I'd like feedback on:\n\n- Bubble area is 2019 employment, so big occupations dominate the picture the way they dominate the weighted fit.\n- 54% of occupations have no observed exposure. I greyed them out rather than dropping them, but they pile up at x = 0.\n- The fit statistics sit in a box rather than the subtitle.\n- Only occupations people ask about are labelled (programmers, customer service reps, software developers and so on).\n\nHow would you show \"there's no real relationship here\" more clearly? Full article with the method and data: https://truthwithdata.com/blog/which-jobs-is-ai-actually-replacing.html?utm_source=reddit&utm_medium=social&utm_campaign=2026-11-15-rd-dataviz-ai-jobs",
+   "note": "r/datavisualization is about craft, so this asks for design feedback. No posted rules."
+  }
+ ]
+}

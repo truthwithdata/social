@@ -1,0 +1,92 @@
+{
+ "out_dir": "img/2026-11-16/langs",
+ "prefix": "langs",
+ "source": "Sources: GitHub, HN hiring posts, Stack Overflow, Google Trends",
+ "slides": [
+  {
+   "type": "title",
+   "h1": "Which programming language is <span style=\"color:#059669\">genuinely</span> growing?",
+   "p": "We checked four signals for 17 languages: code on GitHub, <b>82,138 job posts</b>, a 10-year developer survey and Google searches.",
+   "kicker": "Swipe for the answer &rarr;"
+  },
+  {
+   "type": "stat",
+   "h2": "First: why most rankings are now wrong",
+   "big": "&minus;98.7%",
+   "tone": "amber",
+   "p": "Stack Overflow questions, Jan&ndash;Oct 2026 vs the same months of 2019.",
+   "small": "Developers ask AI now. Rankings built on questions and searches measure that, not usage."
+  },
+  {
+   "type": "list",
+   "h2": "Genuinely growing since 2022",
+   "items": [
+    "<b>Rust</b>: share of GitHub developers +71%; job posts 6.0% &rarr; 8.4%",
+    "<b>TypeScript</b>: GitHub share +108%; 9th &rarr; 3rd on GitHub",
+    "<b>Python</b>: GitHub share +32%; named in 25% of job posts"
+   ],
+   "p": "Shares, not counts: these three are pulling ahead of the rest."
+  },
+  {
+   "type": "bars",
+   "h2": "Job posts naming each language, 2026",
+   "bars": [
+    {
+     "label": "Python",
+     "value": 25.0,
+     "text": "25%"
+    },
+    {
+     "label": "TypeScript",
+     "value": 23.2,
+     "text": "23%"
+    },
+    {
+     "label": "JavaScript",
+     "value": 15.9,
+     "text": "16%"
+    },
+    {
+     "label": "SQL",
+     "value": 12.1,
+     "text": "12%"
+    },
+    {
+     "label": "Rust",
+     "value": 8.8,
+     "text": "9%"
+    }
+   ],
+   "highlight": 1,
+   "p": "TypeScript overtook JavaScript in 2023."
+  },
+  {
+   "type": "list",
+   "h2": "Losing ground",
+   "items": [
+    "<b>Java</b>: GitHub share &minus;39%; job posts 7.2% &rarr; 3.4%",
+    "<b>Ruby</b>: job posts 9.7% &rarr; 4.2%",
+    "<b>PHP</b>: GitHub share &minus;37%",
+    "<b>C#</b>: GitHub share &minus;31%"
+   ],
+   "p": "Still used and hired for. Just a smaller share of what is new."
+  },
+  {
+   "type": "list",
+   "h2": "Where the next two years point",
+   "items": [
+    "<b>Rust</b>: +25% vs the average language (84% chance of gaining)",
+    "<b>Go</b>: +13% (71% chance)",
+    "<b>PHP</b> &minus;17%, <b>JavaScript</b> &minus;15%, <b>Java</b> &minus;14%"
+   ],
+   "p": "A tested lean, not a certainty: back-tested on 2017&ndash;2024, it called the direction right 71% of the time."
+  },
+  {
+   "type": "cta",
+   "h2": "Which language should <i>you</i> learn?",
+   "p": "Check any language for the UK, US, India or worldwide, for the work you want to do.",
+   "cta": "Free checker: link in bio",
+   "small": "Full analysis, data and Python and R code on truthwithdata.com"
+  }
+ ]
+}

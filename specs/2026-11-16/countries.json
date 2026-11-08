@@ -1,0 +1,72 @@
+{
+ "out_dir": "img/2026-11-16/countries",
+ "prefix": "countries",
+ "source": "Source: GitHub Innovation Graph (developers pushing code), Q3 2021&ndash;Q2 2022 vs Q3 2025&ndash;Q2 2026",
+ "slides": [
+  {
+   "type": "title",
+   "h1": "UK vs US vs India: which languages are growing?",
+   "p": "Share of developers writing each language on GitHub, mid-2022 vs mid-2026.",
+   "kicker": "Swipe &rarr;"
+  },
+  {
+   "type": "bars",
+   "h2": "TypeScript&rsquo;s share of GitHub developers grew&hellip;",
+   "bars": [
+    {
+     "label": "India",
+     "value": 180,
+     "text": "+180%"
+    },
+    {
+     "label": "US",
+     "value": 122,
+     "text": "+122%"
+    },
+    {
+     "label": "UK",
+     "value": 98,
+     "text": "+98%"
+    }
+   ],
+   "highlight": 0,
+   "p": "In India it went from 3.6% to 10.0% of developer-language pairs."
+  },
+  {
+   "type": "list",
+   "h2": "India",
+   "items": [
+    "<b>TypeScript</b> 3.6% &rarr; 10.0%",
+    "<b>Python</b> 12.1% &rarr; 17.5%",
+    "<b>Java</b> 9.5% &rarr; 5.6%, still #2 in job ads",
+    "<b>Rust</b>: want-to-learn share +65%, the biggest rise anywhere"
+   ]
+  },
+  {
+   "type": "list",
+   "h2": "United Kingdom",
+   "items": [
+    "<b>Rust</b> +60%, <b>TypeScript</b> +98%, <b>Python</b> +24%",
+    "<b>Java</b> &minus;39% on GitHub, yet UK searches for it +24%",
+    "<b>C#</b> ranks last: down on all four signals",
+    "<b>Python</b>: 8,071 IT job ads on 5 Nov 2026, the most"
+   ]
+  },
+  {
+   "type": "list",
+   "h2": "United States",
+   "items": [
+    "<b>TypeScript</b> +122%, <b>Rust</b> +80%",
+    "<b>Swift</b> +44%: 5th on momentum in the US, 13th in India",
+    "<b>Python</b>: 112,611 IT job ads; <b>Java</b>: 58,567"
+   ]
+  },
+  {
+   "type": "cta",
+   "h2": "Check your country",
+   "p": "Pick the UK, US, India or worldwide and the work you want to do.",
+   "cta": "Free checker: link in bio",
+   "small": "Job-ad counts: The Adzuna API, 5 Nov 2026"
+  }
+ ]
+}

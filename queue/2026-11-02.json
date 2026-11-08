@@ -1,0 +1,178 @@
+{
+  "week": "2026-11-02",
+  "posts": [
+    {
+      "id": "2026-11-03-li-rent-vs-buy",
+      "date": "2026-11-03",
+      "time": "08:00",
+      "platform": "linkedin",
+      "text": "Few money questions start more arguments than this one: is renting really \"dead money\"? So I ran the numbers.\n\nI modelled renting vs buying the same home in all 12 UK regions and 316 local areas, with a backtest to 2005.\n\nWhat I found:\n\n- Mortgage interest is \"dead money\" too. In year one it is 77% to 107% of the rent on the same home.\n- If house prices keep rising 3% a year, buying wins after 1.4 to 4.1 years.\n- If prices stay flat, it takes 11 to 30+ years.\n- In Newcastle, buying wins within a year. In Elmbridge, Waverley and Mole Valley, it never does within 30 years.\n\nSo the honest answer: renting isn't dead money, and buying isn't a sure thing. It is a bet on house prices.\n\nThe full analysis, the data and the Python and R code are free on my site, Truth with Data, with a calculator for your own area. Links in the first comment.\n\nWhere in the UK do you think buying makes least sense?",
+      "first_comment": "Full analysis: https://truthwithdata.com/blog/is-renting-dead-money-uk.html?utm_source=linkedin&utm_medium=social&utm_campaign=2026-11-03-li-rent-vs-buy\nCalculator for your area: https://truthwithdata.com/tools/rent-vs-buy-calculator.html?utm_source=linkedin&utm_medium=social&utm_campaign=2026-11-03-li-rent-vs-buy",
+      "images": [
+        "img/2026-11-02/rent-vs-buy/rent-vs-buy-3.png"
+      ],
+      "note": "Repost from the Truth with Data page after it goes live."
+    },
+    {
+      "id": "2026-11-03-ig-rent-vs-buy",
+      "date": "2026-11-03",
+      "time": "19:00",
+      "platform": "instagram",
+      "text": "Is renting really \"dead money\"? We compared renting and buying the same home in every UK region and 316 local areas.\n\nThe short version: mortgage interest is dead money too, and buying only wins if house prices keep rising. In Newcastle it wins within a year. In parts of Surrey it never does.\n\nCheck your own area with the free calculator: link in bio.\n\nSave this for the next time someone tells you renting is throwing money away.\n\n#renting #housingmarket #firsttimebuyer #ukproperty #personalfinanceuk #mortgage #dataviz",
+      "images": [
+        "img/2026-11-02/rent-vs-buy/rent-vs-buy-1.png",
+        "img/2026-11-02/rent-vs-buy/rent-vs-buy-2.png",
+        "img/2026-11-02/rent-vs-buy/rent-vs-buy-3.png",
+        "img/2026-11-02/rent-vs-buy/rent-vs-buy-4.png",
+        "img/2026-11-02/rent-vs-buy/rent-vs-buy-5.png",
+        "img/2026-11-02/rent-vs-buy/rent-vs-buy-6.png",
+        "img/2026-11-02/rent-vs-buy/rent-vs-buy-7.png",
+        "img/2026-11-02/rent-vs-buy/rent-vs-buy-8.png"
+      ]
+    },
+    {
+      "id": "2026-11-03-igs-rent-vs-buy",
+      "date": "2026-11-03",
+      "time": "19:00",
+      "platform": "instagram",
+      "kind": "story",
+      "text": "",
+      "images": [
+        "img/2026-11-02/story/rent-vs-buy-story.jpg"
+      ],
+      "note": "Story pointing to the new carousel."
+    },
+    {
+      "id": "2026-11-04-li-ai-jobs",
+      "date": "2026-11-04",
+      "time": "08:00",
+      "platform": "linkedin",
+      "text": "Everyone has an opinion on which jobs AI is replacing. I wanted data.\n\nI matched AI usage scores for 722 US occupations (Anthropic's Economic Index) to official employment figures from 2019 to 2025.\n\nThe correlation between how exposed a job is to AI and how its employment changed: r = 0.01.\n\nNot a typo. Across whole occupations, exposure barely predicts what happened, and the same pattern was there before ChatGPT.\n\nWhere displacement does show up: customer service reps, office clerks, receptionists, medical transcriptionists, technical writers, interpreters and graphic designers.\n\nAnd the headline case cuts both ways: computer programmers fell 54%, but were already down 31% before ChatGPT. Software developers grew 33%.\n\nExposure isn't replacement. Not yet, and not across whole occupations.\n\nThe method, a placebo test, the data and code, and a free tool to look up your own job are on Truth with Data. Links in the comments.\n\nToo early to see it, or overhyped?",
+      "first_comment": "Full analysis: https://truthwithdata.com/blog/which-jobs-is-ai-actually-replacing.html?utm_source=linkedin&utm_medium=social&utm_campaign=2026-11-04-li-ai-jobs\nLook up your job: https://truthwithdata.com/tools/ai-job-exposure-checker.html?utm_source=linkedin&utm_medium=social&utm_campaign=2026-11-04-li-ai-jobs",
+      "images": [
+        "img/2026-11-02/ai-jobs/ai-jobs-og-1200x630.png"
+      ],
+      "note": "Repost from the Truth with Data page after it goes live."
+    },
+    {
+      "id": "2026-11-04-x-rent-vs-buy",
+      "date": "2026-11-04",
+      "time": "08:00",
+      "platform": "x",
+      "thread": [
+        "Is renting \"dead money\"? I modelled renting vs buying the same home in 12 UK regions and 316 local areas, with a backtest to 2005. Thread.",
+        "Mortgage interest is dead money too. In year one it's 77 to 107% of the rent on the same home (90% mortgage, 5.37%). In 5 regions, interest alone is more than the rent.",
+        "If prices rise 3% a year, buying beats renting in 1.4 to 4.1 years. If prices stay flat: 11 to 30+ years. Buying is a bet on prices.",
+        "Fastest: Newcastle (1 year), Manchester and Portsmouth (13 months). Never within 30 years: Elmbridge, Waverley, Mole Valley, Powys, Derbyshire Dales and 10 more.",
+        "People who bought in July 2007 took 6 to 19 years to get ahead of an equivalent renter.",
+        "Full analysis, data, Python and R code, and a calculator for your area: https://truthwithdata.com/blog/is-renting-dead-money-uk.html?utm_source=x&utm_medium=social&utm_campaign=2026-11-04-x-rent-vs-buy"
+      ],
+      "images": [
+        "img/2026-11-02/rent-vs-buy/rent-vs-buy-3.png"
+      ],
+      "note": "Skipped automatically until X is connected."
+    },
+    {
+      "id": "2026-11-04-igr-rent-vs-buy",
+      "date": "2026-11-04",
+      "time": "19:00",
+      "platform": "instagram",
+      "kind": "reel",
+      "video": "img/2026-11-02/reel/rent-vs-buy-reel.mp4",
+      "cover": "img/2026-11-02/reel/rent-vs-buy-reel-cover.jpg",
+      "text": "Is renting really \"dead money\"? 20 seconds on what the data says across the UK.\n\nMortgage interest is dead money too. Buying wins only if house prices keep rising, and how fast depends on where you live.\n\nCheck your area with the free calculator: link in bio.\n\n#renting #ukproperty #housingmarket #firsttimebuyer #personalfinanceuk #dataviz",
+      "images": [],
+      "note": "Silent video (the API can't add music). Auto-generated from the carousel slides."
+    },
+    {
+      "id": "2026-11-05-li-ab-testing",
+      "date": "2026-11-05",
+      "time": "08:00",
+      "platform": "linkedin",
+      "text": "The most expensive statistics mistake I see in business teams: checking an A/B test every day and stopping it the moment it looks significant.\n\nSo I simulated it. 10,000 A/B tests where both versions were identical, so any \"winner\" is pure noise.\n\n- Check once, at the planned end: 5% false winners, as promised.\n- Check weekly: 11%.\n- Check daily and stop at the first p < 0.05: 25%.\n\nOne in four \"winning\" changes did nothing at all.\n\nThree fixes:\n1. Decide the sample size before you start, and don't stop early.\n2. If you must monitor, use a method built for it, such as sequential testing.\n3. Report the confidence interval, not just \"significant: yes\".\n\nThe full guide (with Python and R code) and a free sample size calculator are on Truth with Data. Links in the comments.\n\nHave you seen a \"winning\" test fall apart after launch?",
+      "first_comment": "Full guide: https://truthwithdata.com/blog/statistical-significance-ab-testing.html?utm_source=linkedin&utm_medium=social&utm_campaign=2026-11-05-li-ab-testing\nSample size calculator: https://truthwithdata.com/tools/sample-size-calculator.html?utm_source=linkedin&utm_medium=social&utm_campaign=2026-11-05-li-ab-testing",
+      "images": [
+        "img/2026-11-02/ab-testing/ab-testing-3.png"
+      ],
+      "note": "Numbers from analysis/ab_peeking_simulation.py. Repost from the page."
+    },
+    {
+      "id": "2026-11-05-ig-ai-jobs",
+      "date": "2026-11-05",
+      "time": "19:00",
+      "platform": "instagram",
+      "text": "Which jobs is AI actually replacing? We matched data on where AI is really being used to official US employment for 722 occupations, 2019 to 2025.\n\nAI exposure explains about 1% of the change in jobs. The most exposed groups grew fastest. The losses are concentrated in a short list of routine text jobs: customer service, office clerks, receptionists.\n\nLook up your own job with the free AI Job Exposure Checker: link in bio.\n\n#ai #futureofwork #jobs #careers #artificialintelligence #dataviz #labourmarket",
+      "images": [
+        "img/2026-11-02/ai-jobs/ai-jobs-1.png",
+        "img/2026-11-02/ai-jobs/ai-jobs-2.png",
+        "img/2026-11-02/ai-jobs/ai-jobs-3.png",
+        "img/2026-11-02/ai-jobs/ai-jobs-4.png",
+        "img/2026-11-02/ai-jobs/ai-jobs-5.png",
+        "img/2026-11-02/ai-jobs/ai-jobs-6.png",
+        "img/2026-11-02/ai-jobs/ai-jobs-7.png",
+        "img/2026-11-02/ai-jobs/ai-jobs-8.png"
+      ]
+    },
+    {
+      "id": "2026-11-05-igs-ai-jobs",
+      "date": "2026-11-05",
+      "time": "19:00",
+      "platform": "instagram",
+      "kind": "story",
+      "text": "",
+      "images": [
+        "img/2026-11-02/story/ai-jobs-story.jpg"
+      ]
+    },
+    {
+      "id": "2026-11-07-ig-ab-testing",
+      "date": "2026-11-07",
+      "time": "19:00",
+      "platform": "instagram",
+      "text": "Your A/B test \"winner\" might be noise.\n\nWe simulated 10,000 tests where nothing changed. Check once at the planned end: 5% false winners. Check daily and stop at the first significant result: 25%.\n\nFix the sample size before you start, and don't stop early. Free sample size calculator and the full guide: link in bio.\n\n#abtesting #statistics #datascience #productmanagement #marketinganalytics #experimentation",
+      "images": [
+        "img/2026-11-02/ab-testing/ab-testing-1.png",
+        "img/2026-11-02/ab-testing/ab-testing-2.png",
+        "img/2026-11-02/ab-testing/ab-testing-3.png",
+        "img/2026-11-02/ab-testing/ab-testing-4.png",
+        "img/2026-11-02/ab-testing/ab-testing-5.png",
+        "img/2026-11-02/ab-testing/ab-testing-6.png"
+      ]
+    },
+    {
+      "id": "2026-11-07-igs-ab-testing",
+      "date": "2026-11-07",
+      "time": "19:00",
+      "platform": "instagram",
+      "kind": "story",
+      "text": "",
+      "images": [
+        "img/2026-11-02/story/ab-testing-story.jpg"
+      ]
+    },
+    {
+      "id": "2026-11-08-nl-rent-vs-buy",
+      "date": "2026-11-08",
+      "time": "08:00",
+      "platform": "newsletter",
+      "subject": "Is renting really \"dead money\"? (one chart)",
+      "text": "<p>Hi,</p>\n<p>Welcome to the first <b>Truth with Data</b> email: one chart a week that answers a question people actually argue about, with the working shown.</p>\n<h2>This week: is renting really &ldquo;dead money&rdquo;?</h2>\n<p><img src=\"https://truthwithdata.github.io/social/img/2026-11-02/rent-vs-buy/rent-vs-buy-3.png\" alt=\"Break-even years for buying vs renting by UK region\" width=\"540\" style=\"max-width:100%;height:auto\"></p>\n<p>Mortgage interest is &ldquo;dead money&rdquo; too: in the first year it is 77% to 107% of the rent on the same home. Buying only pulls ahead because the home gains value. If prices keep rising 3% a year, a buyer is ahead after 1.4 to 4.1 years depending on the region; if prices stay flat, it takes 11 to 30+ years.</p>\n<p>In Newcastle upon Tyne buying wins within a year. In 15 areas, including Elmbridge, Waverley and Mole Valley in Surrey, it never does within 30 years.</p>\n<p><a href=\"https://truthwithdata.com/blog/is-renting-dead-money-uk.html?utm_source=newsletter&utm_medium=email&utm_campaign=2026-11-08\">Read the full analysis</a> or <a href=\"https://truthwithdata.com/tools/rent-vs-buy-calculator.html?utm_source=newsletter&utm_medium=email&utm_campaign=2026-11-08\">check your own area with the calculator</a>.</p>\n<h3>Also worth a look</h3>\n<ul>\n<li><a href=\"https://truthwithdata.com/blog/which-jobs-is-ai-actually-replacing.html?utm_source=newsletter&utm_medium=email&utm_campaign=2026-11-08\">Which jobs is AI actually replacing?</a> Across 722 US occupations, AI exposure explains about 1% of the change in jobs since 2019.</li>\n<li><a href=\"https://truthwithdata.com/blog/statistical-significance-ab-testing.html?utm_source=newsletter&utm_medium=email&utm_campaign=2026-11-08\">Your A/B test &ldquo;winner&rdquo; might be noise.</a> In 10,000 simulated tests where nothing changed, checking daily produced a false winner 25% of the time.</li>\n</ul>\n<p>Got a question you'd like answered with data? Just reply to this email.</p>\n<p>Vishal<br>Truth with Data</p>",
+      "images": [],
+      "note": "Sent via Kit to all subscribers at 08:00 Sunday. Skipped if Kit isn't connected."
+    },
+    {
+      "id": "2026-11-08-rd-profile-rent-vs-buy",
+      "date": "2026-11-09",
+      "time": "08:00",
+      "platform": "reddit",
+      "subreddit": "u_truthwithdata",
+      "kind": "image",
+      "title": "Owning vs renting the same average home in every UK region: monthly costs in the first year (2026)",
+      "images": [
+        "img/reddit/first-year-cost-of-owning-vs-rent-by-region-uk-2026.png"
+      ],
+      "first_comment": "What this shows: for the average home in each UK region, the unrecoverable monthly cost of owning it in the first year with a 10% deposit (mortgage interest, maintenance, buildings insurance, and the return the deposit could have earned), against the rent on the same home. Capital repayment isn't counted because it becomes equity.\n\n- Mortgage interest alone is 77% to 107% of the rent. In the East Midlands, West Midlands, East of England, South East and Wales it is more than the rent.\n- Add the other costs and owning is more expensive than renting in all 12 regions.\n- Buying only gets ahead through house-price growth. At 3% a year (the 2005 to 2026 pace) it wins after 1.4 years (Scotland) to 4.1 years (South East). If prices stay flat it takes 11 years to more than 30.\n\nData: HM Land Registry UK House Price Index (July 2026), ONS Price Index of Private Rents, Bank of England quoted mortgage rates. Made with Python (pandas, matplotlib); the model is cross-checked in R.\n\nFull write-up, method and code: https://truthwithdata.com/blog/is-renting-dead-money-uk.html?utm_source=reddit&utm_medium=social&utm_campaign=2026-11-08-rd-profile-rent-vs-buy\n\nCalculator for your own numbers: https://truthwithdata.com/tools/rent-vs-buy-calculator.html?utm_source=reddit&utm_medium=social&utm_campaign=2026-11-08-rd-profile-rent-vs-buy\n\nThis is the account for Truth with Data, where I take questions people argue about, answer them with public data, and publish the code.",
+      "note": "Own profile post (u/truthwithdata): gives the account some content before posting in communities. Low risk. Moved from Sun 8 Nov 19:00 (missed while the social PRs were unmerged); still goes before the r/HousingUK post that evening."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+ "out_dir": "img/2026-11-09/case-studies",
+ "prefix": "case-studies",
+ "source": "truthwithdata.com/case-studies.html",
+ "slides": [
+  {"type": "title", "h1": "4 hard questions, answered properly with data",
+   "p": "New on Truth with Data: <b>case studies</b> with the method, the results, the limits and the code.",
+   "kicker": "Swipe &rarr;"},
+  {"type": "stat", "h2": "Machine learning: AI-written reviews", "big": "1% vs 86%",
+   "p": "of today&rsquo;s AI reviews caught by a detector trained on 2019&rsquo;s fakes, vs one trained on current models."},
+  {"type": "stat", "h2": "Simulation: is renting dead money?", "big": "1.4&ndash;4.1 yrs",
+   "p": "for buying to beat renting if prices rise 3% a year. 30+ years in five regions if they stay flat. Backtested on 2005&ndash;2026."},
+  {"type": "stat", "h2": "Causal inference: is AI taking jobs?", "big": "r = 0.01",
+   "p": "between AI exposure and job change in 722 occupations. The apparent effect was already there before ChatGPT."},
+  {"type": "stat", "h2": "Experimentation: peeking at A/B tests", "big": "24.6%", "tone": "amber",
+   "p": "false winners when a test is checked daily. A sequential stopping rule brings it back to 5%."},
+  {"type": "cta", "h2": "Got a question your data should answer?",
+   "p": "Every case study comes with its code. If you have a decision to make, a free 30-minute call will tell you whether data can settle it.",
+   "cta": "Link in bio",
+   "small": "Independent projects on public data, not client work."}
+ ]
+}

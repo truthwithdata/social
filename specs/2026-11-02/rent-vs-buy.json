@@ -1,0 +1,72 @@
+{
+ "out_dir": "img/2026-11-02/rent-vs-buy",
+ "prefix": "rent-vs-buy",
+ "source": "Source: HM Land Registry, ONS, Bank of England",
+ "slides": [
+  {
+   "type": "title",
+   "h1": "Is renting really &lsquo;dead money&rsquo;?",
+   "p": "We modelled renting vs buying the <b>same home</b> in every UK region and 316 local areas.",
+   "kicker": "The answer depends on one thing. Swipe &rarr;"
+  },
+  {
+   "type": "stat",
+   "h2": "Mortgage interest is dead money too",
+   "big": "77&ndash;107%",
+   "p": "First-year mortgage interest as a share of the rent on the same home. Higher than rent in 5 regions.",
+   "chart": "blog/charts/first-year-cost-of-owning-vs-rent-by-region-uk-2026.svg"
+  },
+  {
+   "type": "stat",
+   "h2": "If house prices keep rising 3% a year&hellip;",
+   "big": "1.4&ndash;4.1 yrs",
+   "p": "for buying to beat renting. 10% deposit; the renter invests the difference at 5%.",
+   "chart": "blog/charts/rent-vs-buy-breakeven-years-by-region-uk-2026.svg"
+  },
+  {
+   "type": "stat",
+   "h2": "&hellip;but if prices stay flat",
+   "big": "11&ndash;30+ yrs",
+   "tone": "amber",
+   "p": "In the East and West Midlands, East of England, South East and Wales, buying doesn&rsquo;t get ahead within 30 years.",
+   "small": "<b>The one thing:</b> buying wins only if prices rise."
+  },
+  {
+   "type": "list",
+   "h2": "Where buying wins fastest",
+   "items": [
+    "<b>Newcastle upon Tyne</b> &mdash; 1 year",
+    "<b>Manchester</b> &mdash; 13 months",
+    "<b>Portsmouth</b> &mdash; 13 months",
+    "<b>Bristol, Southampton</b> &mdash; 14 months"
+   ],
+   "p": "Cities where rents are high relative to prices. The median area takes 4.25 years."
+  },
+  {
+   "type": "list",
+   "h2": "Where buying never wins (within 30 years)",
+   "items": [
+    "<b>Elmbridge, Waverley, Mole Valley</b> (Surrey)",
+    "<b>Powys</b>, <b>Derbyshire Dales</b>, <b>South Hams</b>",
+    "and 9 more of 316 areas"
+   ],
+   "p": "Expensive homes, low rents.",
+   "chart": "blog/charts/rent-vs-buy-breakeven-by-local-authority-england-wales-2026.svg"
+  },
+  {
+   "type": "stat",
+   "h2": "What happened to people who bought in July 2007?",
+   "big": "6&ndash;19 yrs",
+   "tone": "amber",
+   "p": "to get ahead of an equivalent renter. Five years in, they were behind by 4% (London) to 29% (North East) of the price.",
+   "chart": "blog/charts/rent-vs-buy-historical-backtest-buy-year-years-held-2005-2026.svg"
+  },
+  {
+   "type": "cta",
+   "h2": "So is renting dead money?",
+   "p": "No more than mortgage interest is. Buying usually wins if you stay <b>5+ years</b> and prices keep rising. Short stays favour renting.",
+   "cta": "Check your area: link in bio",
+   "small": "Free calculator, full analysis, data and code. Save this for later."
+  }
+ ]
+}

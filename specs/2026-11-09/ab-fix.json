@@ -1,0 +1,71 @@
+{
+ "out_dir": "img/2026-11-09/ab-fix",
+ "prefix": "ab-fix",
+ "source": "Simulation: 100,000 tests by Truth with Data",
+ "slides": [
+  {
+   "type": "title",
+   "h1": "You can check your A/B test every day",
+   "p": "&hellip;if you use a stopping rule built for it. We simulated <b>100,000 tests</b> to show the difference.",
+   "kicker": "Swipe &rarr;"
+  },
+  {
+   "type": "bars",
+   "h2": "False &lsquo;winners&rsquo; when nothing changed",
+   "bars": [
+    {
+     "label": "Look once, at the planned end",
+     "value": 4.9,
+     "text": "4.9%"
+    },
+    {
+     "label": "Look daily, stop at first p &lt; 0.05",
+     "value": 24.6,
+     "text": "24.6%"
+    },
+    {
+     "label": "Look daily + O&rsquo;Brien-Fleming boundary",
+     "value": 5.0,
+     "text": "5.0%"
+    },
+    {
+     "label": "Look daily + Pocock boundary",
+     "value": 5.0,
+     "text": "5.0%"
+    }
+   ],
+   "highlight": 1,
+   "p": "Same tests. Only the stopping rule changed."
+  },
+  {
+   "type": "list",
+   "h2": "How the fix works",
+   "items": [
+    "Early on, samples are small and <b>noise is loudest</b>",
+    "So the boundary asks for <b>much stronger evidence</b> early",
+    "It relaxes as the data builds up",
+    "Chance of a false winner over 20 daily looks: <b>5%</b>"
+   ],
+   "p": "This one is the O&rsquo;Brien-Fleming boundary, calibrated by simulation."
+  },
+  {
+   "type": "stat",
+   "h2": "What it costs",
+   "big": "2 points",
+   "p": "of power: <b>59%</b> instead of 61% for a real 10% lift."
+  },
+  {
+   "type": "stat",
+   "h2": "What it buys",
+   "big": "3.2 days",
+   "p": "sooner, on average, to stop a test with a real 10% lift (16.8 days instead of 20)."
+  },
+  {
+   "type": "cta",
+   "h2": "Stop shipping noise",
+   "p": "The full case study, the simulation code and a free sample size calculator.",
+   "cta": "Link in bio",
+   "small": "1,000 visitors per arm per day, 20 days, 5% conversion. 50,000 A/A and 50,000 A/B tests, each read under six stopping plans."
+  }
+ ]
+}

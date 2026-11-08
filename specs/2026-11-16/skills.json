@@ -1,0 +1,83 @@
+{
+ "out_dir": "img/2026-11-16/skills",
+ "prefix": "skills",
+ "source": "Source: Hacker News &lsquo;Who is hiring?&rsquo; posts, 7,582 in 2022 and 3,110 in 2026 (Jan&ndash;Nov)",
+ "slides": [
+  {
+   "type": "title",
+   "h1": "The fastest-rising tech skill of 2026 isn&rsquo;t a language",
+   "p": "What job posts asked for in 2026 vs 2022.",
+   "kicker": "Swipe &rarr;"
+  },
+  {
+   "type": "stat",
+   "h2": "Job posts mentioning LLMs or generative AI",
+   "big": "0.3% &rarr; 15.6%",
+   "p": "2022 vs 2026. Posts mentioning <b>agents</b>: 0.7% &rarr; 21.3%."
+  },
+  {
+   "type": "bars",
+   "h2": "Share of 2026 job posts mentioning&hellip;",
+   "bars": [
+    {
+     "label": "React",
+     "value": 23.5,
+     "text": "23.5%"
+    },
+    {
+     "label": "AI agents",
+     "value": 21.3,
+     "text": "21.3%"
+    },
+    {
+     "label": "PostgreSQL",
+     "value": 18.4,
+     "text": "18.4%"
+    },
+    {
+     "label": "LLM / gen AI",
+     "value": 15.6,
+     "text": "15.6%"
+    },
+    {
+     "label": "AWS",
+     "value": 15.5,
+     "text": "15.5%"
+    },
+    {
+     "label": "Machine learning",
+     "value": 12.9,
+     "text": "12.9%"
+    }
+   ],
+   "highlight": 1
+  },
+  {
+   "type": "list",
+   "h2": "Falling since 2022",
+   "items": [
+    "<b>React</b> 29.2% &rarr; 23.5%",
+    "<b>AWS</b> 18.5% &rarr; 15.5%",
+    "<b>Kubernetes</b> 11.8% &rarr; 9.5%",
+    "<b>Blockchain</b> 6.1% &rarr; 2.3%",
+    "<b>Remote</b> 83% &rarr; 54% of posts"
+   ]
+  },
+  {
+   "type": "list",
+   "h2": "So what should you learn?",
+   "items": [
+    "<b>Python</b> or <b>TypeScript</b>: the languages gaining most ground in job posts and code",
+    "<b>SQL</b>, whatever else you pick",
+    "Then: shipping AI features in it"
+   ]
+  },
+  {
+   "type": "cta",
+   "h2": "Which language is right for you?",
+   "p": "Growth, job ads and salaries for 17 languages in the UK, US and India.",
+   "cta": "Free checker: link in bio",
+   "small": "Keyword counts; &lsquo;agents&rsquo; can occasionally mean something else."
+  }
+ ]
+}
