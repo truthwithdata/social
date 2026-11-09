@@ -4,6 +4,7 @@
     python3 scripts/social_check.py                 # validate every file in queue/
     python3 scripts/social_check.py queue/2026-11-02.json   # validate one file
     python3 scripts/social_check.py --due           # JSON list of posts due now (Europe/London), not yet posted
+    python3 scripts/social_check.py --upcoming 14   # JSON list of every queued post from today to 14 days ahead
 
 Queue file format (queue/<monday YYYY-MM-DD>.json):
 {
@@ -219,8 +220,33 @@ def due(now=None):
     return out
 
 
+def upcoming(days, now=None):
+    now = now or datetime.now(TZ)
+    done = {r["id"]: r for r in json.load(open(POSTED, encoding="utf-8")).get("posted", [])} if os.path.exists(POSTED) else {}
+    out = []
+    for path, q in load_queue_files():
+        for p in q.get("posts", []):
+            at = datetime.strptime(f'{p["date"]} {p["time"]}', "%Y-%m-%d %H:%M").replace(tzinfo=TZ)
+            if now.date() <= at.date() <= (now + timedelta(days=days)).date():
+                first = p.get("title") or p.get("subject") or (p.get("thread") or [p.get("text", "")])[0] or ""
+                if not first and p.get("kind") == "story":
+                    first = "Story from the day's carousel"
+                r = done.get(p["id"], {})
+                status = ("removed" if r.get("removed") else "skipped" if r.get("skipped") else "posted") if r else "queued"
+                item = {"id": p["id"], "at": at.isoformat(), "platform": p["platform"], "kind": p.get("kind", ""),
+                        "community": p.get("subreddit", ""), "text": first.split("\n")[0][:160], "status": status,
+                        "week": q.get("week", os.path.basename(path)[:10])}
+                if str(r.get("ref", "")).startswith("http"):
+                    item["link"] = r["ref"]
+                out.append(item)
+    return sorted(out, key=lambda x: x["at"])
+
+
 def main():
     args = sys.argv[1:]
+    if args and args[0] == "--upcoming":
+        print(json.dumps(upcoming(int(args[1]) if len(args) > 1 else 14), indent=2, ensure_ascii=False))
+        return
     if args and args[0] == "--due":
         errs = validate(load_queue_files())
         if errs:
