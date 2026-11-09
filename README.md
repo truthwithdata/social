@@ -20,9 +20,8 @@ Carousel charts (`blog/charts/…`), articles, `js/config.js` and `data/` are re
 | `specs/<monday>/*.json` | Carousel specs; render with `python3 scripts/make_carousel.py <spec>` |
 | `analysis/` | Scripts behind any number that is not in a published article |
 | `posted.json` | Log of what has been posted or skipped (id, platform, time, link); written only by the poster |
-| `press/` | Press pitch drafts and a log of which articles have been pitched |
+| `press/log.json` | Which articles have been pitched (the pitches and contacts are in the private control room) |
 | `topics/` | Monthly topic shortlists (`log.json`) |
-| `summaries/` | Monday weekly summaries |
 | `linkedin-newsletter/<monday>.html` | LinkedIn newsletter editions, published **by hand** from Vishal's profile every other Monday; covers in `img/li-newsletter/` |
 | `scripts/` | `social_check.py` (validate, list due posts), `make_carousel.py`, `make_reel.py`, `make_logo_outro.py`, `make_li_newsletter.py` |
 
@@ -30,6 +29,30 @@ Accounts: LinkedIn = Vishal's personal profile (`urn:li:person:QueTevIgLG`). Ins
 **truthwithdata** account only; never post to any other Instagram account. X = the Truth with Data account,
 once connected. Newsletter = Kit. Reddit = **u/truthwithdata** only (Composio account `reddit_grame-menald`). The LinkedIn company page reposts by hand (the API connection has no
 page permission).
+
+## Control room (private)
+
+Vishal's private dashboard: https://claude.ai/artifact/1gUjxYZt8REcgABiF7t5L6 (only he can open it).
+Every scheduled task reports there with the `ArtifactData` tool (load it with ToolSearch
+`select:ArtifactData`), `url` = that link. Private material (weekly summaries, press pitches and
+journalists' contacts) goes **only** there, never in this public repo.
+
+Collections (one document per thing; times are UTC ISO 8601):
+| Collection / id | Fields | Who writes |
+| --- | --- | --- |
+| `tasks/<trigger id>` | `last_run`, `last_result` (`ok`, `nothing`, `failed`), `last_note` (one line), `next_run` | every task, at the end of each run (`update`) |
+| `activity/<YYYY-MM-DDTHHMMSS>-<slug>` | `at`, `source` (task name), `text` (one line), `result`, optional `link`, `link_label` | every task, one `set` per thing done or failed (not for "nothing due") |
+| `schedule/<queue id>` | `at`, `platform`, `kind`, `community`, `text` (first line, 160 chars), `status` (`queued`, `posted`, `skipped`, `failed`, `removed`, `manual`), `link`, `week` | poster (status after each item; adds missing items for the next 14 days from `python3 scripts/social_check.py --upcoming 14`); drafter (the manual LinkedIn edition) |
+| `actions/<id>` | `title`, `detail`, `due`, `kind`, `link`, `link_label`, `status` (`open`/`done`), `source`, `created_at` | any task that needs Vishal to do something; he ticks them off on the page |
+| `summaries/<YYYY-MM-DD>` | `date`, `title`, `markdown` | weekly summary |
+| `press/<YYYY-MM-DD>-<slug>` | `date`, `title`, `article`, `drafts`, `markdown` | press pitches |
+
+Rules: a write to a document that exists needs its current version: `get` it, then pass that
+`version` as `if_version` (on a version conflict, get it again and redo the write). Before creating an
+action, `get` its id: if it exists (open or done), leave it alone, so a task never re-opens something
+Vishal ticked off. A task may set its own action to `done` once the thing has happened (for example the
+drafter's "Merge social posts" action once the queue file is on `main`). If the control room cannot be
+reached, carry on with the task and say so in the final summary: reporting never blocks posting.
 
 ## Weekly drafting (scheduled: Thursday evening)
 
