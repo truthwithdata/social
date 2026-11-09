@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>LinkedIn newsletter edition 1 (16 Nov 2026)</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Inter, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; color: #0f172a; background: #fff; line-height: 1.6; }
+  .setup { background: #f1f5f9; border-radius: 10px; padding: 16px 20px; margin-bottom: 32px; font-size: 15px; }
+  .setup h2 { margin-top: 0; font-size: 18px; }
+  .setup img { max-width: 100%; border-radius: 6px; }
+  .copy { border: 2px dashed #2563eb; border-radius: 10px; padding: 8px 24px 16px; }
+  .label { color: #2563eb; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; }
+  a { color: #2563eb; }
+</style>
+</head>
+<body>
+
+<div class="setup">
+<h2>How to publish this edition (for Vishal)</h2>
+<p><strong>Title:</strong> Can a detector spot an AI-written review?</p>
+<p><strong>Cover image</strong> (download, then upload as the edition's cover):<br>
+<a href="../img/li-newsletter/2026-11-16-cover.png"><img src="../img/li-newsletter/2026-11-16-cover.png" alt="Cover: Can a detector spot an AI-written review?"></a></p>
+<p><strong>Body:</strong> select everything inside the dashed box below, copy, and paste into the LinkedIn editor under the title. Headings, bold and links carry over.</p>
+<p><strong>SEO title</strong> (Publishing menu → SEO): Can a detector spot an AI-written review? Tested on 8,036 reviews</p>
+<p><strong>SEO description:</strong> A detector trained on 2019's fake reviews caught 1% of today's AI-written ones. What works, what doesn't, and a detector you can try in your browser.</p>
+<p><strong>Text for the post that goes out with it</strong> (the box LinkedIn shows when you press Publish):</p>
+<p>A detector trained on 2019's fake reviews caught 1% of today's AI-written ones.<br><br>
+I tested detectors on 8,036 short reviews, half by people and half by nine chat models up to GPT-5.2. When the detector has seen the model, it works well. When a new model arrives, it doesn't.<br><br>
+This is the first edition of my newsletter: every other week, one question answered with public data, with the method shown. Subscribe if that's useful to you.</p>
+</div>
+
+<div class="label">Copy from here</div>
+<div class="copy">
+
+<p>Welcome to the first edition. Every other week I take one question people argue about, answer it with public data, and show the working: the chart, the method and the code.</p>
+
+<h2>The question</h2>
+<p>Chat models can write a convincing product review in a second, for free, in any voice. Since October 2024 the US Federal Trade Commission's rule on fake reviews has covered AI-generated ones, and in the UK the Digital Markets, Competition and Consumers Act has banned fake reviews since April 2025. So anyone who publishes reviews now has to ask: can software tell which ones a machine wrote?</p>
+
+<h2>What I did</h2>
+<p>I built a test set of 8,036 short reviews. Half were written by people on Amazon before 2019, before any modern chatbot existed. Half came from nine chat models, from Gemini 1.5 to GPT-5.2. I matched the two halves on length and star rating, so neither could give the game away.</p>
+<p>Then I tested detectors the way fake reviews really arrive, including from models the detector had never seen. I read every result at a 1% false-flag rate, because wrongly accusing a real customer is expensive.</p>
+
+<h2>What I found</h2>
+<p><strong>When it has seen the model, detection works.</strong> The best detector caught 86% of AI-written reviews while wrongly flagging 1% of genuine ones.</p>
+<p><strong>A detector built for yesterday's fakes is close to useless.</strong> Trained on 2019-era GPT-2 reviews, it caught 1% of today's.</p>
+<p><strong>The newest models are the hardest to catch.</strong> When GPT-5.2 Instant, GPT-5 mini and Gemini 3 Flash were left out of training, the detector caught only 29&ndash;37% of their reviews.</p>
+<p><strong>How AI writes gives it away, not just what it writes about.</strong> A model that saw no words at all, only style features such as punctuation and sentence length, still separated the two groups well. AI writes tidy, complete sentences ("The blender was..."). People write in fragments, skip full stops, quote numbers and stretch words ("sooo").</p>
+
+<h2>What it means if you publish reviews</h2>
+<p>Treat a detector as triage, not a verdict: it sends likely fakes to a person, who makes the call. Budget for retraining, because every new model is a new attack: the share caught for GPT-5 mini fell from 90% to 35% when it was new to the detector. And combine the text with signals that are harder to fake, such as account age, purchase verification and bursts of posting.</p>
+
+<h2>The limits</h2>
+<p>The AI reviews came from generic prompts. A fraudster who edits the output or adds typos will be harder to catch, so read these numbers as a best case. The test covers English reviews of 50 words or fewer.</p>
+
+<h2>Try it yourself</h2>
+<p>The compact detector runs in your browser on the case study page. Paste any review and see its score; nothing you type is sent anywhere. Please don't use it to accuse anyone: it is a demonstration, and it will be wrong on some reviews.</p>
+<p><a href="https://truthwithdata.com/case-studies/detecting-ai-written-reviews.html?utm_source=linkedin&amp;utm_medium=newsletter&amp;utm_campaign=li-nl-2026-11-16">Read the case study and try the detector</a></p>
+<p>The analysis code is public: <a href="https://github.com/truthwithdata/analysis/tree/main/ai-written-review-detector">github.com/truthwithdata/analysis</a></p>
+
+<hr>
+<p>Want one chart a week in your inbox, every Sunday? <a href="https://truthwithdata.com/?utm_source=linkedin&amp;utm_medium=newsletter&amp;utm_campaign=li-nl-2026-11-16#nl-title">Sign up at truthwithdata.com</a>. It's free.</p>
+<p>If fake reviews or AI-generated content are a problem on your platform, I can measure how much you have and build a detector on your own data. <a href="https://calendly.com/truthwithdata/30min">Book a free 30-minute call</a>.</p>
+<p>Vishal</p>
+
+</div>
+</body>
+</html>
