@@ -2,28 +2,6 @@
  "week": "2026-11-09",
  "posts": [
   {
-   "id": "2026-11-09-rd-housinguk-rent-vs-buy",
-   "date": "2026-11-09",
-   "time": "19:00",
-   "platform": "reddit",
-   "subreddit": "HousingUK",
-   "kind": "self",
-   "title": "I modelled rent vs buy for every UK region and 316 councils. In year one owning costs more than renting everywhere; buying only wins through price growth",
-   "text": "I spent a few weeks building a month-by-month rent vs buy model from Land Registry prices, ONS rents and current mortgage rates, for a first-time buyer with a 10% deposit. A few things surprised me, and I'd like to know whether they match what people here have found.\n\n**In year one, owning costs more than renting everywhere.** First-year mortgage interest on the average home is 77% to 107% of the rent on the same home. Add maintenance, buildings insurance and what the deposit could have earned, and owning is more expensive in all 12 regions. (I don't count capital repayment as a cost, because it becomes equity.)\n\n**Buying wins through price growth, not monthly savings.** If prices keep rising about 3% a year, the buyer gets ahead after roughly 1.4 years in Scotland to 4.1 years in the South East, including buying and selling costs. If prices stay flat, it takes 11 years in Scotland, 18 to 27 years in six regions, and more than 30 in the other five.\n\n**Where you buy matters more than almost anything.** Across 316 local authorities in England and Wales, 181 (57%) break even within five years. Cities where rents are high relative to prices are fastest: Newcastle upon Tyne in about a year; Manchester, Portsmouth, Bristol and Southampton in 1.1 to 1.2. In 15 expensive rural and commuter areas, including Elmbridge, Waverley, Mole Valley, the Derbyshire Dales and Powys, buying the average home doesn't get ahead within 30 years.\n\n**Timing can override all of it.** People who bought in July 2007 took between 6 years (London) and 19 years (North East) to get ahead of an equivalent renter. Buyers from 2022 to 2024 were still behind in 8 of 12 regions by July this year.\n\nSo \"renting is dead money\" isn't right, but neither is \"buying always wins\". It's mostly a bet on prices and on how long you stay.\n\nIf you bought in the last few years, did the monthly sums come out roughly like this for you? And if you rent, is it the deposit or the numbers that's holding you back?",
-   "note": "No links on purpose: r/HousingUK bans links to online tools and businesses. This one builds the account's standing before the link posts."
-  },
-  {
-   "id": "2026-11-09-igr-ab-testing",
-   "date": "2026-11-09",
-   "time": "19:00",
-   "platform": "instagram",
-   "kind": "reel",
-   "video": "img/2026-11-09/reel/ab-testing-reel.mp4",
-   "cover": "img/2026-11-09/reel/ab-testing-reel-cover.jpg",
-   "text": "Your A/B test \"winner\" might be noise.\n\nWe simulated 10,000 tests where nothing changed. Check once at the planned end: 5% false winners. Check daily and stop at the first significant result: 25%.\n\nFix the sample size before you start. Free sample size calculator: link in bio.\n\n#abtesting #statistics #datascience #productmanagement #experimentation",
-   "note": "28 s: three Gemini (Veo) clips with text overlays and the logo outro. Keeps Gemini's quiet ambient sound; no music via the API. Added on request after the week's PR."
-  },
-  {
    "id": "2026-11-10-li-ai-reviews",
    "date": "2026-11-10",
    "time": "08:00",
@@ -159,6 +137,17 @@
    ]
   },
   {
+   "id": "2026-11-09-igr-ab-testing",
+   "date": "2026-11-13",
+   "time": "19:00",
+   "platform": "instagram",
+   "kind": "reel",
+   "video": "img/2026-11-09/reel/ab-testing-reel.mp4",
+   "cover": "img/2026-11-09/reel/ab-testing-reel-cover.jpg",
+   "text": "Your A/B test \"winner\" might be noise.\n\nWe simulated 10,000 tests where nothing changed. Check once at the planned end: 5% false winners. Check daily and stop at the first significant result: 25%.\n\nFix the sample size before you start. Free sample size calculator: link in bio.\n\n#abtesting #statistics #datascience #productmanagement #experimentation",
+   "note": "28 s: three Gemini (Veo) clips with text overlays and the logo outro. Keeps Gemini's quiet ambient sound; no music via the API. Added on request after the week's PR."
+  },
+  {
    "id": "2026-11-13-rd-cro-ab-peeking",
    "date": "2026-11-13",
    "time": "19:00",
@@ -218,6 +207,17 @@
    ],
    "first_comment": "Data: BLS Occupational Employment and Wage Statistics (May 2019 and May 2025) and the Anthropic Economic Index, which measures the share of each occupation's tasks people already do with an LLM. Tools: Python (pandas, matplotlib), with the regressions repeated in R.\n\nThe finding is mostly a non-finding: Pearson r = 0.01, and the 95% interval on the employment-weighted slope straddles zero. A similar slope shows up in 2015 to 2019, before ChatGPT existed, which is why I don't read it as an AI effect.\n\nDesign choices I'd like feedback on:\n\n- Bubble area is 2019 employment, so big occupations dominate the picture the way they dominate the weighted fit.\n- 54% of occupations have no observed exposure. I greyed them out rather than dropping them, but they pile up at x = 0.\n- The fit statistics sit in a box rather than the subtitle.\n- Only occupations people ask about are labelled (programmers, customer service reps, software developers and so on).\n\nHow would you show \"there's no real relationship here\" more clearly? Full article with the method and data: https://truthwithdata.com/blog/which-jobs-is-ai-actually-replacing.html?utm_source=reddit&utm_medium=social&utm_campaign=2026-11-15-rd-dataviz-ai-jobs",
    "note": "r/datavisualization is about craft, so this asks for design feedback. No posted rules."
+  },
+  {
+   "id": "2026-11-09-rd-housinguk-rent-vs-buy",
+   "date": "2026-11-16",
+   "time": "19:00",
+   "platform": "reddit",
+   "subreddit": "HousingUK",
+   "kind": "self",
+   "title": "I modelled rent vs buy for every UK region and 316 councils. In year one owning costs more than renting everywhere; buying only wins through price growth",
+   "text": "I spent a few weeks building a month-by-month rent vs buy model from Land Registry prices, ONS rents and current mortgage rates, for a first-time buyer with a 10% deposit. A few things surprised me, and I'd like to know whether they match what people here have found.\n\n**In year one, owning costs more than renting everywhere.** First-year mortgage interest on the average home is 77% to 107% of the rent on the same home. Add maintenance, buildings insurance and what the deposit could have earned, and owning is more expensive in all 12 regions. (I don't count capital repayment as a cost, because it becomes equity.)\n\n**Buying wins through price growth, not monthly savings.** If prices keep rising about 3% a year, the buyer gets ahead after roughly 1.4 years in Scotland to 4.1 years in the South East, including buying and selling costs. If prices stay flat, it takes 11 years in Scotland, 18 to 27 years in six regions, and more than 30 in the other five.\n\n**Where you buy matters more than almost anything.** Across 316 local authorities in England and Wales, 181 (57%) break even within five years. Cities where rents are high relative to prices are fastest: Newcastle upon Tyne in about a year; Manchester, Portsmouth, Bristol and Southampton in 1.1 to 1.2. In 15 expensive rural and commuter areas, including Elmbridge, Waverley, Mole Valley, the Derbyshire Dales and Powys, buying the average home doesn't get ahead within 30 years.\n\n**Timing can override all of it.** People who bought in July 2007 took between 6 years (London) and 19 years (North East) to get ahead of an equivalent renter. Buyers from 2022 to 2024 were still behind in 8 of 12 regions by July this year.\n\nSo \"renting is dead money\" isn't right, but neither is \"buying always wins\". It's mostly a bet on prices and on how long you stay.\n\nIf you bought in the last few years, did the monthly sums come out roughly like this for you? And if you rent, is it the deposit or the numbers that's holding you back?",
+   "note": "No links on purpose: r/HousingUK bans links to online tools and businesses. This one builds the account's standing before the link posts."
   }
  ]
 }
