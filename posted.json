@@ -78,6 +78,24 @@
       "platform": "linkedin",
       "at": "2026-11-10T07:56:50Z",
       "ref": "urn:li:share:7525828783019474945"
+    },
+    {
+      "id": "2026-11-08-rd-profile-rent-vs-buy",
+      "platform": "reddit",
+      "at": "2026-11-10T18:59:50Z",
+      "ref": "https://www.reddit.com/r/u_truthwithdata/comments/1xsvd81/owning_vs_renting_the_same_average_home_in_every/"
+    },
+    {
+      "id": "2026-11-10-ig-ai-reviews",
+      "platform": "instagram",
+      "at": "2026-11-10T19:01:00Z",
+      "ref": "https://www.instagram.com/p/Dfkm7rFnTGG/"
+    },
+    {
+      "id": "2026-11-10-igs-ai-reviews",
+      "platform": "instagram",
+      "at": "2026-11-10T19:02:00Z",
+      "ref": "17940442470123204"
     }
   ]
 }
