@@ -76,6 +76,10 @@ reached, carry on with the task and say so in the final summary: reporting never
    in a published article on the site, a data file in the website repo's `data/`, or a script in `analysis/` that
    you commit with it.** State uncertainty the way the article does. Never invent quotes, testimonials or
    follower numbers. Disclose any affiliate link or sponsorship.
+   Hashtags: LinkedIn posts end with 3 relevant hashtags on their own line (CamelCase, e.g. `#ABTesting`);
+   Instagram carousels and Reels end with at most 5 (Instagram's limit since Dec 2025), specific to the
+   topic, the last one `#truthwithdata`. No hashtags on Reddit (communities treat them as spam), in X
+   threads, stories or the newsletter.
 6. Write specs, render carousels, stories and the Reel; look at every slide and a frame from the Reel.
 7. Run `python3 scripts/social_check.py` (must pass).
 8. Open a PR titled `Social posts: week of <date>`. In the description: the table of every post, the full
