@@ -102,6 +102,13 @@
       "platform": "linkedin",
       "at": "2026-11-11T07:57:36Z",
       "ref": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7526191358701731840/"
+    },
+    {
+      "id": "2026-11-11-x-ai-reviews",
+      "platform": "x",
+      "at": "2026-11-11T07:58:00Z",
+      "ref": null,
+      "skipped": "X not connected"
     }
   ]
 }
