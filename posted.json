@@ -115,6 +115,13 @@
       "platform": "instagram",
       "at": "2026-11-11T19:02:24Z",
       "ref": "https://www.instagram.com/reel/DfnL3p6gDPw/"
+    },
+    {
+      "id": "2026-11-11-rd-dib-rent-vs-buy",
+      "platform": "reddit",
+      "at": "2026-11-11T19:03:30Z",
+      "ref": "https://www.reddit.com/r/dataisbeautiful/",
+      "removed": "submitted without errors but not visible in r/dataisbeautiful after 10 minutes (likely spam filter); post id unknown, first comment not posted"
     }
   ]
 }
