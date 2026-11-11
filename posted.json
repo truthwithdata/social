@@ -109,6 +109,12 @@
       "at": "2026-11-11T07:58:00Z",
       "ref": null,
       "skipped": "X not connected"
+    },
+    {
+      "id": "2026-11-11-igr-ai-reviews",
+      "platform": "instagram",
+      "at": "2026-11-11T19:02:24Z",
+      "ref": "https://www.instagram.com/reel/DfnL3p6gDPw/"
     }
   ]
 }
