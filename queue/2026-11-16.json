@@ -6,7 +6,7 @@
    "date": "2026-11-17",
    "time": "08:00",
    "platform": "linkedin",
-   "text": "Which programming language is genuinely growing? I stopped trusting the usual rankings and built my own.\n\nMost \"most popular language\" lists rest on one number: searches, or Stack Overflow questions. Stack Overflow questions are down 98.7% since 2019. Developers ask AI now, so those rankings mostly measure who switched first.\n\nSo I combined four signals for 17 languages, 2022 vs 2026: developers pushing code on GitHub, 82,138 Hacker News job posts, the Stack Overflow developer survey, and Google searches. All as shares, so a language only scores by pulling ahead of the others.\n\nWhat the data says:\n\n- Rust is up on every signal it has. Share of GitHub developers +71%, job posts 6.0% to 8.4%.\n- TypeScript more than doubled its GitHub share and climbed from 9th to 3rd. It overtook JavaScript in job posts in 2023.\n- Python's GitHub share grew by a third, and it is again the language most named in job posts (25%).\n- Java's GitHub share fell 39% and its job-post share halved, even though 41% more developers pushed Java code. Still second in job ads in the UK, US and India. Losing share is not dying.\n\nTwo things surprised me. Google searches moved against every other signal. And the developer survey's gap between \"want to use\" and \"use now\" turned out to predict the next two years: in a 2017-2024 backtest it called the direction right 71% of the time. It now leans towards Rust and Go.\n\nFull analysis, data, Python and R code, and a free checker for your country in the first comment.\n\nWhich language would you bet on for the next two years?",
+   "text": "Which programming language is genuinely growing? I stopped trusting the usual rankings and built my own.\n\nMost \"most popular language\" lists rest on one number: searches, or Stack Overflow questions. Stack Overflow questions are down 98.7% since 2019. Developers ask AI now, so those rankings mostly measure who switched first.\n\nSo I combined four signals for 17 languages, 2022 vs 2026: developers pushing code on GitHub, 82,138 Hacker News job posts, the Stack Overflow developer survey, and Google searches. All as shares, so a language only scores by pulling ahead of the others.\n\nWhat the data says:\n\n- Rust is up on every signal it has. Share of GitHub developers +71%, job posts 6.0% to 8.4%.\n- TypeScript more than doubled its GitHub share and climbed from 9th to 3rd. It overtook JavaScript in job posts in 2023.\n- Python's GitHub share grew by a third, and it is again the language most named in job posts (25%).\n- Java's GitHub share fell 39% and its job-post share halved, even though 41% more developers pushed Java code. Still second in job ads in the UK, US and India. Losing share is not dying.\n\nTwo things surprised me. Google searches moved against every other signal. And the developer survey's gap between \"want to use\" and \"use now\" turned out to predict the next two years: in a 2017-2024 backtest it called the direction right 71% of the time. It now leans towards Rust and Go.\n\nFull analysis, data, Python and R code, and a free checker for your country in the first comment.\n\nWhich language would you bet on for the next two years?\n\n#Programming #SoftwareEngineering #DataAnalysis",
    "first_comment": "Full analysis: https://truthwithdata.com/blog/which-programming-language-is-genuinely-growing.html?utm_source=linkedin&utm_medium=social&utm_campaign=2026-11-17-li-langs\nCheck any language for the UK, US, India or worldwide: https://truthwithdata.com/tools/programming-language-momentum-checker.html?utm_source=linkedin&utm_medium=social&utm_campaign=2026-11-17-li-langs",
    "images": [
     "img/2026-11-16/li/quadrant.png"
@@ -18,7 +18,7 @@
    "date": "2026-11-17",
    "time": "19:00",
    "platform": "instagram",
-   "text": "Which programming language is genuinely growing? We checked code on GitHub, 82,138 job posts, a 10-year developer survey and Google searches for 17 languages.\n\nGrowing since 2022: Rust, TypeScript and Python.\nLosing ground: Java, Ruby, PHP, C#.\nAnd Stack Overflow questions are down 98.7%, which is why most popularity rankings now mislead.\n\nCheck any language for your country: link in bio.\n\n#programming #coding #python #typescript #rustlang #softwareengineering #techcareers #learntocode #datascience",
+   "text": "Which programming language is genuinely growing? We checked code on GitHub, 82,138 job posts, a 10-year developer survey and Google searches for 17 languages.\n\nGrowing since 2022: Rust, TypeScript and Python.\nLosing ground: Java, Ruby, PHP, C#.\nAnd Stack Overflow questions are down 98.7%, which is why most popularity rankings now mislead.\n\nCheck any language for your country: link in bio.\n\n#programming #python #typescript #rustlang #truthwithdata",
    "images": [
     "img/2026-11-16/langs/langs-1.png",
     "img/2026-11-16/langs/langs-2.png",
@@ -57,7 +57,7 @@
    "date": "2026-11-18",
    "time": "08:00",
    "platform": "linkedin",
-   "text": "Stack Overflow had 19,801 new questions from January to October this year. In the same months of 2019 it had 1,474,916.\n\nThat is a 98.7% fall, and most of it came after ChatGPT launched in November 2022.\n\nIt matters beyond Stack Overflow. Many \"most popular programming language\" rankings are built on question counts or search volumes. When every language's questions and searches fall together, the ranking stops measuring how much a language is used. It measures which communities moved to AI assistants first. Google searches for programming languages fell too: 22% in the US, 32% in the UK and 52% in India over four years.\n\nWhen I ranked 17 languages properly, by the code developers actually push and the jobs that ask for them, search interest moved in the opposite direction to every other signal.\n\nIf a ranking doesn't say what it measures, assume it measures attention, not use.\n\nChart and full method in the first comment.",
+   "text": "Stack Overflow had 19,801 new questions from January to October this year. In the same months of 2019 it had 1,474,916.\n\nThat is a 98.7% fall, and most of it came after ChatGPT launched in November 2022.\n\nIt matters beyond Stack Overflow. Many \"most popular programming language\" rankings are built on question counts or search volumes. When every language's questions and searches fall together, the ranking stops measuring how much a language is used. It measures which communities moved to AI assistants first. Google searches for programming languages fell too: 22% in the US, 32% in the UK and 52% in India over four years.\n\nWhen I ranked 17 languages properly, by the code developers actually push and the jobs that ask for them, search interest moved in the opposite direction to every other signal.\n\nIf a ranking doesn't say what it measures, assume it measures attention, not use.\n\nChart and full method in the first comment.\n\n#StackOverflow #Programming #AI",
    "first_comment": "The full analysis, with data and code: https://truthwithdata.com/blog/which-programming-language-is-genuinely-growing.html?utm_source=linkedin&utm_medium=social&utm_campaign=2026-11-18-li-stackoverflow#broken",
    "images": [
     "img/2026-11-16/li/stack-overflow.png"
@@ -90,7 +90,7 @@
    "kind": "reel",
    "video": "img/2026-11-16/reel/langs-reel.mp4",
    "cover": "img/2026-11-16/reel/langs-reel-cover.jpg",
-   "text": "Stack Overflow questions are down 98.7% since 2019, so most \"most popular language\" rankings now mislead. On code and job posts, three languages are genuinely growing: Rust, TypeScript and Python.\n\nCheck any language for your country: link in bio.\n\n#programming #coding #python #typescript #rustlang #techcareers #learntocode",
+   "text": "Stack Overflow questions are down 98.7% since 2019, so most \"most popular language\" rankings now mislead. On code and job posts, three languages are genuinely growing: Rust, TypeScript and Python.\n\nCheck any language for your country: link in bio.\n\n#programming #python #typescript #rustlang #truthwithdata",
    "note": "29 s: four Gemini (Veo) clips with text overlays, two carousel slides, ending on the Gemini logo outro plus truthwithdata.com. Keeps Gemini's quiet ambient sound; no music via the API. The same MP4 can go on LinkedIn as a native video (vertical is fine there)."
   },
   {
@@ -98,7 +98,7 @@
    "date": "2026-11-19",
    "time": "08:00",
    "platform": "linkedin",
-   "text": "Same languages, different countries. How the share of developers writing each language on GitHub changed between mid-2022 and mid-2026:\n\nIndia: TypeScript went from 3.6% to 10.0% of developer-language pairs, Python from 12.1% to 17.5%, Java down from 9.5% to 5.6%. Java is still second in Indian job ads. Rust's share of developers wanting to learn it rose 65%, the biggest rise anywhere.\n\nUS: TypeScript +122%, Rust +80%. Swift is the surprise: +44% on GitHub and 5th on momentum, against 13th in India.\n\nUK: TypeScript +98%, Rust +60%, Python +24%. Java's GitHub share fell 39% while UK searches for it rose 24%. C# ranks last, down on all four signals.\n\nOn 5 November, Python had the most IT job ads in all three: 8,071 in the UK, 112,611 in the US and 24,846 in India.\n\nIf you're choosing a language, the checker in the first comment ranks them for your country and the work you want to do.",
+   "text": "Same languages, different countries. How the share of developers writing each language on GitHub changed between mid-2022 and mid-2026:\n\nIndia: TypeScript went from 3.6% to 10.0% of developer-language pairs, Python from 12.1% to 17.5%, Java down from 9.5% to 5.6%. Java is still second in Indian job ads. Rust's share of developers wanting to learn it rose 65%, the biggest rise anywhere.\n\nUS: TypeScript +122%, Rust +80%. Swift is the surprise: +44% on GitHub and 5th on momentum, against 13th in India.\n\nUK: TypeScript +98%, Rust +60%, Python +24%. Java's GitHub share fell 39% while UK searches for it rose 24%. C# ranks last, down on all four signals.\n\nOn 5 November, Python had the most IT job ads in all three: 8,071 in the UK, 112,611 in the US and 24,846 in India.\n\nIf you're choosing a language, the checker in the first comment ranks them for your country and the work you want to do.\n\n#Programming #TechCareers #GitHub",
    "first_comment": "Language Momentum Checker: https://truthwithdata.com/tools/programming-language-momentum-checker.html?country=uk&utm_source=linkedin&utm_medium=social&utm_campaign=2026-11-19-li-countries\nFull analysis: https://truthwithdata.com/blog/which-programming-language-is-genuinely-growing.html?utm_source=linkedin&utm_medium=social&utm_campaign=2026-11-19-li-countries",
    "images": [
     "img/2026-11-16/li/countries.png"
@@ -109,7 +109,7 @@
    "date": "2026-11-19",
    "time": "19:00",
    "platform": "instagram",
-   "text": "UK vs US vs India: which programming languages are growing?\n\nTypeScript's share of developers on GitHub grew 180% in India, 122% in the US and 98% in the UK. Java's fell in all three, but it's still second in job ads everywhere.\n\nCheck your country: link in bio.\n\n#programming #coding #techjobs #india #uk #typescript #python #learntocode",
+   "text": "UK vs US vs India: which programming languages are growing?\n\nTypeScript's share of developers on GitHub grew 180% in India, 122% in the US and 98% in the UK. Java's fell in all three, but it's still second in job ads everywhere.\n\nCheck your country: link in bio.\n\n#programming #techjobs #typescript #python #truthwithdata",
    "images": [
     "img/2026-11-16/countries/countries-1.png",
     "img/2026-11-16/countries/countries-2.png",
@@ -147,7 +147,7 @@
    "time": "08:00",
    "platform": "linkedin",
    "video": "img/2026-11-16/reel/langs-reel.mp4",
-   "text": "Stack Overflow questions are down 98.7% since 2019, so most programming-language rankings now measure who switched to AI, not who writes the code.\n\nI ranked 17 languages by what developers actually push to GitHub and what 82,138 job posts ask for. Three are genuinely growing: Rust, TypeScript and Python.\n\n30 seconds of what I found. The full analysis, the data, and a free checker for the UK, US and India are in the first comment.",
+   "text": "Stack Overflow questions are down 98.7% since 2019, so most programming-language rankings now measure who switched to AI, not who writes the code.\n\nI ranked 17 languages by what developers actually push to GitHub and what 82,138 job posts ask for. Three are genuinely growing: Rust, TypeScript and Python.\n\n30 seconds of what I found. The full analysis, the data, and a free checker for the UK, US and India are in the first comment.\n\n#Programming #AI #DataAnalysis",
    "first_comment": "Full analysis: https://truthwithdata.com/blog/which-programming-language-is-genuinely-growing.html?utm_source=linkedin&utm_medium=video&utm_campaign=2026-11-20-li-video\nWhich language should you learn? Check your country: https://truthwithdata.com/tools/programming-language-momentum-checker.html?utm_source=linkedin&utm_medium=video&utm_campaign=2026-11-20-li-video",
    "note": "Native LinkedIn video (vertical 1080x1920, 29 s), same file as Wednesday's Instagram Reel. Repost from the Truth with Data page."
   },
@@ -156,7 +156,7 @@
    "date": "2026-11-21",
    "time": "19:00",
    "platform": "instagram",
-   "text": "The fastest-rising tech skill of 2026 isn't a programming language. Job posts mentioning LLMs or generative AI went from 0.3% in 2022 to 15.6% in 2026, and \"agents\" from 0.7% to 21.3%.\n\nFalling: React, AWS, Kubernetes, blockchain, and remote work (83% of posts to 54%).\n\nWhich language fits you: link in bio.\n\n#ai #genai #techcareers #programming #python #machinelearning #jobs",
+   "text": "The fastest-rising tech skill of 2026 isn't a programming language. Job posts mentioning LLMs or generative AI went from 0.3% in 2022 to 15.6% in 2026, and \"agents\" from 0.7% to 21.3%.\n\nFalling: React, AWS, Kubernetes, blockchain, and remote work (83% of posts to 54%).\n\nWhich language fits you: link in bio.\n\n#ai #genai #techcareers #programming #truthwithdata",
    "images": [
     "img/2026-11-16/skills/skills-1.png",
     "img/2026-11-16/skills/skills-2.png",

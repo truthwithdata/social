@@ -104,7 +104,7 @@
    "date": "2026-11-12",
    "time": "08:00",
    "platform": "linkedin",
-   "text": "Last week I showed that checking an A/B test every day, and stopping at the first p < 0.05, turns a 5% false-winner rate into about 25%.\n\nThe obvious follow-up: can you look every day without fooling yourself? Yes, with a stopping rule built for it.\n\nI reran the simulation at a bigger scale: 50,000 tests with no real difference and 50,000 with a real 10% lift, each read under six stopping plans.\n\n- Look once at the planned end: 4.9% false winners.\n- Look daily, stop at p < 0.05: 24.6%.\n- Look daily with an O'Brien-Fleming boundary: 5.0%.\n\nThe boundary asks for much stronger evidence early on, when samples are small and noise is loudest, and relaxes as the data builds up.\n\nThe cost is small: power drops from 61% to 59% for a real 10% lift. And when the lift is real, the test stops 3.2 days sooner on average.\n\nIf your team reads tests from a live dashboard, this is the fix. The case study and the simulation code are in the first comment.\n\nWhat stopping rule does your team use?",
+   "text": "Last week I showed that checking an A/B test every day, and stopping at the first p < 0.05, turns a 5% false-winner rate into about 25%.\n\nThe obvious follow-up: can you look every day without fooling yourself? Yes, with a stopping rule built for it.\n\nI reran the simulation at a bigger scale: 50,000 tests with no real difference and 50,000 with a real 10% lift, each read under six stopping plans.\n\n- Look once at the planned end: 4.9% false winners.\n- Look daily, stop at p < 0.05: 24.6%.\n- Look daily with an O'Brien-Fleming boundary: 5.0%.\n\nThe boundary asks for much stronger evidence early on, when samples are small and noise is loudest, and relaxes as the data builds up.\n\nThe cost is small: power drops from 61% to 59% for a real 10% lift. And when the lift is real, the test stops 3.2 days sooner on average.\n\nIf your team reads tests from a live dashboard, this is the fix. The case study and the simulation code are in the first comment.\n\nWhat stopping rule does your team use?\n\n#ABTesting #Statistics #Experimentation",
    "first_comment": "Case study: https://truthwithdata.com/case-studies/ab-testing-peeking-simulation.html?utm_source=linkedin&utm_medium=social&utm_campaign=2026-11-12-li-ab-fix\nSimulation code: https://github.com/truthwithdata/analysis/tree/main/ab-testing-peeking\nSample size calculator: https://truthwithdata.com/tools/sample-size-calculator.html?utm_source=linkedin&utm_medium=social&utm_campaign=2026-11-12-li-ab-fix",
    "images": [
     "img/2026-11-09/ab-fix/ab-fix-2.png"
@@ -116,7 +116,7 @@
    "date": "2026-11-12",
    "time": "19:00",
    "platform": "instagram",
-   "text": "Checking an A/B test every day isn't the problem. Stopping at the first p < 0.05 is.\n\nWe simulated 100,000 tests. Daily peeking called a false winner 24.6% of the time. A sequential stopping rule kept it at 5%, cost 2 points of power, and stopped real winners 3.2 days sooner.\n\nFull case study and a free sample size calculator: link in bio.\n\n#abtesting #statistics #datascience #productmanagement #growthmarketing #experimentation",
+   "text": "Checking an A/B test every day isn't the problem. Stopping at the first p < 0.05 is.\n\nWe simulated 100,000 tests. Daily peeking called a false winner 24.6% of the time. A sequential stopping rule kept it at 5%, cost 2 points of power, and stopped real winners 3.2 days sooner.\n\nFull case study and a free sample size calculator: link in bio.\n\n#abtesting #experimentation #statistics #productmanagement #truthwithdata",
    "images": [
     "img/2026-11-09/ab-fix/ab-fix-1.png",
     "img/2026-11-09/ab-fix/ab-fix-2.png",
@@ -144,7 +144,7 @@
    "kind": "reel",
    "video": "img/2026-11-09/reel/ab-testing-reel.mp4",
    "cover": "img/2026-11-09/reel/ab-testing-reel-cover.jpg",
-   "text": "Your A/B test \"winner\" might be noise.\n\nWe simulated 10,000 tests where nothing changed. Check once at the planned end: 5% false winners. Check daily and stop at the first significant result: 25%.\n\nFix the sample size before you start. Free sample size calculator: link in bio.\n\n#abtesting #statistics #datascience #productmanagement #experimentation",
+   "text": "Your A/B test \"winner\" might be noise.\n\nWe simulated 10,000 tests where nothing changed. Check once at the planned end: 5% false winners. Check daily and stop at the first significant result: 25%.\n\nFix the sample size before you start. Free sample size calculator: link in bio.\n\n#abtesting #experimentation #statistics #productmanagement #truthwithdata",
    "note": "28 s: three Gemini (Veo) clips with text overlays and the logo outro. Keeps Gemini's quiet ambient sound; no music via the API. Added on request after the week's PR."
   },
   {
@@ -163,7 +163,7 @@
    "date": "2026-11-14",
    "time": "19:00",
    "platform": "instagram",
-   "text": "Four hard questions, answered properly with data: AI-written reviews, renting vs buying, AI and jobs, and A/B testing.\n\nEach case study has the method, the results, the limits and the code. Independent projects on public data, not client work.\n\nGot a question your data should answer? Link in bio.\n\n#datascience #dataanalytics #machinelearning #statistics #dataviz #consulting",
+   "text": "Four hard questions, answered properly with data: AI-written reviews, renting vs buying, AI and jobs, and A/B testing.\n\nEach case study has the method, the results, the limits and the code. Independent projects on public data, not client work.\n\nGot a question your data should answer? Link in bio.\n\n#datascience #dataanalytics #statistics #dataviz #truthwithdata",
    "images": [
     "img/2026-11-09/case-studies/case-studies-1.png",
     "img/2026-11-09/case-studies/case-studies-2.png",

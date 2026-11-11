@@ -47,6 +47,17 @@ POSTED = os.path.join(ROOT, "posted.json")
 # so merging a week of posts never triggers a Netlify deploy.
 MEDIA = "https://truthwithdata.github.io/social"
 SLOTS = {"08:00", "19:00"}
+HASHTAG = re.compile(r"(?<![\w#])#[A-Za-z]\w*")
+
+
+def already_posted():
+    try:
+        with open(POSTED) as fh:
+            return {r.get("id") for r in json.load(fh).get("posted", [])}
+    except (OSError, ValueError):
+        return set()
+
+
 VIDEO_EXT = (".mp4",)  # the poster runs at 07:55 and 18:55 UK time
 TZ = ZoneInfo("Europe/London")
 URL_RE = re.compile(r"https?://\S+")
@@ -125,8 +136,10 @@ def validate(files):
                 kind = p.get("kind", "carousel")
                 if len(cap) > 2200:
                     errors.append(f"{where}: Instagram caption max 2,200 characters")
-                if cap.count("#") > 30:
-                    errors.append(f"{where}: Instagram allows at most 30 hashtags")
+                # Instagram has allowed at most 5 hashtags per post or Reel since Dec 2025
+                # (items already posted before this rule are not re-checked)
+                if len(HASHTAG.findall(cap)) > 5 and p.get("id") not in already_posted():
+                    errors.append(f"{where}: Instagram allows at most 5 hashtags")
                 if kind == "carousel" and not 1 <= len(imgs) <= 10:
                     errors.append(f"{where}: Instagram carousel needs 1 to 10 images")
                 elif kind == "reel":
