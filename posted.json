@@ -122,6 +122,12 @@
       "at": "2026-11-11T19:03:30Z",
       "ref": "https://www.reddit.com/r/dataisbeautiful/",
       "removed": "submitted without errors but not visible in r/dataisbeautiful after 10 minutes (likely spam filter); post id unknown, first comment not posted"
+    },
+    {
+      "id": "2026-11-12-li-ab-fix",
+      "platform": "linkedin",
+      "at": "2026-11-12T07:57:30Z",
+      "ref": "urn:li:share:7526553543911145472"
     }
   ]
 }
