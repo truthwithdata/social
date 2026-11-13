@@ -128,6 +128,12 @@ When drafting the week that starts on a due Monday, also write `linkedin-newslet
 
 ## Reddit
 
+**Paused for automatic posting (13 Nov 2026).** Reddit's sitewide filter removed the new account's
+automated posts, so `scripts/social_check.py --due` never returns Reddit items (`MANUAL_PLATFORMS`) and
+the control room shows them as `manual`. Vishal posts them by hand from the Reddit app, using the copy-ready
+text in the control room's actions, while the account builds history (comments first, at most one post a
+week). Reddit links carry no `utm_` parameters. Any other post can be left for him with `"manual": true`.
+
 Reddit works differently from the other platforms: each community has its own rules, moderators remove
 anything that reads like promotion, and a new account is filtered harder. So:
 
@@ -177,7 +183,8 @@ anything that reads like promotion, and a new account is filtered harder. So:
      Then `INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH` with the creation id.
    - **X**: if there is no active Twitter connection, record it as skipped. Otherwise upload the images,
      post the first item with them, then reply to each previous post in turn.
-   - **Reddit**: Composio account `reddit_grame-menald` only. First confirm with
+   - **Reddit**: paused, never posted automatically (see "Reddit"); `--due` does not return Reddit items.
+     The steps below are kept for when it is turned back on. Composio account `reddit_grame-menald` only. First confirm with
      `proxy_execute("GET", "/api/v1/me", "reddit")` that the `name` is `truthwithdata`; if not, post
      nothing to Reddit. Make Reddit calls one at a time (Reddit rate-limits bursts with HTTP 429; wait
      60 seconds and try once more). Before posting, check `GET /user/truthwithdata/submitted?limit=10`: if a

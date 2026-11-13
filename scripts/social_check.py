@@ -26,8 +26,9 @@ Queue file format (queue/<monday YYYY-MM-DD>.json):
      "note": "..."}                     # optional, for the reviewer; never posted
 
 Reddit kinds: "image" (exactly one image, uploaded natively; first_comment carries the explanation and links),
-"self" (markdown body in "text"; optional "first_comment"), "link" ("url"). Links to truthwithdata.com in
-Reddit text must carry utm_source=reddit.
+"self" (markdown body in "text"; optional "first_comment"), "link" ("url"). Reddit links carry no utm
+parameters. Reddit posts are never posted automatically (MANUAL_PLATFORMS): Vishal posts them by hand.
+Any post with "manual": true is also left for him.
   ]
 }
 Only files on the main branch are posted: merging the weekly pull request is the approval.
@@ -60,6 +61,9 @@ def already_posted():
 
 VIDEO_EXT = (".mp4",)  # the poster runs at 07:55 and 18:55 UK time
 TZ = ZoneInfo("Europe/London")
+# Platforms whose posts are never posted automatically: they are posted by hand (status "manual").
+# Reddit paused 13 Nov 2026: Reddit's filters removed the new account's automated posts.
+MANUAL_PLATFORMS = {"reddit"}
 URL_RE = re.compile(r"https?://\S+")
 
 
@@ -196,8 +200,8 @@ def validate(files):
                     errors.append(f"{where}: reddit kind must be image, self or link")
                 for field in ("text", "first_comment", "url"):
                     for u in URL_RE.findall(p.get(field, "") or ""):
-                        if "truthwithdata.com" in u and "utm_source=reddit" not in u and "/social/img/" not in u:
-                            errors.append(f"{where}: link in {field} needs utm_source=reddit: {u}")
+                        if "utm_" in u:
+                            errors.append(f"{where}: no utm tracking parameters in Reddit links: {u}")
             elif plat == "newsletter":
                 if not p.get("subject") or not p.get("text"):
                     errors.append(f"{where}: newsletter needs subject and text (HTML)")
@@ -218,7 +222,7 @@ def due(now=None):
     out = []
     for _, q in load_queue_files():
         for p in q.get("posts", []):
-            if p["id"] in done:
+            if p["id"] in done or p["platform"] in MANUAL_PLATFORMS or p.get("manual"):
                 continue
             at = datetime.strptime(f'{p["date"]} {p["time"]}', "%Y-%m-%d %H:%M").replace(tzinfo=TZ)
             # due if its slot is within the next 20 minutes or passed earlier today
@@ -245,7 +249,8 @@ def upcoming(days, now=None):
                 if not first and p.get("kind") == "story":
                     first = "Story from the day's carousel"
                 r = done.get(p["id"], {})
-                status = ("removed" if r.get("removed") else "skipped" if r.get("skipped") else "posted") if r else "queued"
+                status = ("removed" if r.get("removed") else "skipped" if r.get("skipped") else "posted") if r else \
+                    ("manual" if p["platform"] in MANUAL_PLATFORMS or p.get("manual") else "queued")
                 item = {"id": p["id"], "at": at.isoformat(), "platform": p["platform"], "kind": p.get("kind", ""),
                         "community": p.get("subreddit", ""), "text": first.split("\n")[0][:160], "status": status,
                         "week": q.get("week", os.path.basename(path)[:10])}
