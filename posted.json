@@ -151,7 +151,8 @@
       "id": "2026-11-13-rd-cro-ab-peeking",
       "platform": "reddit",
       "at": "2026-11-13T19:01:00Z",
-      "ref": "https://www.reddit.com/r/cro/comments/1xvgi4h/i_simulated_100000_ab_tests_looking_daily_and/"
+      "ref": "https://www.reddit.com/r/cro/comments/1xvgi4h/i_simulated_100000_ab_tests_looking_daily_and/",
+      "removed": "reddit (sitewide spam filter)"
     }
   ]
 }
