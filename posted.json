@@ -146,6 +146,12 @@
       "platform": "instagram",
       "at": "2026-11-13T19:00:30Z",
       "ref": "https://www.instagram.com/reel/DfsU1Ijgc1m/"
+    },
+    {
+      "id": "2026-11-13-rd-cro-ab-peeking",
+      "platform": "reddit",
+      "at": "2026-11-13T19:01:00Z",
+      "ref": "https://www.reddit.com/r/cro/comments/1xvgi4h/i_simulated_100000_ab_tests_looking_daily_and/"
     }
   ]
 }
