@@ -91,7 +91,7 @@
    "video": "img/2026-11-16/reel/langs-reel.mp4",
    "cover": "img/2026-11-16/reel/langs-reel-cover.jpg",
    "text": "Stack Overflow questions are down 98.7% since 2019, so most \"most popular language\" rankings now mislead. On code and job posts, three languages are genuinely growing: Rust, TypeScript and Python.\n\nCheck any language for your country: link in bio.\n\n#programming #python #typescript #rustlang #truthwithdata",
-   "note": "29 s: four Gemini (Veo) clips with text overlays, two carousel slides, ending on the Gemini logo outro plus truthwithdata.com. Keeps Gemini's quiet ambient sound; no music via the API. The same MP4 can go on LinkedIn as a native video (vertical is fine there)."
+   "note": "29 s: four Gemini (Veo) clips with text overlays, two carousel slides, ending on the Gemini logo outro plus truthwithdata.com. Gemini text-to-speech voiceover (voice Charon) reading the on-screen text, over Gemini's quiet ambient sound; no music via the API. The same MP4 can go on LinkedIn as a native video (vertical is fine there)."
   },
   {
    "id": "2026-11-19-li-countries",
@@ -149,7 +149,7 @@
    "video": "img/2026-11-16/reel/langs-reel.mp4",
    "text": "Stack Overflow questions are down 98.7% since 2019, so most programming-language rankings now measure who switched to AI, not who writes the code.\n\nI ranked 17 languages by what developers actually push to GitHub and what 82,138 job posts ask for. Three are genuinely growing: Rust, TypeScript and Python.\n\n30 seconds of what I found. The full analysis, the data, and a free checker for the UK, US and India are in the first comment.\n\n#Programming #AI #DataAnalysis",
    "first_comment": "Full analysis: https://truthwithdata.com/blog/which-programming-language-is-genuinely-growing.html?utm_source=linkedin&utm_medium=video&utm_campaign=2026-11-20-li-video\nWhich language should you learn? Check your country: https://truthwithdata.com/tools/programming-language-momentum-checker.html?utm_source=linkedin&utm_medium=video&utm_campaign=2026-11-20-li-video",
-   "note": "Native LinkedIn video (vertical 1080x1920, 29 s), same file as Wednesday's Instagram Reel. Repost from the Truth with Data page."
+   "note": "Native LinkedIn video (vertical 1080x1920, 29 s), same file as Wednesday's Instagram Reel. Repost from the Truth with Data page. Has a Gemini text-to-speech voiceover (voice Charon) reading the on-screen text."
   },
   {
    "id": "2026-11-21-ig-skills",
