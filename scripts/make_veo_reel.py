@@ -9,7 +9,7 @@ SPEC.json:
   "clips": [{"src": "path.mp4", "start": 0, "end": 10}, ...],   # source paths absolute or repo-relative
   "xfade": 0.3,                                         # crossfade between clips (s)
   "outro": "img/brand/logo-outro-1080x1920.mp4",        # optional, crossfaded on at the end
-  "delogo": [582, 1142, 38, 38],                        # optional x,y,w,h box (source pixels) to paint out the Gemini sparkle
+  "delogo": [570, 1128, 60, 64],                       # optional x,y,w,h box (source pixels) to paint out the Gemini sparkle
   "ambient": 0.25,                                      # volume of the clips' own sound under the voice
   "cards": [{"t0": 0.5, "t1": 4.4, "lines": [{"text": "...", "style": "main|accent|small"}]}],
   "voice": [{"wav": "path.wav", "at": 0.5}]
