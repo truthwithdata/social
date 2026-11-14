@@ -1,0 +1,109 @@
+{
+  "out": "img/2026-11-16/reel/rent-reel.mp4",
+  "clips": [
+    {
+      "src": "/home/claude/veo-clips/rent-1.mp4",
+      "start": 0,
+      "end": 10
+    },
+    {
+      "src": "/home/claude/veo-clips/rent-2.mp4",
+      "start": 0,
+      "end": 10
+    },
+    {
+      "src": "/home/claude/veo-clips/rent-3.mp4",
+      "start": 0,
+      "end": 10
+    }
+  ],
+  "xfade": 0.3,
+  "outro": "img/brand/logo-outro-1080x1920.mp4",
+  "delogo": [
+    570,
+    1128,
+    60,
+    64
+  ],
+  "ambient": 0.25,
+  "cards": [
+    {
+      "t0": 0.3,
+      "t1": 3.59,
+      "lines": [
+        {
+          "text": "Is renting really"
+        },
+        {
+          "text": "'dead money'?",
+          "style": "accent"
+        }
+      ]
+    },
+    {
+      "t0": 3.64,
+      "t1": 12.07,
+      "lines": [
+        {
+          "text": "Interest is dead money too"
+        },
+        {
+          "text": "Year 1: 77% to 107% of the rent",
+          "style": "accent"
+        },
+        {
+          "text": "90% mortgage on the average home, UK regions, Sept 2026 rates",
+          "style": "small"
+        }
+      ]
+    },
+    {
+      "t0": 12.12,
+      "t1": 23.02,
+      "lines": [
+        {
+          "text": "Buying wins only if prices rise:"
+        },
+        {
+          "text": "ahead after 1.4 to 4.1 years",
+          "style": "accent"
+        },
+        {
+          "text": "If prices keep rising 3% a year (the 2005 to 2026 pace). Flat prices: 11 to 30+ years",
+          "style": "small"
+        }
+      ]
+    },
+    {
+      "t0": 23.07,
+      "t1": 29.35,
+      "lines": [
+        {
+          "text": "Run your own numbers"
+        },
+        {
+          "text": "Free calculator: link in bio",
+          "style": "accent"
+        }
+      ]
+    }
+  ],
+  "voice": [
+    {
+      "wav": "/home/claude/veo-clips/vo/t_rent1.wav",
+      "at": 0.4
+    },
+    {
+      "wav": "/home/claude/veo-clips/vo/t_rent2.wav",
+      "at": 3.74
+    },
+    {
+      "wav": "/home/claude/veo-clips/vo/t_rent3.wav",
+      "at": 12.22
+    },
+    {
+      "wav": "/home/claude/veo-clips/vo/t_rent4.wav",
+      "at": 23.17
+    }
+  ]
+}

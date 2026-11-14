@@ -1,0 +1,105 @@
+{
+  "out": "img/2026-11-23/reel/ml-model-reel.mp4",
+  "clips": [
+    {
+      "src": "/home/claude/veo-clips/ml-1.mp4",
+      "start": 0,
+      "end": 7.5
+    },
+    {
+      "src": "/home/claude/veo-clips/ml-2.mp4",
+      "start": 0,
+      "end": 10
+    },
+    {
+      "src": "/home/claude/veo-clips/ml-3.mp4",
+      "start": 0,
+      "end": 7
+    }
+  ],
+  "xfade": 0.3,
+  "outro": "img/brand/logo-outro-1080x1920.mp4",
+  "delogo": [
+    570,
+    1128,
+    60,
+    64
+  ],
+  "ambient": 0.25,
+  "cards": [
+    {
+      "t0": 0.3,
+      "t1": 3.16,
+      "lines": [
+        {
+          "text": "Which machine learning model"
+        },
+        {
+          "text": "should you use?",
+          "style": "accent"
+        }
+      ]
+    },
+    {
+      "t0": 3.21,
+      "t1": 8.27,
+      "lines": [
+        {
+          "text": "There's no 'best' algorithm"
+        },
+        {
+          "text": "only the best fit for your problem",
+          "style": "accent"
+        }
+      ]
+    },
+    {
+      "t0": 8.32,
+      "t1": 16.12,
+      "lines": [
+        {
+          "text": "Start simple"
+        },
+        {
+          "text": "Add complexity only when you need it",
+          "style": "accent"
+        },
+        {
+          "text": "A well-tuned simple model often beats a poorly set-up complex one",
+          "style": "small"
+        }
+      ]
+    },
+    {
+      "t0": 16.17,
+      "t1": 23.85,
+      "lines": [
+        {
+          "text": "Test several, cross-validate"
+        },
+        {
+          "text": "Free guide with Python and R code: link in bio",
+          "style": "accent"
+        }
+      ]
+    }
+  ],
+  "voice": [
+    {
+      "wav": "/home/claude/veo-clips/vo/t_ml1.wav",
+      "at": 0.4
+    },
+    {
+      "wav": "/home/claude/veo-clips/vo/t_ml2.wav",
+      "at": 3.31
+    },
+    {
+      "wav": "/home/claude/veo-clips/vo/t_ml3.wav",
+      "at": 8.42
+    },
+    {
+      "wav": "/home/claude/veo-clips/vo/t_ml4.wav",
+      "at": 16.27
+    }
+  ]
+}

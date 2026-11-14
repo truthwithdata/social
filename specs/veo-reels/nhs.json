@@ -1,0 +1,105 @@
+{
+  "out": "img/2026-11-16/reel/nhs-reel.mp4",
+  "clips": [
+    {
+      "src": "/home/claude/veo-clips/nhs-1.mp4",
+      "start": 0,
+      "end": 10
+    },
+    {
+      "src": "/home/claude/veo-clips/nhs-2.mp4",
+      "start": 4.1,
+      "end": 10
+    },
+    {
+      "src": "/home/claude/veo-clips/nhs-3.mp4",
+      "start": 0,
+      "end": 10
+    }
+  ],
+  "xfade": 0.3,
+  "outro": "img/brand/logo-outro-1080x1920.mp4",
+  "delogo": [
+    570,
+    1128,
+    60,
+    64
+  ],
+  "ambient": 0.25,
+  "cards": [
+    {
+      "t0": 0.4,
+      "t1": 4.4,
+      "lines": [
+        {
+          "text": "How long will I wait for"
+        },
+        {
+          "text": "NHS treatment?",
+          "style": "accent"
+        }
+      ]
+    },
+    {
+      "t0": 4.5,
+      "t1": 9.6,
+      "lines": [
+        {
+          "text": "Typical wait: about 3 months"
+        },
+        {
+          "text": "1 in 12: almost 9 months or more",
+          "style": "accent"
+        }
+      ]
+    },
+    {
+      "t0": 9.8,
+      "t1": 18.1,
+      "lines": [
+        {
+          "text": "It depends where you go:"
+        },
+        {
+          "text": "7.7 to 17.8 weeks",
+          "style": "accent"
+        },
+        {
+          "text": "Median wait across 117 NHS trusts, England, Aug 2026",
+          "style": "small"
+        }
+      ]
+    },
+    {
+      "t0": 18.3,
+      "t1": 25.0,
+      "lines": [
+        {
+          "text": "Check your hospital and specialty"
+        },
+        {
+          "text": "Free lookup: link in bio",
+          "style": "accent"
+        }
+      ]
+    }
+  ],
+  "voice": [
+    {
+      "wav": "/home/claude/veo-clips/vo/t_bf_emma_nhs1.wav",
+      "at": 0.5
+    },
+    {
+      "wav": "/home/claude/veo-clips/vo/t_bf_emma_nhs2.wav",
+      "at": 4.6
+    },
+    {
+      "wav": "/home/claude/veo-clips/vo/t_bf_emma_nhs3.wav",
+      "at": 9.9
+    },
+    {
+      "wav": "/home/claude/veo-clips/vo/t_bf_emma_nhs4.wav",
+      "at": 18.4
+    }
+  ]
+}
