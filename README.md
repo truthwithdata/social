@@ -233,7 +233,8 @@ anything that reads like promotion, and a new account is filtered harder. So:
      `TIKTOK_PUBLISH_VIDEO` or upload with `publish` true. `ref` = the publish_id. Then create the control-room
      action `actions/tiktok-<item id>` {title: "Post the TikTok draft: <first line of text, 60 chars>",
      detail: "It's in your TikTok inbox (@truth.with.data). Add a sound at 10-20% volume, paste this caption,
-     turn on More options > AI-generated content if the item has is_aigc, and post around 19:00. Caption: <text>",
+     keep the first frame (the headline cover) as the cover, turn on More options > AI-generated content if the item has
+     is_aigc, and post around 19:00. Caption: <text>",
      due: today 19:00 UK time, kind: "TikTok", link: "https://www.tiktok.com/@truth.with.data",
      link_label: "Open TikTok", status: "open", source: "Post due social posts", created_at}.
    - **Newsletter**: if there is no active Kit connection, record it as skipped. Otherwise
