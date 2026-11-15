@@ -1,0 +1,109 @@
+{
+  "out": "img/2026-11-23/reel/ai-jobs-reel.mp4",
+  "clips": [
+    {
+      "src": "/home/claude/veo-clips/ai-1.mp4",
+      "start": 0,
+      "end": 10
+    },
+    {
+      "src": "/home/claude/veo-clips/ai-2.mp4",
+      "start": 0,
+      "end": 10
+    },
+    {
+      "src": "/home/claude/veo-clips/ai-3.mp4",
+      "start": 0,
+      "end": 10
+    }
+  ],
+  "xfade": 0.3,
+  "outro": "img/brand/logo-outro-1080x1920.mp4",
+  "delogo": [
+    570,
+    1128,
+    60,
+    64
+  ],
+  "ambient": 0.25,
+  "cards": [
+    {
+      "t0": 0.3,
+      "t1": 5.92,
+      "lines": [
+        {
+          "text": "Is AI actually"
+        },
+        {
+          "text": "replacing jobs?",
+          "style": "accent"
+        }
+      ]
+    },
+    {
+      "t0": 5.97,
+      "t1": 16.85,
+      "lines": [
+        {
+          "text": "AI exposure explains only"
+        },
+        {
+          "text": "about 1% of job growth",
+          "style": "accent"
+        },
+        {
+          "text": "722 US occupations, May 2019 to May 2025",
+          "style": "small"
+        }
+      ]
+    },
+    {
+      "t0": 16.9,
+      "t1": 26.58,
+      "lines": [
+        {
+          "text": "Most exposed groups grew fastest:"
+        },
+        {
+          "text": "business, finance, computing",
+          "style": "accent"
+        },
+        {
+          "text": "Losses so far: a few clerical and support jobs, most already declining",
+          "style": "small"
+        }
+      ]
+    },
+    {
+      "t0": 26.63,
+      "t1": 29.35,
+      "lines": [
+        {
+          "text": "Check your own job"
+        },
+        {
+          "text": "Free lookup: link in bio",
+          "style": "accent"
+        }
+      ]
+    }
+  ],
+  "voice": [
+    {
+      "wav": "/home/claude/veo-clips/vo/t_ai1.wav",
+      "at": 0.4
+    },
+    {
+      "wav": "/home/claude/veo-clips/vo/t_ai2.wav",
+      "at": 6.07
+    },
+    {
+      "wav": "/home/claude/veo-clips/vo/t_ai3.wav",
+      "at": 17.0
+    },
+    {
+      "wav": "/home/claude/veo-clips/vo/t_ai4.wav",
+      "at": 26.73
+    }
+  ]
+}

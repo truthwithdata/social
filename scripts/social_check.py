@@ -11,9 +11,9 @@ Queue file format (queue/<monday YYYY-MM-DD>.json):
   "week": "2026-11-02",
   "posts": [
     {"id": "2026-11-03-li-rent-vs-buy", "date": "2026-11-03", "time": "08:00",
-     "platform": "linkedin",            # linkedin | instagram | x | newsletter | reddit
+     "platform": "linkedin",            # linkedin | instagram | x | newsletter | reddit | tiktok
      "kind": "carousel",                # instagram only: carousel (default) | reel | story
-     "video": "img/.../x.mp4",   # instagram reel or linkedin video post: the MP4; "cover" = optional JPG (instagram)
+     "video": "img/.../x.mp4",   # instagram reel, linkedin video post or tiktok draft: the MP4; "cover" = optional JPG (instagram)
      "subject": "...",                  # newsletter: subject line; "text" = HTML body
      "text": "...",                     # linkedin post text / instagram caption
      "first_comment": "...",            # linkedin only, optional: posted as the first comment (links go here)
@@ -24,6 +24,10 @@ Queue file format (queue/<monday YYYY-MM-DD>.json):
      "flair": "OC",                     # reddit, optional: flair text to pick (matched case-insensitively)
      "url": "https://...",              # reddit link posts only
      "note": "..."}                     # optional, for the reviewer; never posted
+
+TikTok items (kind "draft", the only kind) are uploaded to the @truth.with.data TikTok inbox as drafts, never
+published: Vishal adds a sound, pastes "text" as the caption and posts from the app. "is_aigc": true marks
+Veo footage (he switches on the AI-generated label when posting).
 
 Reddit kinds: "image" (exactly one image, uploaded natively; first_comment carries the explanation and links),
 "self" (markdown body in "text"; optional "first_comment"), "link" ("url"). Reddit links carry no utm
@@ -202,11 +206,23 @@ def validate(files):
                     for u in URL_RE.findall(p.get(field, "") or ""):
                         if "utm_" in u:
                             errors.append(f"{where}: no utm tracking parameters in Reddit links: {u}")
+            elif plat == "tiktok":
+                v = p.get("video", "")
+                if p.get("kind", "draft") != "draft":
+                    errors.append(f"{where}: tiktok kind must be draft (inbox upload)")
+                if not v.endswith(VIDEO_EXT) or not os.path.exists(os.path.join(ROOT, v)):
+                    errors.append(f"{where}: tiktok draft needs an existing .mp4 in 'video'")
+                elif os.path.getsize(os.path.join(ROOT, v)) > 500 * 1024 * 1024:
+                    errors.append(f"{where}: tiktok video over 500 MB")
+                if not p.get("text") or len(p["text"]) > 2200:
+                    errors.append(f"{where}: tiktok caption ('text') required, max 2,200 characters")
+                if imgs:
+                    errors.append(f"{where}: tiktok drafts take a video, not images")
             elif plat == "newsletter":
                 if not p.get("subject") or not p.get("text"):
                     errors.append(f"{where}: newsletter needs subject and text (HTML)")
             else:
-                errors.append(f"{where}: platform must be linkedin, instagram, x, newsletter or reddit")
+                errors.append(f"{where}: platform must be linkedin, instagram, x, newsletter, reddit or tiktok")
     return errors
 
 

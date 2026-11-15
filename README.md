@@ -65,6 +65,11 @@ reached, carry on with the task and say so in the final summary: reporting never
      same slot by a story made from its first slide (`make_reel.py --story`), `kind: "story"`.
    - Instagram Reel: Wed 19:00, made from that week's strongest carousel with `scripts/make_reel.py`
      (7 slides max, about 20 s), `kind: "reel"`, with `video` and `cover`.
+   - TikTok draft: for every Instagram Reel in the week (including Veo reels already queued in another
+     file), a `platform: "tiktok"` item at 08:00 the same day with the same `video`, `kind: "draft"`,
+     a caption in `text` (2-4 sentences leading with the finding, "link in bio", 3-5 hashtags, at most
+     2,200 characters) and `"is_aigc": true` when the footage is AI-generated. The poster puts it in the
+     TikTok inbox; Vishal adds a sound and posts it himself.
    - X: one thread on Wed 08:00.
    - Newsletter: Sun 08:00, `platform: "newsletter"`, one chart with three or four sentences, links to
      the week's articles, signed "Vishal". HTML in `text`, short `subject`.
@@ -212,6 +217,19 @@ anything that reads like promotion, and a new account is filtered harder. So:
      titled "TWD: reply to comments on r/<subreddit>", with the post link in the description (not for posts
      on the own profile, u_truthwithdata). Replies are
      Vishal's to write; the poster never replies to anyone.
+   - **TikTok** (inbox drafts only; added 15 Nov 2026): first call `TIKTOK_QUERY_CREATOR_INFO` and confirm
+     `creator_username` is `truth.with.data`; if not, or if there is no TikTok connection, record the item as
+     skipped. In the workbench download `video_url`, `upload_local_file`, then `TIKTOK_UPLOAD_VIDEO` with
+     `file_to_upload` = {name, mimetype "video/mp4", s3key} and `publish` false (it lands in the TikTok
+     inbox as a draft; nothing is published). Check `TIKTOK_FETCH_PUBLISH_STATUS` with the returned
+     `publish_id` after 5, 10 and 20 seconds: `PROCESSING_UPLOAD` or `SEND_TO_USER_INBOX` is success
+     (inbox drafts often stay in PROCESSING_UPLOAD); `FAILED` is a failure (retry once). Never call
+     `TIKTOK_PUBLISH_VIDEO` or upload with `publish` true. `ref` = the publish_id. Then create the control-room
+     action `actions/tiktok-<item id>` {title: "Post the TikTok draft: <first line of text, 60 chars>",
+     detail: "It's in your TikTok inbox (@truth.with.data). Add a sound at 10-20% volume, paste this caption,
+     turn on More options > AI-generated content if the item has is_aigc, and post around 19:00. Caption: <text>",
+     due: today 19:00 UK time, kind: "TikTok", link: "https://www.tiktok.com/@truth.with.data",
+     link_label: "Open TikTok", status: "open", source: "Post due social posts", created_at}.
    - **Newsletter**: if there is no active Kit connection, record it as skipped. Otherwise
      `KIT_CREATE_BROADCAST` with subject, content = text, send_at = `slot_iso` converted to UTC (if that
      is already past, 10 minutes from now), public true, description = the item id.
