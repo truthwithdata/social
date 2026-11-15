@@ -69,7 +69,12 @@ reached, carry on with the task and say so in the final summary: reporting never
      file), a `platform: "tiktok"` item at 08:00 the same day with the same `video`, `kind: "draft"`,
      a caption in `text` (2-4 sentences leading with the finding, "link in bio", 3-5 hashtags, at most
      2,200 characters) and `"is_aigc": true` when the footage is AI-generated. The poster puts it in the
-     TikTok inbox; Vishal adds a sound and posts it himself.
+     TikTok inbox; Vishal adds a sound and posts it himself. TikTok's API can't take a cover image and
+     uses the first frame, so the TikTok `video` is the `-tiktok.mp4` version that opens on the Reel's
+     cover for half a second (`make_veo_reel.py` writes it from a spec's "cover";
+     `make_veo_reel.py --tiktok-only COVER.jpg REEL.mp4` makes one for any other Reel).
+   - Reel covers: a designed 1080x1920 cover whose headline sits in the middle 3:4 area (y 240 to 1680),
+     because the Instagram profile grid crops Reels to 3:4; never a frame with the text near the top.
    - X: one thread on Wed 08:00.
    - Newsletter: Sun 08:00, `platform: "newsletter"`, one chart with three or four sentences, links to
      the week's articles, signed "Vishal". HTML in `text`, short `subject`.

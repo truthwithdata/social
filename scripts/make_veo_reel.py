@@ -12,8 +12,15 @@ SPEC.json:
   "delogo": [570, 1128, 60, 64],                       # optional x,y,w,h box (source pixels) to paint out the Gemini sparkle
   "ambient": 0.25,                                      # volume of the clips' own sound under the voice
   "cards": [{"t0": 0.5, "t1": 4.4, "lines": [{"text": "...", "style": "main|accent|small"}]}],
-  "voice": [{"wav": "path.wav", "at": 0.5}]
+  "voice": [{"wav": "path.wav", "at": 0.5}],
+  "cover": {"src": "clip.mp4", "t": 3.0,                # optional designed cover: background frame from a clip,
+            "lines": [{"text": "Is renting really"}, {"text": "'dead money'?", "style": "accent"}],
+            "sub": "We ran the numbers for every UK region"}
 }
+With "cover", the script writes <name>-reel-cover.jpg (Instagram cover; the headline sits in the middle 3:4 area
+that the profile grid shows) and <name>-reel-tiktok.mp4: the same reel opening on the cover for half a second, so
+TikTok's default thumbnail (the first frame) is the cover. TikTok's API can't take a separate cover image.
+    python3 scripts/make_veo_reel.py --tiktok-only COVER.jpg REEL.mp4   # TikTok variant for an existing reel
 Cards are white with the brand blue bar on the left, near the top of the frame, and fade in and out.
 Text never goes into the Veo prompts; every number in a Reel comes from these cards.
 """
@@ -74,6 +81,57 @@ def card_png(lines, path, maxw=960, x=60, y=150):
         d.text((x + bar + pad, ty), t, font=f, fill=colour)
         ty += size * 1.22 + gap
     img.save(path)
+
+
+COVER_STYLES = {"main": ("Bold", 92, (255, 255, 255)), "accent": ("ExtraBold", 100, (251, 146, 60))}
+
+
+def cover_jpg(bg, lines, sub, path, logo=os.path.join(ROOT, "TWD_Logo.png")):
+    img = Image.open(bg).convert("RGB").resize((W, H), Image.LANCZOS)
+    shade = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(shade)
+    for y in range(H):  # darker in the middle band where the headline sits
+        a = int(110 + 90 * max(0.0, 1 - abs(y - H * 0.5) / (H * 0.32)))
+        d.line([(0, y), (W, y)], fill=(8, 15, 30, a))
+    img = Image.alpha_composite(img.convert("RGBA"), shade)
+    d = ImageDraw.Draw(img)
+    rows = []
+    for ln in lines:
+        weight, size, colour = COVER_STYLES[ln.get("style", "main")]
+        f = font(weight, size)
+        for t in wrap(ln["text"], f, W - 2 * 100):
+            rows.append((t, f, colour, size))
+    sf = font("Medium", 44)
+    subrows = wrap(sub, sf, W - 2 * 120) if sub else []
+    total = sum(r[3] * 1.15 for r in rows) + (40 + len(subrows) * 58 if subrows else 0)
+    y = int(H * 0.5 - total / 2)
+    for t, f, colour, size in rows:
+        d.text(((W - f.getlength(t)) / 2, y), t, font=f, fill=colour)
+        y += int(size * 1.15)
+    if subrows:
+        y += 40
+        d.rounded_rectangle([W / 2 - 60, y - 22, W / 2 + 60, y - 16], 3, fill=(37, 99, 235))
+        for t in subrows:
+            d.text(((W - sf.getlength(t)) / 2, y), t, font=sf, fill=(226, 232, 240))
+            y += 58
+    if os.path.exists(logo):  # logo on a white pill, inside the 3:4 grid area
+        lg = Image.open(logo).convert("RGBA")
+        lg.thumbnail((210, 120))
+        px, py = (W - lg.width) // 2, 300
+        d.rounded_rectangle([px - 30, py - 18, px + lg.width + 30, py + lg.height + 18], 28, fill=(255, 255, 255, 240))
+        img.alpha_composite(lg, (px, py))
+    img.convert("RGB").save(path, quality=92)
+
+
+def tiktok_variant(cover, reel, out, hold=0.5, xf=0.25):
+    run(["ffmpeg", "-v", "error", "-y", "-loop", "1", "-t", str(hold + xf), "-i", cover,
+         "-f", "lavfi", "-t", str(hold + xf), "-i", "anullsrc=r=48000:cl=stereo", "-i", reel,
+         "-filter_complex",
+         f"[0:v]scale={W}:{H},fps={FPS},format=yuv420p,setsar=1[c];[2:v]fps={FPS},format=yuv420p,setsar=1[r];"
+         f"[c][r]xfade=transition=fade:duration={xf}:offset={hold}[v];"
+         f"[1:a][2:a]acrossfade=d={xf}[a]",
+         "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-c:a", "aac",
+         "-b:a", "160k", "-ar", "48000", "-movflags", "+faststart", out])
 
 
 def run(cmd):
@@ -155,10 +213,25 @@ def main(spec_path):
          "-t", f"{total:.3f}", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-r", str(FPS), "-c:a", "aac",
          "-b:a", "160k", "-ar", "48000", "-movflags", "+faststart", out])
     cover = out[:-4] + "-cover.jpg"
-    first = s.get("cards", [{"t0": 0.5, "t1": 1}])[0]
-    run(["ffmpeg", "-v", "error", "-y", "-ss", str((first["t0"] + first["t1"]) / 2), "-i", out, "-frames:v", "1", "-q:v", "3", cover])
+    if s.get("cover"):
+        c = s["cover"]
+        frame = os.path.join(tmp, "coverbg.png")
+        vf = ""
+        if s.get("delogo"):
+            x, y, w, h = s["delogo"]
+            vf = f"delogo=x={x}:y={y}:w={w}:h={h},"
+        run(["ffmpeg", "-v", "error", "-y", "-ss", str(c.get("t", 1)), "-i", rel(c["src"]), "-frames:v", "1",
+             "-vf", vf + f"scale={W}:{H}:flags=lanczos", frame])
+        cover_jpg(frame, c["lines"], c.get("sub", ""), cover)
+        tiktok_variant(cover, out, out[:-4] + "-tiktok.mp4")
+    else:
+        first = s.get("cards", [{"t0": 0.5, "t1": 1}])[0]
+        run(["ffmpeg", "-v", "error", "-y", "-ss", str((first["t0"] + first["t1"]) / 2), "-i", out, "-frames:v", "1", "-q:v", "3", cover])
     print(os.path.relpath(out, ROOT), f"{dur(out):.2f}s")
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    if sys.argv[1] == "--tiktok-only":
+        tiktok_variant(rel(sys.argv[2]), rel(sys.argv[3]), rel(sys.argv[3])[:-4] + "-tiktok.mp4")
+    else:
+        main(sys.argv[1])

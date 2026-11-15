@@ -105,5 +105,19 @@
       "wav": "/home/claude/veo-clips/vo/t_ai4.wav",
       "at": 26.73
     }
-  ]
+  ],
+  "cover": {
+    "src": "/home/claude/veo-clips/ai-1.mp4",
+    "t": 2.0,
+    "lines": [
+      {
+        "text": "Is AI actually"
+      },
+      {
+        "text": "replacing jobs?",
+        "style": "accent"
+      }
+    ],
+    "sub": "What the data says for 722 occupations"
+  }
 }
