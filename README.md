@@ -22,7 +22,7 @@ Carousel charts (`blog/charts/…`), articles, `js/config.js` and `data/` are re
 | `posted.json` | Log of what has been posted or skipped (id, platform, time, link); written only by the poster |
 | `press/log.json` | Which articles have been pitched (the pitches and contacts are in the private control room) |
 | `topics/` | Monthly topic shortlists (`log.json`) |
-| `linkedin-newsletter/<monday>.html` | LinkedIn newsletter editions, published **by hand** from Vishal's profile every other Monday; covers in `img/li-newsletter/` |
+| `linkedin-newsletter/<monday>.html` | LinkedIn newsletter editions, published **by hand** from Vishal's profile every Monday; covers in `img/li-newsletter/` |
 | `scripts/` | `social_check.py` (validate, list due posts), `make_carousel.py`, `make_reel.py`, `make_logo_outro.py`, `make_li_newsletter.py` |
 
 Accounts: LinkedIn = Vishal's personal profile (`urn:li:person:QueTevIgLG`). Instagram = the
@@ -93,7 +93,7 @@ reached, carry on with the task and say so in the final summary: reporting never
      under 14 days old) in the communities above where someone asks a question an article answers, each
      with a reply of 80–150 words that answers it fully on its own, with no link unless the community allows
      it. Commenting helpfully is what lets new-account posts survive Reddit's filters.
-   - **LinkedIn newsletter edition** (fortnightly; see "LinkedIn newsletter" below): in weeks where it is due,
+   - **LinkedIn newsletter edition** (weekly; see "LinkedIn newsletter" below): every week,
      link the edition page and paste its title, the post text and the SEO fields into the description.
    - **Two Quora answers**: the question (search Quora/Google for real, recent questions matching an
      article; give the URL), a full answer of 120–200 words that is useful on its own with the article's
@@ -101,12 +101,11 @@ reached, carry on with the task and say so in the final summary: reporting never
 
 ## LinkedIn newsletter (published by hand)
 
-"Truth with Data", on Vishal's personal LinkedIn profile, every other Monday at about 12:30 UK time, starting
-Mon 16 Nov 2026 (so 16 Nov, 30 Nov, 14 Dec ...: a Monday M is due when (M - 2026-11-16) is a multiple of
-14 days). LinkedIn's API cannot publish newsletter editions, so the poster never touches it; a calendar
+"Truth with Data", on Vishal's personal LinkedIn profile, every Monday at about 12:30 UK time, starting
+Mon 16 Nov 2026 (16 Nov, 23 Nov, 30 Nov ...; weekly since 12 Nov 2026, it was fortnightly before). LinkedIn's API cannot publish newsletter editions, so the poster never touches it; a calendar
 reminder prompts Vishal.
 
-When drafting the week that starts on a due Monday, also write `linkedin-newsletter/<monday>.html`:
+When drafting each week, also write `linkedin-newsletter/<monday>.html`:
 1. Base it on the Kit newsletter sent the Sunday before (it is in the previous week's queue file), expanded
    to 450-700 words for readers who have not seen the article: the question, what was done, three or four
    findings with bold lead-ins, what it means, the limits, then the link. Plain and specific, no emoji,
