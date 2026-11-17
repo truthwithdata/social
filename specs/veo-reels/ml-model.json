@@ -101,5 +101,19 @@
       "wav": "/home/claude/veo-clips/vo/t_ml4.wav",
       "at": 16.27
     }
-  ]
+  ],
+  "cover": {
+    "src": "/home/claude/veo-clips/ml-1.mp4",
+    "t": 1.0,
+    "lines": [
+      {
+        "text": "Which ML model"
+      },
+      {
+        "text": "should you use?",
+        "style": "accent"
+      }
+    ],
+    "sub": "Start here before you pick an algorithm"
+  }
 }
