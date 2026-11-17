@@ -22,7 +22,7 @@ Carousel charts (`blog/charts/…`), articles, `js/config.js` and `data/` are re
 | `posted.json` | Log of what has been posted or skipped (id, platform, time, link); written only by the poster |
 | `press/log.json` | Which articles have been pitched (the pitches and contacts are in the private control room) |
 | `topics/` | Monthly topic shortlists (`log.json`) |
-| `linkedin-newsletter/<monday>.html` | LinkedIn newsletter editions, published **by hand** from Vishal's profile every Monday; covers in `img/li-newsletter/` |
+| `linkedin-newsletter/<monday>.html` | LinkedIn newsletter editions, published **by hand** from Vishal's profile every other Monday; covers in `img/li-newsletter/` |
 | `scripts/` | `social_check.py` (validate, list due posts), `make_carousel.py`, `make_reel.py`, `make_logo_outro.py`, `make_li_newsletter.py` |
 
 Accounts: LinkedIn = Vishal's personal profile (`urn:li:person:QueTevIgLG`). Instagram = the
@@ -69,7 +69,12 @@ reached, carry on with the task and say so in the final summary: reporting never
      file), a `platform: "tiktok"` item at 08:00 the same day with the same `video`, `kind: "draft"`,
      a caption in `text` (2-4 sentences leading with the finding, "link in bio", 3-5 hashtags, at most
      2,200 characters) and `"is_aigc": true` when the footage is AI-generated. The poster puts it in the
-     TikTok inbox; Vishal adds a sound and posts it himself.
+     TikTok inbox; Vishal adds a sound and posts it himself. TikTok's API can't take a cover image and
+     uses the first frame, so the TikTok `video` is the `-tiktok.mp4` version that opens on the Reel's
+     cover for half a second (`make_veo_reel.py` writes it from a spec's "cover";
+     `make_veo_reel.py --tiktok-only COVER.jpg REEL.mp4` makes one for any other Reel).
+   - Reel covers: a designed 1080x1920 cover whose headline sits in the middle 3:4 area (y 240 to 1680),
+     because the Instagram profile grid crops Reels to 3:4; never a frame with the text near the top.
    - X: one thread on Wed 08:00.
    - Newsletter: Sun 08:00, `platform: "newsletter"`, one chart with three or four sentences, links to
      the week's articles, signed "Vishal". HTML in `text`, short `subject`.
@@ -98,7 +103,7 @@ reached, carry on with the task and say so in the final summary: reporting never
      under 14 days old) in the communities above where someone asks a question an article answers, each
      with a reply of 80–150 words that answers it fully on its own, with no link unless the community allows
      it. Commenting helpfully is what lets new-account posts survive Reddit's filters.
-   - **LinkedIn newsletter edition** (weekly; see "LinkedIn newsletter" below): every week,
+   - **LinkedIn newsletter edition** (fortnightly; see "LinkedIn newsletter" below): in weeks where it is due,
      link the edition page and paste its title, the post text and the SEO fields into the description.
    - **Two Quora answers**: the question (search Quora/Google for real, recent questions matching an
      article; give the URL), a full answer of 120–200 words that is useful on its own with the article's
@@ -106,11 +111,12 @@ reached, carry on with the task and say so in the final summary: reporting never
 
 ## LinkedIn newsletter (published by hand)
 
-"Truth with Data", on Vishal's personal LinkedIn profile, every Monday at about 12:30 UK time, starting
-Mon 16 Nov 2026 (16 Nov, 23 Nov, 30 Nov ...; weekly since 12 Nov 2026, it was fortnightly before). LinkedIn's API cannot publish newsletter editions, so the poster never touches it; a calendar
+"Truth with Data", on Vishal's personal LinkedIn profile, every other Monday at about 12:30 UK time, starting
+Mon 16 Nov 2026 (so 16 Nov, 30 Nov, 14 Dec ...: a Monday M is due when (M - 2026-11-16) is a multiple of
+14 days). LinkedIn's API cannot publish newsletter editions, so the poster never touches it; a calendar
 reminder prompts Vishal.
 
-When drafting each week, also write `linkedin-newsletter/<monday>.html`:
+When drafting the week that starts on a due Monday, also write `linkedin-newsletter/<monday>.html`:
 1. Base it on the Kit newsletter sent the Sunday before (it is in the previous week's queue file), expanded
    to 450-700 words for readers who have not seen the article: the question, what was done, three or four
    findings with bold lead-ins, what it means, the limits, then the link. Plain and specific, no emoji,
@@ -227,7 +233,8 @@ anything that reads like promotion, and a new account is filtered harder. So:
      `TIKTOK_PUBLISH_VIDEO` or upload with `publish` true. `ref` = the publish_id. Then create the control-room
      action `actions/tiktok-<item id>` {title: "Post the TikTok draft: <first line of text, 60 chars>",
      detail: "It's in your TikTok inbox (@truth.with.data). Add a sound at 10-20% volume, paste this caption,
-     turn on More options > AI-generated content if the item has is_aigc, and post around 19:00. Caption: <text>",
+     keep the first frame (the headline cover) as the cover, turn on More options > AI-generated content if the item has
+     is_aigc, and post around 19:00. Caption: <text>",
      due: today 19:00 UK time, kind: "TikTok", link: "https://www.tiktok.com/@truth.with.data",
      link_label: "Open TikTok", status: "open", source: "Post due social posts", created_at}.
    - **Newsletter**: if there is no active Kit connection, record it as skipped. Otherwise

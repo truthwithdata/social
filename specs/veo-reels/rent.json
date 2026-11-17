@@ -105,5 +105,19 @@
       "wav": "/home/claude/veo-clips/vo/t_rent4.wav",
       "at": 23.17
     }
-  ]
+  ],
+  "cover": {
+    "src": "/home/claude/veo-clips/rent-1.mp4",
+    "t": 3.0,
+    "lines": [
+      {
+        "text": "Is renting really"
+      },
+      {
+        "text": "'dead money'?",
+        "style": "accent"
+      }
+    ],
+    "sub": "We ran the numbers for every region"
+  }
 }

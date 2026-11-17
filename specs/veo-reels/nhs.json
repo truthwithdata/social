@@ -101,5 +101,19 @@
       "wav": "/home/claude/veo-clips/vo/t_bf_emma_nhs4.wav",
       "at": 18.4
     }
-  ]
+  ],
+  "cover": {
+    "src": "/home/claude/veo-clips/nhs-1.mp4",
+    "t": 6.0,
+    "lines": [
+      {
+        "text": "How long will you wait for"
+      },
+      {
+        "text": "NHS treatment?",
+        "style": "accent"
+      }
+    ],
+    "sub": "We checked waits at 117 NHS trusts"
+  }
 }
