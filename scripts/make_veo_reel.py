@@ -128,9 +128,10 @@ def tiktok_variant(cover, reel, out, hold=0.5, xf=0.25):
          "-f", "lavfi", "-t", str(hold + xf), "-i", "anullsrc=r=48000:cl=stereo", "-i", reel,
          "-filter_complex",
          f"[0:v]scale={W}:{H},fps={FPS},format=yuv420p,setsar=1[c];[2:v]fps={FPS},format=yuv420p,setsar=1[r];"
-         f"[c][r]xfade=transition=fade:duration={xf}:offset={hold}[v];"
+         f"[c][r]xfade=transition=fade:duration={xf}:offset={hold},format=yuv420p[v];"
          f"[1:a][2:a]acrossfade=d={xf}[a]",
-         "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-c:a", "aac",
+         "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+         "-pix_fmt", "yuv420p", "-profile:v", "high", "-c:a", "aac",
          "-b:a", "160k", "-ar", "48000", "-movflags", "+faststart", out])
 
 
