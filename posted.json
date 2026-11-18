@@ -213,6 +213,13 @@
       "platform": "tiktok",
       "at": "2026-11-18T07:57:50Z",
       "ref": "v_inbox_file~v2.7709416949360953346"
+    },
+    {
+      "id": "2026-11-18-x-langs",
+      "platform": "x",
+      "at": "2026-11-18T07:57:51Z",
+      "ref": null,
+      "skipped": "X not connected"
     }
   ]
 }
