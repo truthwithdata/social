@@ -1,0 +1,61 @@
+{
+ "out_dir": "img/2026-11-23/bf",
+ "prefix": "bf",
+ "source": "Source: PriceSpy UK price histories, 13 big UK retailers, May 2025&ndash;Nov 2026",
+ "slides": [
+  {
+   "type": "title",
+   "h1": "Are Black Friday deals real?",
+   "p": "We tracked daily prices for 33 popular products at 13 big UK retailers for 18 months.",
+   "kicker": "Swipe &rarr;"
+  },
+  {
+   "type": "stat",
+   "h2": "Products at their lowest price of the year on Black Friday 2025",
+   "big": "0 of 33",
+   "tone": "amber",
+   "p": "Every Black Friday price was matched or beaten within six months. 22 were beaten outright."
+  },
+  {
+   "type": "stat",
+   "h2": "But most were cheaper than usual",
+   "big": "29 of 33",
+   "p": "Typical saving: 10.9% (&pound;35) on the price they usually sold for.",
+   "small": "95% confidence interval: 73&ndash;95% of products"
+  },
+  {
+   "type": "list",
+   "h2": "Black Friday to Cyber Monday was the cheapest stretch in 18 months",
+   "items": [],
+   "p": "On average, prices were 14% below their usual level.",
+   "chart": "img/2026-11-23/bf/price-index.png"
+  },
+  {
+   "type": "list",
+   "h2": "What a &ldquo;deal&rdquo; usually is",
+   "items": [
+    "<b>30 of 33</b> had been at the same price or lower in the 6 months before",
+    "<b>Echo Dot</b>: the same &pound;29.99 in October, November and December",
+    "<b>5 of 33</b> rose 5%+ in October, then were &ldquo;cut&rdquo;",
+    "<b>4</b> had no saving at all, including AirPods Pro 2 and the Switch OLED"
+   ]
+  },
+  {
+   "type": "list",
+   "h2": "Check a deal in a minute",
+   "items": [
+    "Ignore the &ldquo;was&rdquo; price: look at the price history",
+    "Compare with the lowest price of the last 6 months",
+    "Watch for a rise in October or early November",
+    "Missed it? Mid-December came within 3&ndash;4 points of Cyber Monday"
+   ]
+  },
+  {
+   "type": "cta",
+   "h2": "Black Friday is 27 November",
+   "p": "Type in any product and price to see whether it&rsquo;s a real low.",
+   "cta": "Free deal checker: link in bio",
+   "small": "Amazon prices aren&rsquo;t in our data: PriceSpy UK doesn&rsquo;t track them."
+  }
+ ]
+}

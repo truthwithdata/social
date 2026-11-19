@@ -1,0 +1,87 @@
+{
+ "out_dir": "img/2026-11-23/cyber",
+ "prefix": "cyber",
+ "source": "Source: PriceSpy UK price histories, 13 big UK retailers, May 2025&ndash;Nov 2026",
+ "slides": [
+  {
+   "type": "title",
+   "h1": "Missed Black Friday? What last year&rsquo;s prices say",
+   "p": "33 popular products, 13 big UK retailers, daily prices for 18 months.",
+   "kicker": "Swipe &rarr;"
+  },
+  {
+   "type": "stat",
+   "h2": "Products at least 10% below their usual price on Cyber Monday 2025",
+   "big": "55%",
+   "p": "For most of the year that share was below 30%."
+  },
+  {
+   "type": "bars",
+   "h2": "Median Black Friday saving, by category",
+   "bars": [
+    {
+     "label": "Streaming and smart home",
+     "value": 42.9,
+     "text": "43%"
+    },
+    {
+     "label": "TVs",
+     "value": 11.7,
+     "text": "12%"
+    },
+    {
+     "label": "Tablets and laptops",
+     "value": 7.2,
+     "text": "7%"
+    },
+    {
+     "label": "Headphones",
+     "value": 3.9,
+     "text": "4%"
+    },
+    {
+     "label": "Gaming",
+     "value": 1.4,
+     "text": "1%"
+    }
+   ],
+   "highlight": 0,
+   "p": "Each category is only one to six products."
+  },
+  {
+   "type": "list",
+   "h2": "Biggest genuine discounts last year",
+   "items": [
+    "<b>Ring Battery Doorbell</b>: &pound;39, usually &pound;99",
+    "<b>Echo Dot</b>: &pound;29.99, usually &pound;54.99",
+    "<b>Fitbit Charge 6</b>: &pound;88, usually &pound;139",
+    "<b>Kindle Paperwhite</b>: &pound;125, usually about &pound;160"
+   ],
+   "p": "Amazon&rsquo;s own devices return to the same sale price several times a year."
+  },
+  {
+   "type": "list",
+   "h2": "No discount at all last year",
+   "items": [
+    "AirPods Pro 2",
+    "AirPods 4 with noise cancelling",
+    "Nintendo Switch OLED",
+    "Google TV Streamer"
+   ],
+   "p": "Their price hardly moves. There&rsquo;s no need to rush."
+  },
+  {
+   "type": "stat",
+   "h2": "Missed Cyber Monday too?",
+   "big": "3&ndash;4 points",
+   "p": "Before Christmas last year, prices were on average only 3&ndash;4 percentage points behind Cyber Monday."
+  },
+  {
+   "type": "cta",
+   "h2": "Is your deal a real low?",
+   "p": "Type in a product and its price, and compare it with its history.",
+   "cta": "Free deal checker: link in bio",
+   "small": "Amazon prices aren&rsquo;t in our data: PriceSpy UK doesn&rsquo;t track them."
+  }
+ ]
+}

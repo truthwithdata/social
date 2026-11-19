@@ -1,0 +1,210 @@
+{
+ "week": "2026-11-23",
+ "posts": [
+  {
+   "id": "2026-11-24-li-bf",
+   "date": "2026-11-24",
+   "time": "08:00",
+   "platform": "linkedin",
+   "text": "Black Friday is on Friday. Before you trust a \"deal\", it helps to know which kind it is.\n\nI rebuilt the daily best price of 33 popular products at 13 big UK retailers, from May 2025 to November 2026. Product by product, last year's Black Friday deals fell into four patterns:\n\n1. The real deal. Sony WH-1000XM5 headphones usually cost £249 to £279 and dropped to £199.99. Even that price came back for a few days in December.\n2. The recurring sale. The Echo Dot was £29.99 in October, back at £54.99 for five weeks, then £29.99 again for Black Friday and most of December. 45% off, but the same 45% as six weeks earlier.\n3. Cheaper in the summer. AirPods Pro 2 were £169 on Black Friday, their usual price that autumn, and £149 for weeks in June, August and September.\n4. No deal at all. The Nintendo Switch OLED was £299 at the big retailers almost all year, Black Friday included.\n\nThe \"raised, then cut\" trick is real but was rare: 5 of the 33 rose at least 5% in October and early November before being \"cut\". Even then, the Dyson Airwrap and the JBL Flip 6 both ended up below their usual price.\n\nAcross all 33, none was at its lowest price of the year on Black Friday, but 29 were cheaper than usual. The limits: 33 popular products is not everything on sale, it's one Black Friday, and Amazon's own prices aren't in the data.\n\nWhich of the four have you been caught by?\n\n#BlackFriday #DataAnalysis #ConsumerPricing",
+   "first_comment": "The full analysis, with the table for all 33 products and the Python and R code: https://truthwithdata.com/blog/are-black-friday-deals-real.html?utm_source=linkedin&utm_medium=social&utm_campaign=2026-11-24-li-bf\n\nA free checker for whether a price is a real low: https://truthwithdata.com/tools/black-friday-deal-checker.html?utm_source=linkedin&utm_medium=social&utm_campaign=2026-11-24-li-bf\n\n(The article has a few Amazon affiliate links; Amazon's prices aren't part of the analysis.)",
+   "images": [
+    "img/2026-11-23/li/bf-four-products.png"
+   ],
+   "note": "Repost from the Truth with Data page. Chart is Figure 3 of the article."
+  },
+  {
+   "id": "2026-11-24-ig-bf",
+   "date": "2026-11-24",
+   "time": "19:00",
+   "platform": "instagram",
+   "text": "Are Black Friday deals real? I tracked daily prices for 33 popular products at 13 big UK retailers for 18 months.\n\nNone was at its lowest price of the year on Black Friday 2025: every Black Friday price was matched or beaten within six months. But 29 of the 33 were cheaper than usual, typically by 10.9% (£35), and Black Friday to Cyber Monday was the cheapest stretch of the 18 months on average.\n\nSo both headlines are half right. Most \"deals\" are a sale price the product has had before. If you need it, Black Friday is a good time to buy. If you're only buying because of a countdown clock, you can usually wait.\n\nBlack Friday is Friday 27 November. The free deal checker is linked in our bio. Amazon prices aren't in the data, because PriceSpy UK doesn't track them.\n\n#BlackFriday #BlackFridayUK #MoneySavingTips #PriceTracking #truthwithdata",
+   "images": [
+    "img/2026-11-23/bf/bf-1.png",
+    "img/2026-11-23/bf/bf-2.png",
+    "img/2026-11-23/bf/bf-3.png",
+    "img/2026-11-23/bf/bf-4.png",
+    "img/2026-11-23/bf/bf-5.png",
+    "img/2026-11-23/bf/bf-6.png",
+    "img/2026-11-23/bf/bf-7.png"
+   ]
+  },
+  {
+   "id": "2026-11-24-igs-bf",
+   "date": "2026-11-24",
+   "time": "19:00",
+   "platform": "instagram",
+   "kind": "story",
+   "images": [
+    "img/2026-11-23/story/bf-story.jpg"
+   ],
+   "note": "Story from slide 1. Add a link sticker to the deal checker by hand if you like."
+  },
+  {
+   "id": "2026-11-24-rd-dataanalysis-bf",
+   "date": "2026-11-24",
+   "time": "19:00",
+   "platform": "reddit",
+   "subreddit": "dataanalysis",
+   "kind": "self",
+   "title": "Are Black Friday deals real? Two definitions of a \"real deal\" give opposite answers on the same price data (33 products, 13 UK retailers, 18 months)",
+   "text": "Every November two kinds of headline run side by side: Black Friday deals are fake, and Black Friday is the cheapest time to buy. Both come from serious price trackers, so I rebuilt the data myself to see why they disagree.\n\n**Data.** The daily best price at 13 big UK retailers (Argos, Currys, John Lewis, AO, Very and others) for 42 popular products, May 2025 to November 2026, rebuilt from PriceSpy UK price histories. I kept products a big retailer sold during Black Friday week with at least 60 days of prices on each side: 33 of 42. \"Usual price\" is the median daily price over the six months either side, not the \"was\" price on the label. Prices below half the typical listed price were dropped as listing errors (a \"Galaxy Tab S10 FE\" at £50 turned out to be an accessory).\n\n**Definition 1: was Black Friday the lowest price of the year?** 0 of 33 (95% CI 0 to 10%). Every Black Friday price was matched or beaten within six months, and 22 of the 33 were beaten outright.\n\n**Definition 2: was it below the usual price?** 29 of 33 (88%, 95% CI 73 to 95%). Median saving 10.9% (mean 14.4%). Averaged across the basket, Black Friday to Cyber Monday was the cheapest point of the 18 months, about 14% below usual.\n\nSo the two headlines don't contradict each other. One asks about the minimum of a noisy series, the other about its median. With several sales a year, the 12-month minimum almost always matches or beats any single sale.\n\n**Limits.** 33 chosen products, not a random sample. One Black Friday. No Amazon prices, because PriceSpy UK doesn't track Amazon.co.uk. Price only: no bundles or loyalty prices. Sold-out days are gaps, so a flash sale that sold out in hours can be missing.\n\nI ran every number twice, in Python and base R, and they match. Write-up with the data and code: https://truthwithdata.com/blog/are-black-friday-deals-real.html\n\nA question for anyone who works with price data: how would you define \"usual price\" here? I used the 12-month median to avoid inflated \"was\" prices, but products that sit on one long sale price behave oddly under it. Would a mode or a trimmed mean be better?",
+   "note": "r/dataanalysis rules (checked 19 Nov): no career questions, no social-media links or URL shorteners, no spam; nothing against linking your own write-up. No flair required. Text post: Reddit filtered the account's image posts in r/dataisbeautiful and its self post in r/CRO, so this one has a single link at the end."
+  },
+  {
+   "id": "2026-11-25-tt-bf",
+   "date": "2026-11-25",
+   "time": "08:00",
+   "platform": "tiktok",
+   "kind": "draft",
+   "video": "img/2026-11-23/reel/bf-reel-tiktok.mp4",
+   "is_aigc": false,
+   "text": "Are Black Friday deals real? I tracked daily prices for 33 popular products at 13 big UK retailers for 18 months. None was at its lowest price of the year on Black Friday 2025, but 29 of 33 were cheaper than usual, typically by 11%. Free deal checker: link in bio. #BlackFriday #BlackFridayUK #MoneyTips #DataAnalysis",
+   "note": "TikTok inbox draft of Wednesday's Instagram Reel (carousel slides, not AI footage). The -tiktok.mp4 opens on the cover for 0.5 s. Add a sound and post it yourself."
+  },
+  {
+   "id": "2026-11-25-li-nhs",
+   "date": "2026-11-25",
+   "time": "08:00",
+   "platform": "linkedin",
+   "text": "If your GP refers you for a hip or knee operation in England, how long you wait depends a lot on which hospital you're sent to.\n\nI worked through NHS England's August 2026 figures for every hospital trust and specialty. In trauma and orthopaedics, the median wait of people still on the list ranges from 7.4 weeks at East Lancashire Hospitals to 30.8 weeks at Mid and South Essex. Across England's 117 large trusts, all specialties together, it runs from 7.7 to 17.8 weeks.\n\nSome of that gap isn't about capacity. Specialist hospitals take harder cases from wide areas, trusts that check their lists often look better, and one month's figures can move a few weeks either way. So a short wait is a reason to ask about a hospital, not proof it's better.\n\nIt still matters, because for most planned care in England you have a legal right to choose which provider you're referred to, including independent-sector providers that treat NHS patients at no cost to you.\n\nThe national picture: a median wait so far of 12.2 weeks, 1 in 12 people waiting 38.8 weeks or more, and at recent pace the 18-week standard returns somewhere around 2032 to 2035, not by March 2029.\n\nWhen you were last referred, were you offered a choice of hospital?\n\n#NHS #HealthData #DataAnalysis",
+   "first_comment": "The full analysis, with the method and the Python and R code: https://truthwithdata.com/blog/how-long-will-i-wait-for-nhs-treatment.html?utm_source=linkedin&utm_medium=social&utm_campaign=2026-11-25-li-nhs\n\nCheck the waits at any trust and specialty: https://truthwithdata.com/tools/nhs-waiting-time-lookup.html?utm_source=linkedin&utm_medium=social&utm_campaign=2026-11-25-li-nhs",
+   "images": [
+    "img/2026-11-23/li/nhs-trusts.png"
+   ],
+   "note": "Repost from the Truth with Data page. Chart is Figure 3 of the NHS article."
+  },
+  {
+   "id": "2026-11-25-x-bf",
+   "date": "2026-11-25",
+   "time": "08:00",
+   "platform": "x",
+   "thread": [
+    "Are Black Friday deals real? I rebuilt the daily best price of 33 popular products at 13 big UK retailers, May 2025 to Nov 2026. Thread.",
+    "None of the 33 was at its lowest price of the year on Black Friday 2025. Every Black Friday price was matched or beaten within six months; 22 were beaten outright.",
+    "But they weren't fake. 29 of 33 were below their usual price (the 12-month median, not the \"was\" price): median saving 10.9%, or £35. As a basket, Black Friday to Cyber Monday was the cheapest stretch in 18 months, 14% below usual.",
+    "Most deals were a repeat: 30 of 33 had been at the same price or lower in the 6 months before. \"Raised, then cut\" happened to 5 of 33. Four had no discount at all, including AirPods Pro 2 and the Switch OLED.",
+    "Missed it? Mid-December came within 3-4 percentage points of Cyber Monday last year. Limits: 33 products, one Black Friday, and no Amazon prices (PriceSpy UK doesn't track them).",
+    "Data, Python and R code, and a one-minute deal checker: https://truthwithdata.com/blog/are-black-friday-deals-real.html?utm_source=x&utm_medium=social&utm_campaign=2026-11-25-x-bf"
+   ],
+   "images": [
+    "img/2026-11-23/bf/price-index.png"
+   ],
+   "note": "Skipped automatically until X is connected. Chart drawn by analysis/bf_price_index_chart.py from the article's published CSV."
+  },
+  {
+   "id": "2026-11-25-igr-bf",
+   "date": "2026-11-25",
+   "time": "19:00",
+   "platform": "instagram",
+   "kind": "reel",
+   "video": "img/2026-11-23/reel/bf-reel.mp4",
+   "cover": "img/2026-11-23/reel/bf-reel-cover.jpg",
+   "text": "Are Black Friday deals real? None of the 33 popular products we tracked was at its lowest price of the year on Black Friday 2025, but 29 were cheaper than usual, typically by 11%.\n\nBlack Friday is 27 November. Free deal checker: link in bio.\n\n#BlackFriday #BlackFridayUK #MoneySavingTips #PriceTracking #truthwithdata",
+   "note": "22 s: the seven carousel slides plus the logo outro (make_reel.py). Silent via the API; if you post by hand instead, add trending audio."
+  },
+  {
+   "id": "2026-11-26-li-bf-check",
+   "date": "2026-11-26",
+   "time": "08:00",
+   "platform": "linkedin",
+   "text": "Black Friday is tomorrow. This is the one-minute check I'll use, based on 18 months of daily prices for 33 popular products at 13 big UK retailers.\n\n1. Ignore the \"was\" price. Look at the price history (PriceSpy, PriceRunner, or CamelCamelCamel for Amazon) and ask what it has cost for most of the last six months.\n2. Compare with the lowest price of the last six months. Last year 30 of the 33 had already been at their Black Friday price or lower in the six months before. Matching that low is a good price, not a rare one.\n3. Watch for a recent rise. 5 of the 33 went up at least 5% in October and early November before being \"cut\".\n4. Don't rush on products that barely move. AirPods Pro 2, AirPods 4 with noise cancelling, the Switch OLED and the Google TV Streamer had no Black Friday discount at the big retailers.\n5. If you miss it, don't panic. In the run-up to Christmas, prices were on average only 3 to 4 percentage points behind Cyber Monday.\n\nThe chart shows why the answer isn't \"skip Black Friday\": averaged across the basket, Black Friday to Cyber Monday was the cheapest stretch of the 18 months, about 14% below usual. It just wasn't the lowest price of the year for any single product.\n\nI've also built a free checker: put in a product and a price and it shows how that compares with its history. Link in the first comment.\n\n#BlackFriday #ConsumerData #DataAnalysis",
+   "first_comment": "Black Friday deal checker: https://truthwithdata.com/tools/black-friday-deal-checker.html?utm_source=linkedin&utm_medium=social&utm_campaign=2026-11-26-li-bf-check\n\nThe analysis behind it, with all 33 products: https://truthwithdata.com/blog/are-black-friday-deals-real.html?utm_source=linkedin&utm_medium=social&utm_campaign=2026-11-26-li-bf-check\n\n(The article has a few Amazon affiliate links; Amazon's prices aren't part of the analysis.)",
+   "images": [
+    "img/2026-11-23/bf/price-index.png"
+   ],
+   "note": "Repost from the Truth with Data page. Chart drawn by analysis/bf_price_index_chart.py from the article's published CSV."
+  },
+  {
+   "id": "2026-11-26-ig-nhs",
+   "date": "2026-11-26",
+   "time": "19:00",
+   "platform": "instagram",
+   "text": "How long will you wait for NHS treatment in England? Half the people on the list have waited less than 12.2 weeks so far, and 1 in 12 have waited 38.8 weeks or more (NHS England, August 2026).\n\nIf you're admitted for an operation, it depends on the specialty: about 23 to 25 weeks for orthopaedics, ENT and oral surgery, 12.4 weeks for ophthalmology. And it depends on the hospital: across 117 large NHS trusts the median wait runs from 7.7 to 17.8 weeks, though case mix explains part of that.\n\nFor most planned care you have a legal right to choose your provider. Our free lookup shows the waits at every trust and specialty: link in bio.\n\n#NHS #NHSWaitingList #HealthData #UKHealth #truthwithdata",
+   "images": [
+    "img/2026-11-23/nhs/nhs-1.png",
+    "img/2026-11-23/nhs/nhs-2.png",
+    "img/2026-11-23/nhs/nhs-3.png",
+    "img/2026-11-23/nhs/nhs-4.png",
+    "img/2026-11-23/nhs/nhs-5.png",
+    "img/2026-11-23/nhs/nhs-6.png",
+    "img/2026-11-23/nhs/nhs-7.png"
+   ]
+  },
+  {
+   "id": "2026-11-26-igs-nhs",
+   "date": "2026-11-26",
+   "time": "19:00",
+   "platform": "instagram",
+   "kind": "story",
+   "images": [
+    "img/2026-11-23/story/nhs-story.jpg"
+   ],
+   "note": "Story from slide 1. Add a link sticker to the NHS lookup by hand if you like."
+  },
+  {
+   "id": "2026-11-26-rd-dataviz-bf",
+   "date": "2026-11-26",
+   "time": "19:00",
+   "platform": "reddit",
+   "subreddit": "datavisualization",
+   "kind": "image",
+   "flair": "OC",
+   "title": "[OC] Two panels for one question: was Black Friday 2025 the cheapest time to buy? Average price vs share of products 10%+ off, 33 products at 13 UK retailers",
+   "images": [
+    "img/reddit/black-friday-price-index-2025-2026.png"
+   ],
+   "first_comment": "The left panel says that on average Black Friday week really was the cheapest time of the year: about 14% below each product's usual price around Cyber Monday 2025, the lowest point in 18 months. The right panel says that even then only about half the products were at least 10% off (55% on 1 December 2025; below 30% for most of the year). Either panel alone tells half the story, so I put them side by side.\n\nDesign questions I'd value views on:\n\n- Would you merge these into one chart (say a line with a second axis or a shaded band), or does two panels with matching x-axes work?\n- Is the shaded Black Friday window and the dashed \"usual price\" line clear enough without a legend?\n\nData: daily best price at 13 big UK retailers (Argos, Currys, John Lewis, AO, Very and others), plotted every third day, June 2025 to November 2026, rebuilt from PriceSpy UK price histories. \"Usual price\" is each product's median daily price over 12 months. Amazon isn't included. Tools: Python (pandas, matplotlib).\n\nWrite-up with the data and code: https://truthwithdata.com/blog/are-black-friday-deals-real.html",
+   "note": "Asks for design feedback (r/datavisualization is about craft). Last post here was 15 Nov, so 11 days apart."
+  },
+  {
+   "id": "2026-11-28-ig-cyber",
+   "date": "2026-11-28",
+   "time": "19:00",
+   "platform": "instagram",
+   "text": "Missed Black Friday? Here's what last year's prices say about the next few weeks.\n\nOn Cyber Monday 2025, 55% of the 33 products we tracked were at least 10% below their usual price; for most of the year that share was below 30%. And if you miss Cyber Monday too, prices in the run-up to Christmas were on average only 3 to 4 percentage points behind it.\n\nSavings varied a lot by category: a median 43% off for streaming and smart-home devices (Amazon's own, which return to the same sale price several times a year), 1% for gaming. Each category is only one to six products, so treat those as rough.\n\nFree deal checker: link in bio.\n\n#CyberMonday #BlackFridayUK #MoneySavingTips #PriceTracking #truthwithdata",
+   "images": [
+    "img/2026-11-23/cyber/cyber-1.png",
+    "img/2026-11-23/cyber/cyber-2.png",
+    "img/2026-11-23/cyber/cyber-3.png",
+    "img/2026-11-23/cyber/cyber-4.png",
+    "img/2026-11-23/cyber/cyber-5.png",
+    "img/2026-11-23/cyber/cyber-6.png",
+    "img/2026-11-23/cyber/cyber-7.png"
+   ]
+  },
+  {
+   "id": "2026-11-28-igs-cyber",
+   "date": "2026-11-28",
+   "time": "19:00",
+   "platform": "instagram",
+   "kind": "story",
+   "images": [
+    "img/2026-11-23/story/cyber-story.jpg"
+   ],
+   "note": "Story from slide 1."
+  },
+  {
+   "id": "2026-11-28-rd-datasets-nhs",
+   "date": "2026-11-28",
+   "time": "19:00",
+   "platform": "reddit",
+   "subreddit": "datasets",
+   "kind": "self",
+   "flair": "dataset",
+   "title": "[self-promotion] NHS England waiting times for every provider and specialty, August 2026: 4,037 rows with medians, 92nd percentiles and admitted waits (CSV, CC BY 4.0)",
+   "text": "Disclosure: I run Truth with Data, the site hosting the cleaned files. They're free, no sign-up.\n\n**Original source.** NHS England's Consultant-led Referral to Treatment (RTT) waiting times, full CSV extract for August 2026 (published 8 October 2026, Open Government Licence): https://www.england.nhs.uk/statistics/statistical-work-areas/rtt-waiting-times/rtt-data-2026-27/\n\nThe raw extract is 177,770 rows: pathway counts in one-week bands (0-1 weeks up to 104+) for each provider x commissioner x specialty. It's awkward to use if you just want \"what's the median wait at this hospital for this specialty?\".\n\n**What I built from it.** I summed across commissioners to get one row per provider x specialty (532 providers: 145 NHS trusts and 387 independent-sector providers, 4,037 rows). Columns: number waiting, median and 92nd-percentile weeks (interpolated within bands, as NHS England does), % within 18 weeks, over 52 weeks, admitted and non-admitted completions with their medians, sector and ICB. No median where fewer than 50 people are waiting.\n\nChecks: summed across providers I get 7,189,213 pathways, a 12.2-week median, a 38.8-week 92nd percentile and 65.2% within 18 weeks; NHS England's own figures are 12.2, 38.8 and 65.2% on a total of 7,158,164 (the 0.4% gap comes from summing by provider rather than commissioner). A separate R script rebuilt every provider from the raw file and matches to within 0.005 weeks.\n\nAlso in the same release: the national monthly series from August 2007, a by-specialty table, and the Python and R code. All CSVs, CC BY 4.0, with the source data under the OGL. Files and method: https://truthwithdata.com/blog/how-long-will-i-wait-for-nhs-treatment.html#downloads\n\nIf you've worked with the RTT data before: is there a better way than band interpolation to estimate percentiles from the weekly bands? I followed NHS England's method, but the 104+ band makes the top tail rough.",
+   "note": "r/datasets rules (checked 19 Nov): own site allowed with a [self-promotion] label and disclosure, link the original source, self text required, flair required ('dataset'). r/nhs was checked and skipped: it bans submitting your own article."
+  },
+  {
+   "id": "2026-11-29-nl-bf",
+   "date": "2026-11-29",
+   "time": "08:00",
+   "platform": "newsletter",
+   "subject": "Cyber Monday tomorrow: is the deal real? (one chart)",
+   "text": "<p>Hi,</p>\n<h2>This week: are Black Friday deals real?</h2>\n<p><img src=\"https://truthwithdata.github.io/social/img/2026-11-23/bf/bf-4.png\" alt=\"Black Friday to Cyber Monday 2025 was the cheapest stretch in 18 months\" width=\"540\" style=\"max-width:100%;height:auto\"></p>\n<p>I tracked the daily best price of 33 popular products at 13 big UK retailers for 18 months. None was at its lowest price of the year on Black Friday 2025: every Black Friday price was matched or beaten within six months.</p>\n<p>But the deals weren't fake. 29 of the 33 were cheaper than usual, typically by 10.9%, and averaged across the basket, Black Friday to Cyber Monday was the cheapest stretch of the 18 months, about 14% below usual. Cyber Monday is tomorrow. If you miss it, prices before Christmas last year were only 3 to 4 percentage points behind.</p>\n<p><a href=\"https://truthwithdata.com/blog/are-black-friday-deals-real.html?utm_source=newsletter&utm_medium=email&utm_campaign=2026-11-29-nl-bf\">Read the analysis</a> or <a href=\"https://truthwithdata.com/tools/black-friday-deal-checker.html?utm_source=newsletter&utm_medium=email&utm_campaign=2026-11-29-nl-bf\">check whether a price is a real low</a>. Also new this month: <a href=\"https://truthwithdata.com/blog/how-long-will-i-wait-for-nhs-treatment.html?utm_source=newsletter&utm_medium=email&utm_campaign=2026-11-29-nl-bf\">how long you'll actually wait for NHS treatment</a>.</p>\n<p>The Black Friday article has a few Amazon affiliate links; Amazon's prices aren't part of the analysis.</p>\n<p>Vishal</p>",
+   "images": [],
+   "note": "Sent via Kit at 08:00 Sunday. Skipped if Kit isn't connected."
+  }
+ ]
+}
