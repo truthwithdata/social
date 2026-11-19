@@ -22,7 +22,7 @@ Carousel charts (`blog/charts/…`), articles, `js/config.js` and `data/` are re
 | `posted.json` | Log of what has been posted or skipped (id, platform, time, link); written only by the poster |
 | `press/log.json` | Which articles have been pitched (the pitches and contacts are in the private control room) |
 | `topics/` | Monthly topic shortlists (`log.json`) |
-| `linkedin-newsletter/<monday>.html` | LinkedIn newsletter editions, published **by hand** from Vishal's profile every Monday; covers in `img/li-newsletter/` |
+| `linkedin-newsletter/<thursday>.html` | LinkedIn newsletter editions, published **by hand** from Vishal's profile every Thursday at 06:30; covers in `img/li-newsletter/` |
 | `scripts/` | `social_check.py` (validate, list due posts), `make_carousel.py`, `make_reel.py`, `make_logo_outro.py`, `make_li_newsletter.py` |
 
 Accounts: LinkedIn = Vishal's personal profile (`urn:li:person:QueTevIgLG`). Instagram = the
@@ -104,20 +104,24 @@ reached, carry on with the task and say so in the final summary: reporting never
      with a reply of 80–150 words that answers it fully on its own, with no link unless the community allows
      it. Commenting helpfully is what lets new-account posts survive Reddit's filters.
    - **LinkedIn newsletter edition** (weekly; see "LinkedIn newsletter" below): every week,
-     link the edition page and paste its title, the post text and the SEO fields into the description.
+     link the edition page (for that week's Thursday) and paste its title, the post text and the SEO fields into the description.
    - **Two Quora answers**: the question (search Quora/Google for real, recent questions matching an
      article; give the URL), a full answer of 120–200 words that is useful on its own with the article's
      numbers, and one closing line linking to the article.
 
 ## LinkedIn newsletter (published by hand)
 
-"Truth with Data", on Vishal's personal LinkedIn profile, every Monday at about 12:30 UK time, starting
-Mon 16 Nov 2026 (16 Nov, 23 Nov, 30 Nov ...; weekly since 12 Nov 2026, it was fortnightly before). LinkedIn's API cannot publish newsletter editions, so the poster never touches it; a calendar
-reminder prompts Vishal.
+"Truth with Data", on Vishal's personal LinkedIn profile, **every Thursday at 06:30 UK time**. Edition 1 went
+out on Mon 16 Nov 2026; from edition 2 (Thu 19 Nov 2026) it is weekly on Thursdays (26 Nov, 3 Dec ...).
+LinkedIn's API cannot publish newsletter editions, so the poster never touches it; a calendar reminder
+prompts Vishal.
 
-When drafting each week, also write `linkedin-newsletter/<monday>.html`:
-1. Base it on the Kit newsletter sent the Sunday before (it is in the previous week's queue file), expanded
-   to 450-700 words for readers who have not seen the article: the question, what was done, three or four
+When drafting the week that starts on Monday M, also write `linkedin-newsletter/<thursday>.html` for that
+week's Thursday (M + 3 days), unless it already exists on main:
+1. Base it on the Kit newsletter sent the Sunday before that Thursday (it is in the previous week's queue
+   file). If that topic has already had an edition (check `linkedin-newsletter/`), use the newest
+   published article or case study that has not. Expand it to 450-700 words for readers who have not seen
+   the article: the question, what was done, three or four
    findings with bold lead-ins, what it means, the limits, then the link. Plain and specific, no emoji,
    no hype. The same number rule as every post: each figure must appear in the published article or case
    study, and keep its uncertainty. Do not paste the whole article: LinkedIn editions must stay a summary
@@ -125,14 +129,15 @@ When drafting each week, also write `linkedin-newsletter/<monday>.html`:
 2. Copy the layout of the latest edition file: a grey "How to publish" box (title, cover, SEO title under
    60 characters, SEO description under 160, the short post text that goes out with the edition) and the
    dashed "Copy from here" box with the body as HTML (h2, p, strong, a), which keeps its formatting when
-   pasted into LinkedIn's editor. Number the edition in the cover date line.
-3. Links carry `?utm_source=linkedin&utm_medium=newsletter&utm_campaign=li-nl-<monday>`. End with the Kit
+   pasted into LinkedIn's editor. Number the edition (count the files in `linkedin-newsletter/`) in the
+   cover date line.
+3. Links carry `?utm_source=linkedin&utm_medium=newsletter&utm_campaign=li-nl-<thursday>`. End with the Kit
    sign-up (`https://truthwithdata.com/?<utm>#nl-title`), then the Calendly link if the topic suits a
    service, then "Vishal".
-4. Cover: `python3 scripts/make_li_newsletter.py cover img/li-newsletter/<monday>-cover.png --title "<question,
-   under 60 characters>" --date "Edition <n> · <d Month yyyy>" --image <the Kit email's chart slide>`.
-   Look at it before committing.
-5. The edition page is served at `https://truthwithdata.github.io/social/linkedin-newsletter/<monday>.html`
+4. Cover: `python3 scripts/make_li_newsletter.py cover img/li-newsletter/<thursday>-cover.png --title "<question,
+   under 60 characters>" --date "Edition <n> · <d Month yyyy>" --image <the Kit email's chart slide, or a
+   1080x1350 render of the article's chart>`. Look at it before committing.
+5. The edition page is served at `https://truthwithdata.github.io/social/linkedin-newsletter/<thursday>.html`
    once the PR is merged; put that link at the top of the PR's LinkedIn newsletter section.
 
 ## Reddit
