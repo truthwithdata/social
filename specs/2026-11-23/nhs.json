@@ -1,0 +1,85 @@
+{
+ "out_dir": "img/2026-11-23/nhs",
+ "prefix": "nhs",
+ "source": "Source: NHS England referral-to-treatment waiting times, August 2026",
+ "slides": [
+  {
+   "type": "title",
+   "h1": "How long will you wait for NHS treatment?",
+   "p": "NHS England&rsquo;s own figures for every hospital trust and specialty, August 2026.",
+   "kicker": "Swipe &rarr;"
+  },
+  {
+   "type": "stat",
+   "h2": "Typical wait so far for people on England&rsquo;s list",
+   "big": "12.2 weeks",
+   "p": "1 in 12 have already waited 38.8 weeks or more.",
+   "small": "Median and 92nd percentile of people still waiting"
+  },
+  {
+   "type": "bars",
+   "h2": "Median wait if you were admitted for treatment",
+   "bars": [
+    {
+     "label": "Ear, nose and throat",
+     "value": 24.9,
+     "text": "24.9 wks"
+    },
+    {
+     "label": "Oral surgery",
+     "value": 24.5,
+     "text": "24.5 wks"
+    },
+    {
+     "label": "Trauma and orthopaedics",
+     "value": 23.3,
+     "text": "23.3 wks"
+    },
+    {
+     "label": "All specialties",
+     "value": 13.0,
+     "text": "13.0 wks"
+    },
+    {
+     "label": "Ophthalmology (incl. cataracts)",
+     "value": 12.4,
+     "text": "12.4 wks"
+    }
+   ],
+   "highlight": 3,
+   "p": "Hip and knee replacements come under orthopaedics."
+  },
+  {
+   "type": "stat",
+   "h2": "Where you are treated matters as much as what for",
+   "big": "7.7&ndash;17.8",
+   "p": "weeks: the median wait across England&rsquo;s 117 large NHS trusts, all specialties.",
+   "small": "Some of the gap is case mix and how lists are counted."
+  },
+  {
+   "type": "list",
+   "h2": "The list in numbers",
+   "items": [
+    "<b>7.37m</b> pathways: about <b>6.24m</b> people",
+    "<b>61%</b> longer than in February 2020",
+    "<b>65.2%</b> wait under 18 weeks; the standard is 92%",
+    "<b>113,339</b> waiting over a year (1,468 in Aug 2019)"
+   ]
+  },
+  {
+   "type": "stat",
+   "h2": "When could the 18-week standard return?",
+   "big": "2032&ndash;2035",
+   "tone": "amber",
+   "p": "At recent pace. The target is March 2029, which needs progress two to three times faster.",
+   "small": "Straight-line projections, not forecasts"
+  },
+  {
+   "type": "cta",
+   "h2": "Check your hospital",
+   "p": "Pick a trust and a specialty to see its waits and the shortest waits nearby.",
+   "cta": "Free lookup: link in bio",
+   "small": "For most planned care you have a legal right to choose your provider. Ask your GP."
+  }
+ ]
+}
