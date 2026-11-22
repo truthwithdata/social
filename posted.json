@@ -274,6 +274,13 @@
       "platform": "instagram",
       "at": "2026-11-21T18:59:00Z",
       "ref": "https://www.instagram.com/stories/truthwithdata/18001413282022826"
+    },
+    {
+      "id": "2026-11-22-nl-langs",
+      "platform": "newsletter",
+      "at": "2026-11-22T18:57:00Z",
+      "ref": "",
+      "skipped": "Kit not connected"
     }
   ]
 }
