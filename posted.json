@@ -281,6 +281,12 @@
       "at": "2026-11-22T18:57:00Z",
       "ref": "",
       "skipped": "Kit not connected"
+    },
+    {
+      "id": "2026-11-23-tt-ai-jobs",
+      "platform": "tiktok",
+      "at": "2026-11-23T07:57:30Z",
+      "ref": "v_inbox_file~v2.7711272558896646166"
     }
   ]
 }
