@@ -1,0 +1,180 @@
+{
+  "out": "img/2026-11-23/reel/black-friday-reel.mp4",
+  "clips": [
+    {
+      "src": "/home/claude/veo-clips2/raw/bf-1.mp4",
+      "start": 0,
+      "end": 10.0
+    },
+    {
+      "src": "/home/claude/veo-clips2/raw/bf-2.mp4",
+      "start": 0,
+      "end": 10.0
+    },
+    {
+      "src": "/home/claude/veo-clips2/raw/bf-3.mp4",
+      "start": 0,
+      "end": 10.0
+    },
+    {
+      "src": "/home/claude/veo-clips2/raw/bf-4.mp4",
+      "start": 0,
+      "end": 10.0
+    },
+    {
+      "src": "/home/claude/veo-clips2/raw/bf-5.mp4",
+      "start": 0,
+      "end": 10.0
+    },
+    {
+      "src": "/home/claude/veo-clips2/raw/bf-6.mp4",
+      "start": 0,
+      "end": 10.0
+    }
+  ],
+  "xfade": 0.3,
+  "outro": "img/brand/logo-outro-1080x1920.mp4",
+  "delogo": [
+    570,
+    1128,
+    60,
+    64
+  ],
+  "ambient": 0.25,
+  "cards": [
+    {
+      "t0": 0.3,
+      "t1": 9.9,
+      "lines": [
+        {
+          "text": "Are Black Friday deals"
+        },
+        {
+          "text": "actually real?",
+          "style": "accent"
+        },
+        {
+          "text": "33 products, 13 big UK retailers, tracked for a year",
+          "style": "small"
+        }
+      ]
+    },
+    {
+      "t0": 10.0,
+      "t1": 19.6,
+      "lines": [
+        {
+          "text": "On Black Friday 2025"
+        },
+        {
+          "text": "0 of 33 hit their lowest price",
+          "style": "accent"
+        },
+        {
+          "text": "Every price was matched or beaten within 6 months",
+          "style": "small"
+        }
+      ]
+    },
+    {
+      "t0": 19.7,
+      "t1": 29.3,
+      "lines": [
+        {
+          "text": "29 of 33 were cheaper than usual"
+        },
+        {
+          "text": "typically 11% off, or £35",
+          "style": "accent"
+        }
+      ]
+    },
+    {
+      "t0": 29.4,
+      "t1": 39.0,
+      "lines": [
+        {
+          "text": "Check the 'was' price"
+        },
+        {
+          "text": "Some prices rose in October",
+          "style": "accent"
+        },
+        {
+          "text": "A big % off can just mean back to the usual price",
+          "style": "small"
+        }
+      ]
+    },
+    {
+      "t0": 39.1,
+      "t1": 48.7,
+      "lines": [
+        {
+          "text": "Cheapest stretch on average:"
+        },
+        {
+          "text": "Black Friday to Cyber Monday",
+          "style": "accent"
+        },
+        {
+          "text": "About 14% below the usual price",
+          "style": "small"
+        }
+      ]
+    },
+    {
+      "t0": 48.8,
+      "t1": 58.45,
+      "lines": [
+        {
+          "text": "Check a deal before you buy"
+        },
+        {
+          "text": "Free deal checker: link in bio",
+          "style": "accent"
+        }
+      ]
+    }
+  ],
+  "voice": [
+    {
+      "wav": "/home/claude/veo-clips2/vo/t_bf1.wav",
+      "at": 0.4
+    },
+    {
+      "wav": "/home/claude/veo-clips2/vo/t_bf2.wav",
+      "at": 10.1
+    },
+    {
+      "wav": "/home/claude/veo-clips2/vo/t_bf3.wav",
+      "at": 19.8
+    },
+    {
+      "wav": "/home/claude/veo-clips2/vo/t_bf4.wav",
+      "at": 29.5
+    },
+    {
+      "wav": "/home/claude/veo-clips2/vo/t_bf5.wav",
+      "at": 39.2
+    },
+    {
+      "wav": "/home/claude/veo-clips2/vo/t_bf6.wav",
+      "at": 48.9
+    }
+  ],
+  "cover": {
+    "src": "/home/claude/veo-clips2/raw/bf-1.mp4",
+    "t": 2.0,
+    "lines": [
+      {
+        "text": "Are Black Friday deals"
+      },
+      {
+        "text": "actually real?",
+        "style": "accent"
+      }
+    ],
+    "sub": "We tracked 33 products for a year"
+  }
+}
