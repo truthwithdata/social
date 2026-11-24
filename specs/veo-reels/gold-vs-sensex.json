@@ -1,0 +1,188 @@
+{
+  "out": "img/2026-11-30/reel/gold-vs-sensex-reel.mp4",
+  "clips": [
+    {
+      "src": "/home/claude/veo-clips2/raw/gold-1.mp4",
+      "start": 0,
+      "end": 10.0
+    },
+    {
+      "src": "/home/claude/veo-clips2/raw/gold-2.mp4",
+      "start": 0,
+      "end": 10.0
+    },
+    {
+      "src": "/home/claude/veo-clips2/raw/gold-3.mp4",
+      "start": 0,
+      "end": 10.0
+    },
+    {
+      "src": "/home/claude/veo-clips2/raw/gold-4.mp4",
+      "start": 0,
+      "end": 10.0
+    },
+    {
+      "src": "/home/claude/veo-clips2/raw/gold-5.mp4",
+      "start": 0,
+      "end": 10.0
+    },
+    {
+      "src": "/home/claude/veo-clips2/raw/gold-6.mp4",
+      "start": 0,
+      "end": 10.0
+    }
+  ],
+  "xfade": 0.3,
+  "outro": "img/brand/logo-outro-1080x1920.mp4",
+  "delogo": [
+    570,
+    1128,
+    60,
+    64
+  ],
+  "ambient": 0.25,
+  "cards": [
+    {
+      "t0": 0.3,
+      "t1": 9.9,
+      "lines": [
+        {
+          "text": "Has gold beaten"
+        },
+        {
+          "text": "the Sensex?",
+          "style": "accent"
+        },
+        {
+          "text": "33 years of monthly data, Apr 1993 to Oct 2026",
+          "style": "small"
+        }
+      ]
+    },
+    {
+      "t0": 10.0,
+      "t1": 19.6,
+      "lines": [
+        {
+          "text": "Since 1993: almost a tie"
+        },
+        {
+          "text": "Gold 11.3% vs Sensex 11.0%",
+          "style": "accent"
+        },
+        {
+          "text": "A year, in rupees. Sensex on price alone; about 12.4% with dividends",
+          "style": "small"
+        }
+      ]
+    },
+    {
+      "t0": 19.7,
+      "t1": 29.3,
+      "lines": [
+        {
+          "text": "Last 20 years"
+        },
+        {
+          "text": "Gold 14.4% vs Sensex 10.6%",
+          "style": "accent"
+        },
+        {
+          "text": "Sensex with an assumed 1.25% dividend yield",
+          "style": "small"
+        }
+      ]
+    },
+    {
+      "t0": 29.4,
+      "t1": 39.0,
+      "lines": [
+        {
+          "text": "Every 10-year window since 1993"
+        },
+        {
+          "text": "Gold won about 1 in 3",
+          "style": "accent"
+        },
+        {
+          "text": "Counting Sensex dividends",
+          "style": "small"
+        }
+      ]
+    },
+    {
+      "t0": 39.1,
+      "t1": 48.73,
+      "lines": [
+        {
+          "text": "They rarely fall together"
+        },
+        {
+          "text": "10–30% gold lifted the worst SIPs",
+          "style": "accent"
+        },
+        {
+          "text": "Worst falls: gold −25%, Sensex −55%",
+          "style": "small"
+        }
+      ]
+    },
+    {
+      "t0": 48.83,
+      "t1": 58.45,
+      "lines": [
+        {
+          "text": "Try your own start date"
+        },
+        {
+          "text": "Free SIP backtester: link in bio",
+          "style": "accent"
+        },
+        {
+          "text": "Not financial advice",
+          "style": "small"
+        }
+      ]
+    }
+  ],
+  "voice": [
+    {
+      "wav": "/home/claude/veo-clips2/vo/t_gold1.wav",
+      "at": 0.4
+    },
+    {
+      "wav": "/home/claude/veo-clips2/vo/t_gold2.wav",
+      "at": 10.1
+    },
+    {
+      "wav": "/home/claude/veo-clips2/vo/t_gold3.wav",
+      "at": 19.8
+    },
+    {
+      "wav": "/home/claude/veo-clips2/vo/t_gold4.wav",
+      "at": 29.5
+    },
+    {
+      "wav": "/home/claude/veo-clips2/vo/t_gold5.wav",
+      "at": 39.2
+    },
+    {
+      "wav": "/home/claude/veo-clips2/vo/t_gold6.wav",
+      "at": 48.93
+    }
+  ],
+  "cover": {
+    "src": "/home/claude/veo-clips2/raw/gold-2.mp4",
+    "t": 4.0,
+    "lines": [
+      {
+        "text": "Has gold beaten"
+      },
+      {
+        "text": "the Sensex?",
+        "style": "accent"
+      }
+    ],
+    "sub": "33 years of data for Indian investors"
+  }
+}

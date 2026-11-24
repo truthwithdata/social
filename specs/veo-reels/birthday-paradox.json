@@ -1,0 +1,172 @@
+{
+  "out": "img/2026-11-30/reel/birthday-paradox-reel.mp4",
+  "clips": [
+    {
+      "src": "/home/claude/veo-clips2/raw/bd-1.mp4",
+      "start": 0,
+      "end": 10.0
+    },
+    {
+      "src": "/home/claude/veo-clips2/raw/bd-2.mp4",
+      "start": 0,
+      "end": 10.0
+    },
+    {
+      "src": "/home/claude/veo-clips2/raw/bd-3.mp4",
+      "start": 0,
+      "end": 10.0
+    },
+    {
+      "src": "/home/claude/veo-clips2/raw/bd-4.mp4",
+      "start": 0,
+      "end": 10.0
+    },
+    {
+      "src": "/home/claude/veo-clips2/raw/bd-5.mp4",
+      "start": 0,
+      "end": 10.0
+    },
+    {
+      "src": "/home/claude/veo-clips2/raw/bd-6.mp4",
+      "start": 0,
+      "end": 10.0
+    }
+  ],
+  "xfade": 0.3,
+  "outro": "img/brand/logo-outro-1080x1920.mp4",
+  "delogo": [
+    570,
+    1128,
+    60,
+    64
+  ],
+  "ambient": 0.25,
+  "cards": [
+    {
+      "t0": 0.3,
+      "t1": 9.9,
+      "lines": [
+        {
+          "text": "How many people before two"
+        },
+        {
+          "text": "share a birthday?",
+          "style": "accent"
+        }
+      ]
+    },
+    {
+      "t0": 10.0,
+      "t1": 19.6,
+      "lines": [
+        {
+          "text": "The answer:"
+        },
+        {
+          "text": "just 23 people",
+          "style": "accent"
+        },
+        {
+          "text": "22 players + the referee",
+          "style": "small"
+        }
+      ]
+    },
+    {
+      "t0": 19.7,
+      "t1": 29.3,
+      "lines": [
+        {
+          "text": "It's not about your birthday"
+        },
+        {
+          "text": "23 people = 253 pairs",
+          "style": "accent"
+        }
+      ]
+    },
+    {
+      "t0": 29.4,
+      "t1": 39.0,
+      "lines": [
+        {
+          "text": "Chance of a shared birthday"
+        },
+        {
+          "text": "23 people: 50.7%",
+          "style": "accent"
+        },
+        {
+          "text": "30 people: 70.6%. Assumes 365 equally likely birthdays",
+          "style": "small"
+        }
+      ]
+    },
+    {
+      "t0": 39.1,
+      "t1": 48.7,
+      "lines": [
+        {
+          "text": "50 people: 97.0%"
+        },
+        {
+          "text": "70 people: 99.9%",
+          "style": "accent"
+        }
+      ]
+    },
+    {
+      "t0": 48.8,
+      "t1": 58.45,
+      "lines": [
+        {
+          "text": "Gut feeling vs data"
+        },
+        {
+          "text": "Follow for more",
+          "style": "accent"
+        }
+      ]
+    }
+  ],
+  "voice": [
+    {
+      "wav": "/home/claude/veo-clips2/vo/t_bd1.wav",
+      "at": 0.4
+    },
+    {
+      "wav": "/home/claude/veo-clips2/vo/t_bd2.wav",
+      "at": 10.1
+    },
+    {
+      "wav": "/home/claude/veo-clips2/vo/t_bd3.wav",
+      "at": 19.8
+    },
+    {
+      "wav": "/home/claude/veo-clips2/vo/t_bd4.wav",
+      "at": 29.5
+    },
+    {
+      "wav": "/home/claude/veo-clips2/vo/t_bd5.wav",
+      "at": 39.2
+    },
+    {
+      "wav": "/home/claude/veo-clips2/vo/t_bd6.wav",
+      "at": 48.9
+    }
+  ],
+  "cover": {
+    "src": "/home/claude/veo-clips2/raw/bd-3.mp4",
+    "t": 6.0,
+    "lines": [
+      {
+        "text": "How many people until two"
+      },
+      {
+        "text": "share a birthday?",
+        "style": "accent"
+      }
+    ],
+    "sub": "The answer is surprisingly small"
+  }
+}
