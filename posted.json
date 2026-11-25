@@ -323,6 +323,13 @@
       "platform": "linkedin",
       "at": "2026-11-25T07:58:38Z",
       "ref": "https://www.linkedin.com/feed/update/urn:li:share:7531265047474548736/"
+    },
+    {
+      "id": "2026-11-25-x-bf",
+      "platform": "x",
+      "at": "2026-11-25T07:59:00Z",
+      "ref": "",
+      "skipped": "X not connected"
     }
   ]
 }
