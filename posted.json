@@ -348,6 +348,12 @@
       "platform": "tiktok",
       "at": "2026-11-26T07:59:05Z",
       "ref": "v_inbox_file~v2.7712385955772106774"
+    },
+    {
+      "id": "2026-11-26-li-bf-check",
+      "platform": "linkedin",
+      "at": "2026-11-26T08:00:05Z",
+      "ref": "https://www.linkedin.com/feed/update/urn:li:share:7531627824793980928/"
     }
   ]
 }
