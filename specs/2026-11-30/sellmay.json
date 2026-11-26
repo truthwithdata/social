@@ -1,0 +1,17 @@
+{
+ "out_dir": "img/2026-11-30/sellmay",
+ "prefix": "sellmay",
+ "source": "Source: Robert Shiller (Yale) US stock data; FRED. Real total returns, 1871&ndash;2026",
+ "slides": [
+  {"type": "title", "h1": "Does &ldquo;Sell in May and go away&rdquo; actually work?", "p": "155 years of US stock market data, month by month.", "kicker": "Swipe &rarr;"},
+  {"type": "stat", "h2": "Summers really have been weaker", "big": "3.1% vs 5.2%", "p": "Average return after inflation, May&ndash;Oct vs Nov&ndash;Apr. But the gap&rsquo;s 95% confidence interval runs from &minus;0.3 to +4.5 points.", "small": "Winter beat the summer before it in only 52% of years"},
+  {"type": "stat", "h2": "But a weak summer still usually beats cash", "big": "60%", "p": "of summers, stocks beat Treasury bills. Staying invested earned 2.4% more than cash on average.", "small": "Selling in May swaps summer stocks for summer cash, not for winter"},
+  {"type": "stat", "h2": "$1 invested in 1871, in today&rsquo;s dollars", "big": "$44,157", "p": "Buy and hold. Switching to cash every May and back in November: <b>$3,555</b>, before costs and tax.", "small": "7.1% vs 5.4% a year after inflation"},
+  {"type": "bars", "h2": "Winter minus summer, by era (percentage points)", "bars": [
+    {"label": "1871&ndash;1950", "value": 0.05, "text": "+0.0"},
+    {"label": "1951&ndash;2001", "value": 5.5, "text": "+5.5"},
+    {"label": "2002&ndash;2025 (after it became famous)", "value": 1.9, "text": "+1.9"}], "highlight": 1, "p": "Since 2002 switching trailed holding by 2.7 points a year."},
+  {"type": "list", "h2": "To be fair to the idea", "items": ["<b>Smaller crashes</b>: worst real fall 57%, vs 77% for holding", "It beat a constant <b>half stocks, half cash</b> mix: 5.4% vs 4.75% a year", "But a cost of about <b>0.31% per switch</b> wipes that edge out", "<b>Tax</b> makes it far worse outside an ISA or pension"]},
+  {"type": "cta", "h2": "Test your own years", "p": "Pick the months, the period and the trading costs, and compare switching with holding.", "cta": "Free backtester: link in bio", "small": "Not financial advice. Past returns don&rsquo;t guarantee future ones."}
+ ]
+}
