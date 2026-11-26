@@ -1,0 +1,205 @@
+{
+ "week": "2026-11-30",
+ "posts": [
+  {
+   "id": "2026-12-01-li-crime",
+   "date": "2026-12-01",
+   "time": "08:00",
+   "platform": "linkedin",
+   "text": "\"Crime is out of control\" is one of the most common claims in Britain. 79% of adults told the ONS crime had gone up across the country. So I downloaded the official tables for England and Wales back to 1981.\n\nThere are two official measures, and they disagree.\n\nThe Crime Survey asks about 31,000 adults a year what happened to them, reported or not. It counted 19.8 million incidents in 1995 and 4.35 million in the year to June 2026: down 78% (excluding fraud and computer misuse).\n\nPolice recorded crime counts what police record. It is up 50% since its 2013/14 low, from 3.51 million to 5.25 million.\n\nBoth are right. In 2014 inspectors found about 1 in 5 crimes reported to police were not being recorded, and forces tightened up. Violence, public order and sexual offences account for more than the whole rise since. Meanwhile burglary recorded by police, which victims report because insurers need a crime number, halved.\n\nSome things really are rising: fraud (+34% since 2016/17 in the survey), theft from outside homes, parcels included (+42%), and shoplifting recorded by police (+40%).\n\nThe limits: this is England and Wales only, the survey misses crimes against businesses and homicide, and many one-year changes are within its margin of error.\n\nWhat do you go by when you judge whether crime is rising: the news, police figures, or what you see where you live?\n\n#CrimeStatistics #DataJournalism #UKData",
+   "first_comment": "The full analysis, with the Python and R code: https://truthwithdata.com/blog/is-crime-going-up-in-the-uk.html?utm_source=linkedin&utm_medium=social&utm_campaign=2026-12-01-li-crime\n\nCrime recorded per 1,000 residents for your police force or council area: https://truthwithdata.com/tools/crime-in-your-area-lookup.html?utm_source=linkedin&utm_medium=social&utm_campaign=2026-12-01-li-crime",
+   "images": [
+    "img/2026-11-30/li/crime-two-measures-poster.png"
+   ],
+   "note": "Image: the article's own 1080x1350 poster (copied from the website). Repost from the Truth with Data page."
+  },
+  {
+   "id": "2026-12-01-ig-crime",
+   "date": "2026-12-01",
+   "time": "19:00",
+   "platform": "instagram",
+   "text": "Is crime really going up in the UK? It depends which official measure you ask.\n\nThe Crime Survey for England and Wales, which asks people what happened to them whether they reported it or not, shows crime against people down 78% since its 1995 peak. Police recorded crime is up 50% since 2013/14, mostly because police now record more of what they're told.\n\nSome crimes really are rising: fraud (+34% since 2016/17), theft from outside homes (+42%) and shoplifting recorded by police (+40%). Violence, burglary and robbery are lower in the survey than a decade ago.\n\nCheck the recorded crime rate where you live with the free lookup: link in bio. England and Wales only.\n\n#crimestatistics #ukcrime #ons #datajournalism #truthwithdata",
+   "images": [
+    "img/2026-11-30/crime/crime-1.png",
+    "img/2026-11-30/crime/crime-2.png",
+    "img/2026-11-30/crime/crime-3.png",
+    "img/2026-11-30/crime/crime-4.png",
+    "img/2026-11-30/crime/crime-5.png",
+    "img/2026-11-30/crime/crime-6.png",
+    "img/2026-11-30/crime/crime-7.png"
+   ]
+  },
+  {
+   "id": "2026-12-01-igs-crime",
+   "date": "2026-12-01",
+   "time": "19:00",
+   "platform": "instagram",
+   "kind": "story",
+   "images": [
+    "img/2026-11-30/story/crime-story.jpg"
+   ],
+   "note": "Story from slide 1. Add a link sticker to the crime lookup by hand if you like."
+  },
+  {
+   "id": "2026-12-01-rd-criminology-crime",
+   "date": "2026-12-01",
+   "time": "19:00",
+   "platform": "reddit",
+   "subreddit": "criminology",
+   "kind": "self",
+   "flair": "Discussion",
+   "title": "England and Wales: the Crime Survey is down 78% since 1995 while police recorded crime is up 50% since 2013/14. I broke down where the police rise came from",
+   "text": "I compared the two official measures of crime in England and Wales from 1981 to the year ending June 2026, using the ONS's own tables and significance tests (I didn't re-estimate anything from the CSEW microdata).\n\n**The headline divergence.** The CSEW estimated 19.8m incidents at its 1995 peak and 4.35m in the year to June 2026 (excluding fraud and computer misuse), down 78%. Police recorded crime fell to 3.51m in 2013/14 and has since risen 50% to 5.25m.\n\n**Where the police rise came from.** Of the net rise of 1.74m offences since 2013/14, violence against the person accounts for 77%, public order 18% and sexual offences 9%, so those three add up to more than the whole rise. Within violence, stalking and harassment went from 62,656 to 622,662 recorded offences and violence without injury from 248,616 to 834,095. That lines up with the 2014 HMIC finding that about 19% of reported crimes weren't being recorded, plus new offences such as coercive control (2015) and more reporting of sexual offences and domestic abuse.\n\n**The useful control.** Offences that victims report because they need a crime number for insurance moved the other way in police data: residential burglary roughly halved and vehicle offences fell 16%. In the survey, burglary of homes is down 43% since 2016/17 and police residential burglary down 51% since 2017/18, so the two sources agree where recording practice matters least.\n\n**What does seem to be rising.** Fraud (+34% since 2016/17 in the survey, significant), theft from outside homes (+42%, significant) and shoplifting recorded by police (+40%, survey can't measure it). Theft from the person is the hard case: +31% in police data, a non-significant -7% in the survey.\n\n**Limits.** The two measures cover different offences and populations, so I compare trends, not levels. There are no comparable CSEW estimates for 2020/21 and 2021/22, the survey's accreditation was suspended from 2022 to 2024, and most one-year changes in smaller categories aren't significant.\n\nWrite-up with the data and Python/R code: https://truthwithdata.com/blog/is-crime-going-up-in-the-uk.html\n\nA question for people who work with these data: is there a better way to separate genuine change from recording change in the violence categories than using burglary and vehicle crime as a rough control? I'd be interested in how others have approached it.",
+   "note": "r/criminology rules (checked 26 Nov): must relate to the scientific study of crime, topic flair required (Discussion), Reddit's 10:1 self-promotion guide, no spam. Post requirements: flair required, no title or domain restrictions. Text post with one link at the end. Posted by hand."
+  },
+  {
+   "id": "2026-12-02-li-salary",
+   "date": "2026-12-02",
+   "time": "08:00",
+   "platform": "linkedin",
+   "text": "Every job offer from abroad starts with the same sum: take the salary, divide by the exchange rate, compare. It's the wrong sum.\n\nI used the World Bank's price data (PPP) for 164 countries and ILO earnings surveys for 108 to work out what a salary is really worth elsewhere. Take ₹1 lakh a month:\n\n1. At the 2025 exchange rate it is £871.\n2. It buys the same average basket of goods and services as about £3,536 in the UK, four times as much.\n3. But ₹1 lakh is 6.7 times India's median pay, and £3,536 is only 1.3 times Britain's. Being as far up the pay ladder in the UK would take about £18,000 a month.\n\nAll three answers are honest; they answer different questions. The second is what matters for groceries and transport. The third is what matters for things priced by what other people earn: a home near work, childcare, a good school.\n\nThe limits: PPP is a national average, so it understates London, Mumbai or Bengaluru rents. Every figure is before tax. And things priced in dollars everywhere (phones, flights, money sent home) don't get cheaper: with 30% of spending at world prices, the UK equivalent drops from £3,536 to £2,737.\n\nIf you've compared offers across countries, which of these three did you use?\n\n#Salary #CostOfLiving #DataAnalysis",
+   "first_comment": "The full analysis for 164 countries, with the data and Python and R code: https://truthwithdata.com/blog/how-far-does-your-salary-go-in-another-country.html?utm_source=linkedin&utm_medium=social&utm_campaign=2026-12-02-li-salary\n\nThe free salary converter: https://truthwithdata.com/tools/salary-purchasing-power-converter.html?utm_source=linkedin&utm_medium=social&utm_campaign=2026-12-02-li-salary",
+   "images": [
+    "img/2026-11-30/li/salary-1-lakh-equivalents.png"
+   ],
+   "note": "Image: Figure 5 of the article (rendered from the site's SVG). The chart shows dollars at market rates: the UK PPP bar $4,656 is the £3,536 in the text."
+  },
+  {
+   "id": "2026-12-02-x-crime",
+   "date": "2026-12-02",
+   "time": "08:00",
+   "platform": "x",
+   "thread": [
+    "Is crime really going up in the UK? I compared the two official measures for England and Wales, 1981 to June 2026. They point in opposite directions, and both are right. Thread.",
+    "The Crime Survey asks about 31,000 adults what happened to them, reported or not. Incidents: 19.8m at the 1995 peak, 4.35m in the year to June 2026. Down 78% (excluding fraud and computer misuse).",
+    "Police recorded crime: 3.51m in 2013/14, 5.25m now. Up 50%. In 2014 inspectors found about 1 in 5 reported crimes went unrecorded. Violence, public order and sexual offences make up more than the whole rise since.",
+    "Burglary recorded by police, which victims report for insurance, halved. What is really rising: fraud (+34% since 2016/17), theft from outside homes (+42%), shoplifting recorded by police (+40%).",
+    "Why it feels worse: 79% say crime has risen nationally, 51% in their own area. Limits: England and Wales only, and many one-year survey changes are within the margin of error.",
+    "Data, Python and R code, and a lookup for your area: https://truthwithdata.com/blog/is-crime-going-up-in-the-uk.html?utm_source=x&utm_medium=social&utm_campaign=2026-12-02-x-crime"
+   ],
+   "images": [
+    "img/2026-11-30/li/crime-survey-vs-police-by-offence.png"
+   ],
+   "note": "Skipped automatically until X is connected. Image: Figure 2 of the article."
+  },
+  {
+   "id": "2026-12-02-tt-crime",
+   "date": "2026-12-02",
+   "time": "08:00",
+   "platform": "tiktok",
+   "kind": "draft",
+   "video": "img/2026-11-30/reel/crime-reel-tiktok.mp4",
+   "is_aigc": false,
+   "text": "Is crime really going up in the UK? The Crime Survey says crime against people is down 78% since 1995. Police records are up 50% since 2013/14, mostly because police now record more. Fraud and parcel theft really are rising. Free lookup for your area: link in bio. #ukcrime #crimestatistics #uk #datajournalism #truthwithdata",
+   "note": "TikTok inbox draft of Wednesday's Instagram Reel (carousel slides, not AI footage). The -tiktok.mp4 opens on the cover for 0.5 s. Add a sound and post it yourself."
+  },
+  {
+   "id": "2026-12-02-igr-crime",
+   "date": "2026-12-02",
+   "time": "19:00",
+   "platform": "instagram",
+   "kind": "reel",
+   "video": "img/2026-11-30/reel/crime-reel.mp4",
+   "cover": "img/2026-11-30/reel/crime-reel-cover.jpg",
+   "text": "Is crime really going up in the UK? The Crime Survey for England and Wales shows crime against people down 78% since 1995. Police records are up 50% since 2013/14, mostly because police now record more of what they're told.\n\nFraud, theft from outside homes and shoplifting really are rising. Check your area with the free lookup: link in bio.\n\n#crimestatistics #ukcrime #ons #datajournalism #truthwithdata",
+   "note": "22 s: the seven crime carousel slides plus the logo outro (make_reel.py). Silent via the API; if you post by hand instead, add trending audio."
+  },
+  {
+   "id": "2026-12-03-li-sellmay",
+   "date": "2026-12-03",
+   "time": "08:00",
+   "platform": "linkedin",
+   "text": "\"Sell in May and go away\" is the market's most famous calendar rule. I tested it on US stocks from 1871 to 2026, using Robert Shiller's data and Treasury bill rates.\n\nThe saying gets one thing right. From May to October, stocks returned 3.1% on average after inflation, against 5.2% from November to April. But that gap is noisy: its 95% confidence interval runs from -0.3 to +4.5 points, and winter beat the summer before it in only 52% of years.\n\nThe part most arguments skip: selling in May doesn't swap summer for winter. It swaps summer stocks for summer cash. And stocks beat Treasury bills in 60% of summers.\n\nSo switching to T-bills every May and back every November returned 5.4% a year after inflation, against 7.1% for buy-and-hold, before any costs or tax. Over 155 years, $1 became $3,555 instead of $44,157.\n\nTo be fair to it: switching had smaller crashes (a worst real fall of 57% against 77%), and almost all of the seasonal gap came from 1951 to 2001. Since the idea became famous in 2002, switching has trailed holding by 2.7 points a year.\n\nThe limits: one market, monthly average prices rather than exact trade dates, and an illustrative tax rate. Not financial advice.\n\nWhich calendar rule do you hear most often at work?\n\n#Investing #Statistics #DataAnalysis",
+   "first_comment": "The full analysis, with the data and Python and R code: https://truthwithdata.com/blog/does-sell-in-may-and-go-away-work.html?utm_source=linkedin&utm_medium=social&utm_campaign=2026-12-03-li-sellmay\n\nTest your own months, years and costs with the free backtester: https://truthwithdata.com/tools/sell-in-may-backtester.html?utm_source=linkedin&utm_medium=social&utm_campaign=2026-12-03-li-sellmay",
+   "images": [
+    "img/2026-11-30/li/sell-in-may-growth-of-1-dollar.png"
+   ],
+   "note": "Image: Figure 2 of the article. LinkedIn newsletter edition 4 (crime) goes out by hand at 06:30 the same morning."
+  },
+  {
+   "id": "2026-12-03-ig-salary",
+   "date": "2026-12-03",
+   "time": "19:00",
+   "platform": "instagram",
+   "text": "How far does your salary really go in another country? Not as far as the exchange rate says, in most of the world.\n\nChange $1,000 at the market rate and spend it in the median country, and it buys what $2,075 buys in the US. In India, $4,393. So ₹1 lakh a month, only £871 at the exchange rate, buys the same average basket as about £3,536 in the UK.\n\nBut ₹1 lakh is 6.7 times India's median pay, while £3,536 is 1.3 times Britain's. Same basket, very different place in the pay ladder. And PPP doesn't cover big-city rents, tax, or things priced in dollars everywhere.\n\nConvert your own salary between 164 countries: free converter, link in bio.\n\n#salary #costofliving #movingabroad #ppp #truthwithdata",
+   "images": [
+    "img/2026-11-30/salary/salary-1.png",
+    "img/2026-11-30/salary/salary-2.png",
+    "img/2026-11-30/salary/salary-3.png",
+    "img/2026-11-30/salary/salary-4.png",
+    "img/2026-11-30/salary/salary-5.png",
+    "img/2026-11-30/salary/salary-6.png",
+    "img/2026-11-30/salary/salary-7.png"
+   ]
+  },
+  {
+   "id": "2026-12-03-igs-salary",
+   "date": "2026-12-03",
+   "time": "19:00",
+   "platform": "instagram",
+   "kind": "story",
+   "images": [
+    "img/2026-11-30/story/salary-story.jpg"
+   ],
+   "note": "Story from slide 1. Add a link sticker to the salary converter by hand if you like."
+  },
+  {
+   "id": "2026-12-03-rd-cscquk-salary",
+   "date": "2026-12-03",
+   "time": "19:00",
+   "platform": "reddit",
+   "subreddit": "cscareerquestionsuk",
+   "kind": "self",
+   "title": "Comparing a UK tech offer with an Indian salary: ₹1 lakh/month buys the same basket as about £3,536 here, but it's 6.7x India's median pay vs 1.3x the UK's. PPP data for 164 countries",
+   "text": "Comparisons between UK and Indian salaries usually convert at the exchange rate. I wanted to see how wrong that is, so I used the World Bank's PPP conversion factors for household consumption (2025) and ILOSTAT median earnings.\n\n**Three honest answers for ₹1 lakh a month (₹12 lakh a year), before tax:**\n\n- At the 2025 exchange rate: £871.\n- Same national-average basket of goods and services (PPP): about £3,536 in the UK.\n- Same place in the pay ladder: ₹1 lakh is 6.7x India's median employee pay (₹15,000 in the 2025 labour force survey). 6.7x the UK median would be about £18,056 a month.\n\nSo the PPP figure buys the same groceries and transport, but £3,536 is only 1.3x the UK median: you'd be a middle earner rather than near the top. That matters for anything priced by local wages, like rent near work, childcare or domestic help.\n\n**Other salaries:** ₹50,000 a month buys what about £1,768 does here (two-thirds of the UK median). ₹2 lakh buys what about £7,072 does (2.6x the median). Going the other way, £40,000 a year buys the same basket as about ₹11.3 lakh a year in India, a quarter of the ₹45.9 lakh it converts to.\n\n**Professionals specifically:** ILOSTAT's broad professional group earns 2.1x the median employee in India and 1.3x in the UK, so the gap between professionals is smaller: a British professional's median buys about 3.1x what an Indian professional's does, against 5.1x for all employees. The groups are broad, so I can't isolate software engineers.\n\n**What PPP misses:** London (or Bengaluru) rents are well above the national averages PPP uses; it's all before tax; and anything priced in dollars everywhere (laptops, flights, money sent home) doesn't get cheaper. With 30% of spending at world prices, the UK equivalent of ₹1 lakh falls from £3,536 to £2,737.\n\nWrite-up with the data and code: https://truthwithdata.com/blog/how-far-does-your-salary-go-in-another-country.html\n\nFor anyone who has moved between India and the UK in tech: which comparison matched your experience best, and how much did London rent change the picture?",
+   "note": "r/cscareerquestionsuk (checked 26 Nov): no subreddit rules listed, no flair or post requirements. Text only, one link at the end. Last post here was 19 Nov (14 days earlier). Posted by hand."
+  },
+  {
+   "id": "2026-12-05-ig-sellmay",
+   "date": "2026-12-05",
+   "time": "19:00",
+   "platform": "instagram",
+   "text": "Does \"Sell in May and go away\" actually work? I tested it on 155 years of US stock market data.\n\nSummers really have been weaker: 3.1% after inflation from May to October, against 5.2% from November to April, though the gap is noisy. But stocks still beat cash in 60% of summers, so switching to Treasury bills every May returned 5.4% a year against 7.1% for holding, before costs and tax. $1 in 1871 became $3,555 instead of $44,157.\n\nAlmost all of the seasonal gap came from 1951 to 2001. Since 2002, switching has trailed holding by 2.7 points a year.\n\nTest your own months and costs with the free backtester: link in bio. Not financial advice.\n\n#sellinmay #investing #stockmarket #personalfinance #truthwithdata",
+   "images": [
+    "img/2026-11-30/sellmay/sellmay-1.png",
+    "img/2026-11-30/sellmay/sellmay-2.png",
+    "img/2026-11-30/sellmay/sellmay-3.png",
+    "img/2026-11-30/sellmay/sellmay-4.png",
+    "img/2026-11-30/sellmay/sellmay-5.png",
+    "img/2026-11-30/sellmay/sellmay-6.png",
+    "img/2026-11-30/sellmay/sellmay-7.png"
+   ]
+  },
+  {
+   "id": "2026-12-05-igs-sellmay",
+   "date": "2026-12-05",
+   "time": "19:00",
+   "platform": "instagram",
+   "kind": "story",
+   "images": [
+    "img/2026-11-30/story/sellmay-story.jpg"
+   ],
+   "note": "Story from slide 1. Add a link sticker to the backtester by hand if you like."
+  },
+  {
+   "id": "2026-12-05-rd-ukinvesting-sellmay",
+   "date": "2026-12-05",
+   "time": "19:00",
+   "platform": "reddit",
+   "subreddit": "UKInvesting",
+   "kind": "self",
+   "title": "I backtested \"Sell in May and go away\" on 155 years of US data: summers really were weaker (3.1% vs 5.2% real), but switching to T-bills still lost to holding (5.4% vs 7.1% a year)",
+   "text": "Most discussions of \"Sell in May\" quote someone else's backtest, so I built my own. Data: Robert Shiller's monthly S&P Composite series with dividends and CPI, 1871 to August 2026, and 3-month T-bill rates from FRED (NBER commercial paper before 1934). All returns are real total returns.\n\n**Are summers worse?** On average, yes: May-October returned 3.1% after inflation and November-April 5.2%. But the gap's bootstrap 95% CI is -0.3 to +4.5 points, the median year-by-year gap is about 1 point, and winter beat the preceding summer in only 52% of 155 years.\n\n**Does switching pay?** No, because the strategy swaps summer stocks for summer cash, not for winter stocks. Stocks beat T-bills in 60% of summers (average excess +2.4%, CI +0.4 to +4.5). Switching every May and November returned 5.40% a year real against 7.12% for buy-and-hold, before costs: $1 became $3,555 vs $44,157. At 0.25% per switch it's 4.87%.\n\n**In its favour:** much smaller drawdowns (worst real fall 57% vs 77% in 1929-32), and it beat a constant 50/50 stocks/cash portfolio (5.40% vs 4.75%) with the same average exposure. That's the sense in which the \"Halloween effect\" exists, but a cost of about 0.31% per switch erases it.\n\n**It isn't stable over time.** 1871-1950: no summer gap at all. 1951-2001: +5.5 points (CI +1.4 to +9.9). 2002-2025, after Bouman and Jacobsen's paper made it famous: +1.9 points, CI -3.5 to +7.4, and switching trailed holding by 2.7 points a year.\n\n**Limits and caveats.** US only. Shiller's prices are monthly averages, so \"May\" really runs from mid-April to mid-May (shifting everything a month later shrinks the gap to 1.2 points and switching still loses, 4.9% vs 7.1%). The tax illustration (a flat 20%) makes switching far worse in a taxable account; in an ISA or SIPP only dealing costs matter.\n\nWrite-up with the code: https://truthwithdata.com/blog/does-sell-in-may-and-go-away-work.html\n\nFor those of you who do use seasonal or calendar rules: do you use them as a full switch, or only to tilt exposure, and have you found any version that survives costs on UK data?",
+   "note": "r/UKInvesting (checked 26 Nov): own research allowed if in-depth with evidence (R10, 300+ characters), active strategies only (R3; Sell in May is a timing strategy), no low-effort self-promotion (R5). Post requirements: body required, link posts restricted to a whitelist, so this is a text post with one link at the end. Posted by hand."
+  },
+  {
+   "id": "2026-12-06-nl-crime",
+   "date": "2026-12-06",
+   "time": "08:00",
+   "platform": "newsletter",
+   "subject": "Is crime really going up? (one chart)",
+   "text": "<p>Hi,</p>\n<h2>This week: is crime really going up in the UK?</h2>\n<p><img src=\"https://truthwithdata.github.io/social/img/2026-11-30/li/crime-two-measures-poster.png\" alt=\"Crime Survey down 78% since 1995; police recorded crime up 50% since 2013/14\" width=\"540\" style=\"max-width:100%;height:auto\"></p>\n<p>England and Wales measure crime in two official ways, and they disagree. The Crime Survey, which asks people what happened to them whether they reported it or not, counted 4.35 million incidents in the year to June 2026, 78% fewer than at the 1995 peak. Police recorded crime is up 50% since 2013/14, mostly because police now record more of what they are told.</p>\n<p>Some things really are rising: fraud (up 34% since 2016/17), theft from outside homes, parcels included (up 42%), and shoplifting recorded by police (up 40%). Violence, burglary and robbery are all lower in the survey than a decade ago.</p>\n<p><a href=\"https://truthwithdata.com/blog/is-crime-going-up-in-the-uk.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=2026-12-06-nl-crime\">Read the analysis</a> or <a href=\"https://truthwithdata.com/tools/crime-in-your-area-lookup.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=2026-12-06-nl-crime\">look up the recorded crime rate where you live</a>.</p>\n<p>Also new this week: <a href=\"https://truthwithdata.com/blog/how-far-does-your-salary-go-in-another-country.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=2026-12-06-nl-crime\">how far your salary really goes in another country</a> (164 countries compared) and <a href=\"https://truthwithdata.com/blog/does-sell-in-may-and-go-away-work.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=2026-12-06-nl-crime\">does \"Sell in May and go away\" actually work?</a> (155 years of data). Each has a free tool to try your own numbers.</p>\n<p>Vishal</p>",
+   "note": "Kit broadcast. Chart: the article's own poster, copied into this repo."
+  }
+ ]
+}

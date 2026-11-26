@@ -1,0 +1,14 @@
+{
+ "out_dir": "img/2026-11-30/crime",
+ "prefix": "crime",
+ "source": "Source: ONS, Crime in England and Wales, year ending June 2026",
+ "slides": [
+  {"type": "title", "h1": "Is crime really going up in the UK?", "p": "Two official measures for England and Wales give opposite answers. Both are right.", "kicker": "Swipe &rarr;"},
+  {"type": "stat", "h2": "The Crime Survey: crime against people since the 1995 peak", "big": "&minus;78%", "p": "19.8m incidents a year in 1995, 4.35m in the year to June 2026 (excluding fraud and computer misuse).", "small": "Statistically significant, by the ONS&rsquo;s own test"},
+  {"type": "stat", "h2": "Police recorded crime since its 2013/14 low", "big": "+50%", "tone": "amber", "p": "3.51m offences then, 5.25m in the year to June 2026.", "small": "The two measures count different things: compare trends, not levels"},
+  {"type": "list", "h2": "Why the police figures went up", "items": ["In 2014 inspectors found about <b>1 in 5</b> reported crimes went unrecorded; forces tightened up", "Violence, public order and sexual offences make up <b>more than all</b> of the 1.74m rise", "Stalking and harassment: <b>62,656 &rarr; 622,662</b> recorded", "Burglary recorded by police <b>halved</b>: victims need a crime number to claim"]},
+  {"type": "list", "h2": "What really is rising, and what isn&rsquo;t", "items": ["<b>Fraud: +34%</b> since 2016/17 (survey)", "<b>Theft from outside homes</b>, parcels included: <b>+42%</b>", "<b>Shoplifting</b> recorded by police: <b>+40%</b>", "Down in the survey: violence <b>&minus;34%</b>, robbery <b>&minus;58%</b>, burglary of homes <b>&minus;43%</b>"]},
+  {"type": "stat", "h2": "Why it feels worse", "big": "79% vs 51%", "p": "say crime has gone up across the country, vs in their own area (year to March 2024).", "small": "The national picture comes from news; the local one from experience"},
+  {"type": "cta", "h2": "How much crime is recorded where you live?", "p": "Crimes per 1,000 residents for every police force and about 300 council areas, with the trend since 2022.", "cta": "Free lookup: link in bio", "small": "England and Wales only. Scotland and Northern Ireland count crime differently."}
+ ]
+}

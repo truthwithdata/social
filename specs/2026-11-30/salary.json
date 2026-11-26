@@ -1,0 +1,85 @@
+{
+ "out_dir": "img/2026-11-30/salary",
+ "prefix": "salary",
+ "source": "Source: World Bank WDI (PPP, private consumption, 2025); ILOSTAT",
+ "slides": [
+  {
+   "type": "title",
+   "h1": "How far does your salary really go in another country?",
+   "p": "Exchange rates vs what money actually buys, in 164 countries.",
+   "kicker": "Swipe &rarr;"
+  },
+  {
+   "type": "bars",
+   "h2": "What $1,000 changed at the market rate buys, at US prices",
+   "bars": [
+    {
+     "label": "Egypt",
+     "value": 6375,
+     "text": "$6,375"
+    },
+    {
+     "label": "India",
+     "value": 4393,
+     "text": "$4,393"
+    },
+    {
+     "label": "Median of 164 countries",
+     "value": 2075,
+     "text": "$2,075"
+    },
+    {
+     "label": "United Kingdom",
+     "value": 1083,
+     "text": "$1,083"
+    },
+    {
+     "label": "Switzerland",
+     "value": 780,
+     "text": "$780"
+    }
+   ],
+   "highlight": 2,
+   "p": "In 156 of 164 countries, a dollar goes further than in the US."
+  },
+  {
+   "type": "stat",
+   "h2": "&#8377;1 lakh a month, changed at the 2025 exchange rate",
+   "big": "&pound;871",
+   "p": "But it buys the same average basket of goods and services as about <b>&pound;3,536</b> in the UK.",
+   "small": "Purchasing power parity (PPP): what the same things cost in each country"
+  },
+  {
+   "type": "stat",
+   "h2": "Same basket, very different place in the pay ladder",
+   "big": "6.7&times; vs 1.3&times;",
+   "tone": "amber",
+   "p": "&#8377;1 lakh is 6.7 times India&rsquo;s median pay. &pound;3,536 is 1.3 times Britain&rsquo;s. The same rank in the UK would take about &pound;18,000 a month.",
+   "small": "Monthly pay before tax"
+  },
+  {
+   "type": "list",
+   "h2": "What PPP misses",
+   "items": [
+    "<b>Big-city rents</b>: PPP is a national average, not London or Mumbai",
+    "<b>Tax</b>: every figure here is before tax",
+    "<b>Things priced in dollars</b>: with 30% of spending at world prices, &#8377;1 lakh is worth &pound;2,737, not &pound;3,536",
+    "<b>Your basket</b> isn&rsquo;t the average household&rsquo;s"
+   ]
+  },
+  {
+   "type": "stat",
+   "h2": "Going the other way",
+   "big": "&#8377;11.3 lakh",
+   "p": "a year buys in India what &pound;40,000 a year buys in the UK: a quarter of the &#8377;45.9 lakh it converts to.",
+   "small": "National averages; city rents for expat-standard flats are far higher"
+  },
+  {
+   "type": "cta",
+   "h2": "Check your own salary",
+   "p": "Convert any salary between 164 countries and see where it sits against local median pay.",
+   "cta": "Free converter: link in bio",
+   "small": "Use PPP as a floor for a move to a dearer country, then do the tax sums."
+  }
+ ]
+}
